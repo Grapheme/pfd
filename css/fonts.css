@@ -15,3 +15,12 @@
          url('../fonts/opensans-light.ttf') format('truetype'),
          url('../fonts/opensans-light.svg#OpenSansLight') format('svg');
 }
+
+@font-face {
+    font-family: 'ProximaNovaBold';
+    src: url('../fonts/proximanovabold_0.eot');
+    src: url('../fonts/proximanovabold_0.eot') format('embedded-opentype'),
+         url('../fonts/proximanovabold_0.woff') format('woff'),
+         url('../fonts/proximanovabold_0.ttf') format('truetype'),
+         url('../fonts/proximanovabold_0.svg#ProximaNovaBold') format('svg');
+}
