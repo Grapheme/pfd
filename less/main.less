@@ -110,10 +110,25 @@ textarea {
  * All variables
  */
 
-@white: #ffffff;
-@black: #000000;
+@white: #fff;
+@black: #000;
 @menu-height: 65px;
 @menu-hover: #eaeaea;
+@gray: #4a4c4c;
+
+/* ==========================================================================
+   Font classes
+   ========================================================================== */
+
+@open-sans-light: 'OpenSansLight', sans-serif;
+@open-sans-reg: 'OpenSansRegular', sans-serif;
+@proxima-nova-bold: 'ProximaNovaBold', sans-serif;
+@proxima-nova-reg: 'ProximaNovaRegular', sans-serif;
+
+.footer-font(@family: @open-sans-light, @size: .875em, @line-h: 1.7857em) {
+  font: @size e('/') @line-h @family;
+}
+
 
 /*
  * Useable classes
@@ -395,24 +410,39 @@ header {
    
    .ftr-top {  
         
-     .ftr-links-list {
-       position: relative;
-       z-index: 1;
-       float: left;
-       width: 20.5%;
-     }
-     .about-us {
-       width: 18.5%;
-     }
-     .products {
-       width: 15.5%;
-     }
-     .operations {
-       width: 16%;
-     }
+       .ftr-links-list {
+           .footer-font;
+           position: relative;
+           z-index: 1;
+           float: left;
+           width: 20.5%;
+           .ftr-links-item{               
+               a {
+                   color: @gray;
+                   text-decoration: none;
+               }
+               a:hover {
+                   text-decoration: underline;
+               }               
+           }
+           .list-head {
+               font-family: @open-sans-reg;
+           }      
+       }
+       .about-us {
+           width: 18.5%;
+       }
+       .products {
+           width: 15.5%;
+       }
+       .operations {
+           width: 16%;
+       }
      
    }
    .ftr-copyright {
+     .footer-font(@family: @open-sans-reg);
+     color: @black;
      margin: 50px 0 0;
    }
 } 
