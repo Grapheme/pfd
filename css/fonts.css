@@ -24,3 +24,12 @@
          url('../fonts/proximanovabold_0.ttf') format('truetype'),
          url('../fonts/proximanovabold_0.svg#ProximaNovaBold') format('svg');
 }
+
+@font-face {
+    font-family: 'ProximaNovaRegular';
+    src: url('../fonts/proximanovaregular_0.eot');
+    src: url('../fonts/proximanovaregular_0.eot') format('embedded-opentype'),
+         url('../fonts/proximanovaregular_0.woff') format('woff'),
+         url('../fonts/proximanovaregular_0.ttf') format('truetype'),
+         url('../fonts/proximanovaregular_0.svg#ProximaNovaRegular') format('svg');
+}
