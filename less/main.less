@@ -368,9 +368,48 @@ header {
    ========================================================================== */
 
 .main-footer {
-   height: 138px;
-   background: #b5b9bb;
+   padding: 55px 0 37px;
+   background: #b5b9bb;     
 }
+.footer-content {
+   position: relative;
+   width: 980px;
+   margin: 0 auto;  
+   
+   &:after {
+       content: "";
+       position: absolute;
+       top: 0;
+       right: 0;
+       z-index: 0;       
+       width: 252px;
+       height: 46px;
+       background: url(../img/footer-logo.png);
+   }
+   
+   .ftr-top {  
+        
+     .ftr-links-list {
+       position: relative;
+       z-index: 1;
+       float: left;
+       width: 20.5%;
+     }
+     .about-us {
+       width: 18.5%;
+     }
+     .products {
+       width: 15.5%;
+     }
+     .operations {
+       width: 16%;
+     }
+     
+   }
+   .ftr-copyright {
+     margin: 50px 0 0;
+   }
+} 
 
 
 
