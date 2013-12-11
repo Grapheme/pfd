@@ -137,7 +137,19 @@ textarea {
   height: @height;
 }
 
+.noneOutline {
+  outline: 0 none;
+  &:hover { outline: 0 none; }
+  &:active { outline: 0 none; }
+  &:focus { outline: 0 none; }
+  &::-moz-focus-inner { outline: 0 none; }
+}
 
+.borderRadius (@radius: 3px) {
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+}
 
 /*
  * Main options
@@ -146,6 +158,7 @@ textarea {
 nav, ul, li {
   padding: 0;
   margin: 0;
+  list-style-type: none;
 }
 
 .wrapper {
@@ -186,6 +199,8 @@ body.main {
 .sign-up {
   .heightWline(30px);
   .paddingLR(15px);
+  .noneOutline;
+  .borderRadius;
   
   display: block;
   color: @white;
@@ -279,8 +294,27 @@ body.main {
   }
 }
 
+/*
+ * Main menu
+ */
 
-
+.main-menu {
+  width: 100%;
+  min-width: 980px;
+  height: 77px;
+  background: url('../img/menu/back.jpg');
+  
+  ul {
+    width: 980px;
+    margin: 0 auto;
+    
+    li {
+      background: url('../img/menu/option.jpg');
+      .heightWline(77px);
+      width: 25%;
+    }
+  }
+}
 
 
 
