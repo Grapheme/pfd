@@ -128,13 +128,30 @@ textarea {
 .footer-font(@family: @open-sans-light, @size: .875em, @line-h: 1.7857em) {
   font: @size e('/') @line-h @family;
 }
+.desc {
+  .footer-font(@proxima-nova-reg, .875em, 1.3571em);
+  color: @black;
+}
+/* ==========================================================================
+   Header classes
+   ========================================================================== */
+  
+.f_header {
+  .footer-font(@proxima-nova-bold, 1.125em, 1.0555em);
+  .uppercase;
+  color: @black;
+}  
+.s_header {
+  .footer-font(@proxima-nova-bold, .875em, 2.3535em);
+  .uppercase;
+  color: @black;
+}  
+  
+/* ==========================================================================
+   Usable classes
+   ========================================================================== */
 
-
-/*
- * Useable classes
- */
-
-.transition(@transTime) {
+.transition(@transTime: .3s) {
   transition: all @transTime ease;
   -webkit-transition: all @transTime ease;
   -moz-transition: all @transTime ease;
@@ -174,9 +191,20 @@ textarea {
   -ms-transform:rotate(@deg);
 }
 
-/*
- * Main options
- */
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+  
+.uppercase() {
+  text-transform: uppercase;
+}
+.mid_block() {
+  width: 980px;
+  margin: 0 auto;
+}
+/* ==========================================================================
+   Global styles and resets
+   ========================================================================== */
 
 nav, ul, li {
   padding: 0;
@@ -442,6 +470,13 @@ header {
     .rotate(45deg);
   }
 }
+
+/* ==========================================================================
+   Section product
+   ========================================================================== */
+  .product {
+    .mid_block;
+  }
 
 
 /* ==========================================================================
