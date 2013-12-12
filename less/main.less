@@ -115,7 +115,7 @@ textarea {
 @menu-height: 65px;
 @menu-hover: #eaeaea;
 @gray: #4a4c4c;
-
+@orange: #d68a40;
 /* ==========================================================================
    Font classes
    ========================================================================== */
@@ -201,6 +201,23 @@ textarea {
 .mid_block() {
   width: 980px;
   margin: 0 auto;
+}
+
+.gen_list {
+  .gen_list-item {    
+    .desc;
+    position:relative;
+    margin: 0 0 1em;
+    
+    &:before {
+      content: "■";
+      position: absolute;
+      top: 0;
+      right: 104%;
+      font-size: .7em;
+      color: @orange;
+    }
+  }
 }
 /* ==========================================================================
    Global styles and resets
@@ -476,6 +493,13 @@ header {
    ========================================================================== */
   .product {
     .mid_block;
+    padding: 0 2em;
+    .meta-trader {
+      float: left;
+    }
+    .benefits {
+      float: left;
+    }
   }
 
 
