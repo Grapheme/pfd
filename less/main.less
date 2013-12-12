@@ -116,6 +116,7 @@ textarea {
 @menu-hover: #eaeaea;
 @gray: #4a4c4c;
 @orange: #d68a40;
+@traiderColor: #7badc6;
 /* ==========================================================================
    Font classes
    ========================================================================== */
@@ -232,6 +233,36 @@ textarea {
   font-weight: 700;
   margin: 0 0 0 5px;
 }
+
+.our-link {
+	color: #1976a5;
+	text-decoration: underline;
+	
+	&:hover { text-decoration: none; }
+}
+
+.traiderLink {
+	.noneOutline;
+	.paddingLR(40px);
+	
+	padding-top: 20px;
+	height: 200px;
+	text-decoration: none;
+	color: @black;
+	display: block;
+	
+	span {
+		display: block;
+	}
+}
+
+.traiderLi {
+	width: 100%/3;
+	float: left;
+	
+	&:hover { background: #4e98b0; }
+}
+
 /* ==========================================================================
    Global styles and resets
    ========================================================================== */
@@ -278,10 +309,31 @@ header {
   }
   .lang-div {
     float: right;
-  	width: 300px;
+  	width: 160px;
+    margin-top: 6px;
   	
   	.search {
   		float: left;
+  		margin-top: 8px;
+  		
+  		.search-img {
+  			float: left;
+  		}
+  		
+  		.lang-ul {
+  			.footer-font(@open-sans-reg, 14px, normal);
+  			.uppercase();
+  			margin-left: 20px;
+  			margin-top: -3px;
+  			float: left;
+  			cursor: pointer;
+  			
+  			.option-lang {
+  				position: relative;
+  				max-height: 1px;
+  				overflow: hidden;
+  			}
+  		}
   	}
   	
   	.sign {
@@ -304,7 +356,62 @@ header {
   font-family: 'OpenSansRegular';
 }
 
+.sign-up-open {
+	.transition(.5s);
+	position: absolute;
+	width: 980px;
+	left: 50%;
+	margin-left: -490px;
+	z-index: 3;
+	background: @traiderColor;
+	top: 50px;
+	overflow: hidden;
+	max-height: 0px;
+	opacity: 0;
+		
+	ul {
+		
+		li {
+			.traiderLi;
+			
+			a {
+				.traiderLink;
+				height: 260px;
+			}
+		}
+	}
+}
 
+.sign-close {
+	right: 10px;
+	top: 12px;
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	cursor: pointer;
+	
+	.sign-close-one {
+		.rotate(45deg);
+		
+		top: 3px;
+		left: 10px;
+		position: absolute;
+		height: 15px;
+		width: 1px;
+		background: #577a8c;
+	}
+	
+	.sign-close-two {
+		.rotate(-45deg);
+		
+		top: 3px;
+		left: 10px;
+		position: absolute;
+		height: 15px;
+		width: 1px;
+		background: #577a8c;
+	}
+}
 
 /*
  * Header Navigation
@@ -394,10 +501,13 @@ header {
  */
 
 .main-menu {
+  position: relative;
   width: 100%;
   min-width: 980px;
   height: 77px;
   background: url('../img/menu/back.jpg');
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  z-index: 2;
   
   ul {
     width: 980px;
@@ -555,32 +665,47 @@ header {
  */
 
 section.traiders {
-	background: #7badc6;
+	position: relative;
+	background: @traiderColor;
 	overflow: hidden;
+	z-index: 1;
 	
 	ul {
-		.mid_block();
+		.mid_block;
 		
 		li {
-			width: 100%/3;
-			float: left;
-			
-			&:hover { background: #4e98b0; }
+			.traiderLi;
 			
 			.traider-link {
-				.noneOutline;
-				.paddingLR(40px);
+				.traiderLink;
 				
-				padding-top: 20px;
-				padding-bottom: 60px;
-				text-decoration: none;
-				color: @black;
-				display: block;
-				
-				span {
-					display: block;
-				}
 			}
+		}
+	}
+}
+
+/*
+ * Normal block
+ */
+
+section.normal {
+	background: @white;
+}
+
+.main-desc {
+	.mid_block(920px);
+	padding-bottom: 80px;
+	
+	.main-desc-title {
+		.footer-font(@proxima-nova-bold, .875em, 2.3571em);
+		text-transform: uppercase;
+	}
+	
+	.main-desc-text {
+		.footer-font(@proxima-nova-reg, 12px, 20px);
+		
+		a {
+			.our-link;
 		}
 	}
 }
@@ -645,7 +770,7 @@ section.traiders {
    Section table
    ========================================================================== */  
   
-  .table {
+  .table-container {
     .mid_block;
     padding: 55px 0;
     table {
