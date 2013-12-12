@@ -137,14 +137,16 @@ textarea {
    ========================================================================== */
   
 .f_header {
-  .footer-font(@proxima-nova-bold, 1.125em, 1.0555em);
-  .uppercase;
-  color: @black;
+  .footer-font(@proxima-nova-bold, 1.125em, 20px);
+    .uppercase;
+  margin: 20px 0;
+  color: @black;  
 }  
 .s_header {
-  .footer-font(@proxima-nova-bold, .875em, 2.3535em);
+  .footer-font(@proxima-nova-bold, .875em, 20px);
   .uppercase;
-  color: @black;
+  margin: 20px 0;
+  color: @black;  
 }  
   
 /* ==========================================================================
@@ -524,10 +526,15 @@ header {
     .mid_block( 980px - 64px );
     padding: 0 2em;
     .meta-trader {
+      width: 80%;
       float: left;
     }
     .benefits {
+      width: 20%;
       float: left;
+      .s_header {
+        margin: 20px 0 18px;
+      }
     }
   }
 
