@@ -10,6 +10,15 @@ function cssFade(elem, act) {
 	}
 }
 
+function csSlide(elem, act, max) {
+	if(act=='show') {
+		$(elem).css({'max-height': max});
+	}
+	if(act=='hide') {
+		$(elem).css({'max-height': 0});
+	}
+}
+
 $('.left-arrow').click(function(){
 	fotorama.show('<');
 });
@@ -30,6 +39,26 @@ $('.js-close-sign').click(function(e){
 
 $('.sign-up-open').click(function(e){
 	e.stopPropagation();
+});
+
+var $lang_open = false;
+$('.lang-ul').click(function(){
+	if(!$lang_open) {
+		csSlide('.option-lang','show',40);
+		$('.lang-triangle').addClass('lang-triangle-active');
+		$lang_open = true;	
+	} else {
+		csSlide('.option-lang','hide',40);
+		$('.lang-triangle').removeClass('lang-triangle-active');
+		$lang_open = false;
+	}
+});
+
+$('.lang-item').click(function(){
+	var langB = $(this).html();
+	var langA = $('.active-lang').html();
+	$(this).html(langA);
+	$('.active-lang').html(langB);
 });
 
 $(document).click(function(){

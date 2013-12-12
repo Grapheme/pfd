@@ -330,11 +330,31 @@ header {
   			margin-top: -3px;
   			float: left;
   			cursor: pointer;
+  			position: relative;
+  			width: 35px; 			
   			
   			.option-lang {
-  				position: relative;
-  				max-height: 1px;
+  				.transition(.3s);
+  				position: absolute;
+  				max-height: 0px;
   				overflow: hidden;
+  			}
+  			
+  			.lang-triangle {
+  				.transition(.3s);
+  				
+  				position: absolute;
+  				width: 0;
+  				height: 0;
+  				left: 22px;
+  				top: 9px;
+  				border-left: 3px solid transparent;
+  				border-right: 3px solid transparent;
+  				border-top: 3px solid @black;
+  			}
+  			
+  			.lang-triangle.lang-triangle-active {
+  				.rotate(180deg);
   			}
   		}
   	}
