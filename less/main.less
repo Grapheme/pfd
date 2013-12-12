@@ -393,13 +393,15 @@ header {
 
 .slider-arrow {
   position: relative;
-  height: 20px;
+  height: 29px;
   cursor: pointer;
+  width: 18px;
+  margin-top: 120px;
   
   .top-part {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 8px;
     width: 1px;
     height: 15px;
     background: @white;
@@ -408,7 +410,7 @@ header {
   .bottom-part {  
     position: absolute;
     top: 10px;
-    left: 0;
+    left: 8px;
     width: 1px;
     height: 15px;
     background: @white;
@@ -416,6 +418,9 @@ header {
 }
 
 .left-arrow {
+  float: left;
+  margin-left: 50px;
+
   .top-part {
     .rotate(45deg);
   }
@@ -426,6 +431,9 @@ header {
 }
 
 .right-arrow {
+  float: right;
+  margin-right: 50px;
+
   .top-part {
     .rotate(-45deg);
   }
