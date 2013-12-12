@@ -42,7 +42,8 @@ $('.sign-up-open').click(function(e){
 });
 
 var $lang_open = false;
-$('.lang-ul').click(function(){
+$('.lang-ul').click(function(e){
+	e.stopPropagation();
 	if(!$lang_open) {
 		csSlide('.option-lang','show',40);
 		$('.lang-triangle').addClass('lang-triangle-active');
@@ -63,6 +64,10 @@ $('.lang-item').click(function(){
 
 $(document).click(function(){
 	cssFade('.sign-up-open','hide');
+	
+	csSlide('.option-lang','hide',40);
+	$('.lang-triangle').removeClass('lang-triangle-active');
+	$lang_open = false;
 });
 
 
