@@ -221,6 +221,17 @@ textarea {
     }
   }
 }
+
+.tick {
+  display: inline-block;
+  width: 25px;
+  height: 10px;
+  background: url(../img/tick.png) no-repeat center center;
+}
+.minus {
+  font-weight: 700;
+  margin: 0 0 0 5px;
+}
 /* ==========================================================================
    Global styles and resets
    ========================================================================== */
@@ -572,6 +583,24 @@ header {
   
   .table {
     .mid_block;
+    table {
+      .footer-font(@proxima-nova-bold, .875em, 2.3571em);
+      width: 100%;        
+      tr {
+        &:nth-child(2n+2) {
+          background: #dcebf3;
+        }
+      }    
+      th {
+        .uppercase;
+        padding: 0 0 0 24px;
+        text-align: left;
+      }
+      td {        
+        padding: 0 0 0 24px;
+        font-family: @proxima-nova-reg;
+      }
+    }
   }
   
 /* ==========================================================================
