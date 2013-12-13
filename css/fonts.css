@@ -33,3 +33,12 @@
          url('../fonts/proximanovaregular_0.ttf') format('truetype'),
          url('../fonts/proximanovaregular_0.svg#ProximaNovaRegular') format('svg');
 }
+
+@font-face {
+    font-family: 'ProximaNovaSemibold';
+    src: url('../fonts/proximanovasemibold_0.eot');
+    src: url('../fonts/proximanovasemibold_0.eot') format('embedded-opentype'),
+         url('../fonts/proximanovasemibold_0.woff') format('woff'),
+         url('../fonts/proximanovasemibold_0.ttf') format('truetype'),
+         url('../fonts/proximanovasemibold_0.svg#ProximaNovaSemibold') format('svg');
+}

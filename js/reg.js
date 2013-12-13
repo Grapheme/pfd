@@ -4,8 +4,8 @@ function regStart() {
 	$('.account-choose-a[data-type=' + $toCat + ']').addClass('active');
 	$('.account-div[data-type=' + $toCat + ']').fadeIn();
 	if($toCat == '') {
-		$('.account-choose-a[data-type=papper]').addClass('active');
-		$('.account-div[data-type=papper]').show();
+		$('.account-choose-a[data-type=paper]').addClass('active');
+		$('.account-div[data-type=paper]').show();
 	}
 }
 
@@ -19,7 +19,9 @@ $('.account-choose-a').click(function(){
 		$('.account-div[data-type=' + $account_active + ']').fadeOut('fast', function(){
 			$('.account-div[data-type=' + $account_click + ']').fadeIn('fast');
 		});
+		window.location.hash = $account_click;
 	}
+	return false;
 });
 
 regStart();

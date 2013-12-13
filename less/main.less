@@ -127,12 +127,17 @@ textarea {
 @open-sans-reg: 'OpenSansRegular', sans-serif;
 @proxima-nova-bold: 'ProximaNovaBold', sans-serif;
 @proxima-nova-reg: 'ProximaNovaRegular', sans-serif;
+@proxima-nova-semibold: 'ProximaNovaSemibold', sans-serif;
 
 .footer-font(@family: @open-sans-light, @size: .875em, @line-h: 1.7857em) {
   font: @size e('/') @line-h @family;
 }
 .desc {
   .footer-font(@proxima-nova-reg, .875em, 1.3571em);
+  color: @black;
+}
+.desc-bold {
+  .footer-font(@proxima-nova-semibold, 14px, 1.3571em);
   color: @black;
 }
 /* ==========================================================================
@@ -277,12 +282,54 @@ textarea {
 .button(@display: block) {  
   .noneOutline;
   .borderRadius;
-  .footer-font(@open-sans-reg, .875em, 2.1428em);
+  .footer-font(@open-sans-reg, 14px, 2.1428em);
   display: @display;
   padding: 0 15px;
   color: @white;
   text-decoration: none;
   background: @orange;
+  border: none;
+  
+  &:hover { background: #e2730a; }
+  &:active { box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5); }
+}
+
+.button-blue(@display: block) {  
+  .noneOutline;
+  .borderRadius;
+  .footer-font(@open-sans-reg, 14px, 2.1428em);
+  display: @display;
+  padding: 0 15px;
+  color: @white;
+  text-decoration: none;
+  background: #0092b7;
+  border: none;
+  
+  &:hover { background: #e2730a; }
+  &:active { box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5); }
+}
+
+
+
+.ourInput(@width: 100%) {
+	border: 1px solid #c4c7c9;
+	margin-bottom: 15px;
+	
+	input {
+		border: 0 none;
+		height: 30px;
+		padding-left: 5px;
+	}
+}
+
+.wrappDiv {
+	&:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	}
 }
 
 /* ==========================================================================
@@ -404,7 +451,7 @@ header {
 	margin-left: -490px;
 	z-index: 3;
 	background: @traiderColor;
-	top: 50px;
+	top: 35px;
 	overflow: hidden;
 	max-height: 0px;
 	opacity: 0;
@@ -805,10 +852,53 @@ section.normal {
 			width: 100%/3;
 			float: left;
 			
+			.account-div-cont {
+				padding-left: 40px;
+				padding-right: 40px;
+				padding-top: 40px;
+				
+				.gen_list-item {
+					margin-left: 17px;
+				}
+			}
 		}
 	}
 }
 
+.reg-input {
+	.ourInput;
+}
+
+.account-div-cont {
+	.reg-button {
+		.button;
+		
+		float: right;
+	}
+}
+
+.account-div {
+	.wrappDiv;
+	padding-bottom: 20px;
+}
+
+.account-div[data-type=demo] {
+	padding: 0;
+	height: 450px;
+	background: url(../img/demo-people.png) no-repeat right bottom rgba(0, 0, 0, 0);
+	
+	.download-button {
+		.button;
+		width: 100%;
+		text-align: center;
+	}
+	
+	.download-button-blue {
+		.button;
+		width: 100%;
+		text-align: center;
+	}
+}
 
 
 /* ==========================================================================
