@@ -274,6 +274,17 @@ textarea {
     display: inline-block;
 }
 
+.button(@display: block) {  
+  .noneOutline;
+  .borderRadius;
+  .footer-font(@open-sans-reg, .875em, 2.1428em);
+  display: @display;
+  padding: 0 15px;
+  color: @white;
+  text-decoration: none;
+  background: @orange;
+}
+
 /* ==========================================================================
    Global styles and resets
    ========================================================================== */
@@ -377,18 +388,12 @@ header {
 }
 
 .sign-up {
-  .heightWline(30px);
-  .noneOutline;
-  .borderRadius;
-  
-  padding-left: 15px;
-  padding-right: 15px;
-  display: block;
-  color: @white;
-  text-decoration: none;
-  font-size: 14px;
-  background: #d68a40;
-  font-family: 'OpenSansRegular';
+  .button;
+}
+
+.product-dl {
+  .button(inline-block);
+  margin: 40px 0 0;
 }
 
 .sign-up-open {
