@@ -94,3 +94,11 @@ if (!hasPlaceholderSupport()) {
           }
         }).blur();
 }
+
+/*
+ * DISABLE DRAG IMAGES
+ */
+
+$(document).on("dragstart", function() {
+     return false;
+});
