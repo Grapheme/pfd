@@ -118,6 +118,7 @@ textarea {
 @orange: #d68a40;
 @traiderColor: #7badc6;
 @traiderColorHover: #4e98b0;
+@newsColor: #1976a5;
 
 /* ==========================================================================
    Font classes
@@ -772,6 +773,8 @@ section.traiders {
  */
 
 section.normal {
+	.wrappDiv;
+
 	background: @white;
 }
 
@@ -954,6 +957,67 @@ section.normal {
 		
 	}
 }
+
+/*
+ * PRESS ROOM
+ */
+
+.news {
+	.mid_block;
+
+	.news-left-div {
+		width: 40%;
+		float: left;
+		
+		.news-link {
+			display: block;
+			height: 27px;
+		}
+	}
+	
+	.news-right-div {
+		width: 60%;
+		float: left;
+	}
+	
+	.news-in {
+		padding: 40px 40px 40px 40px;
+		
+		.news-link {
+			.footer-font(@proxima-nova-reg, 14px, normal);
+			
+			color: @newsColor;
+			text-decoration: none;
+		}
+		
+		.news-item {
+			margin-bottom: 40px;
+			
+			.f_header {
+				margin-bottom: 0;
+			}
+		
+			.news-date {
+				
+				font-size: 10px;
+				color: @newsColor;
+			}
+			
+			.news-text {
+				
+				font-size: 14px;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				color: #202020;
+				
+				a {
+					.news-link;
+				}
+			}
+		}
+	}
+}
+
 
 
 /* ==========================================================================
