@@ -880,12 +880,12 @@ section.normal {
 			
 		/* TODO: Разобраться с placeholder! Не работает! */
 		
-		&::-webkit-input-placeholder {
+		&:::-webkit-input-placeholder {
 		   color: #b5b9bb;
 		   .footer-font(@open-sans-reg, 13px, normal);
 		}
 		 
-		&:-moz-placeholder {
+		&::-moz-placeholder {
 		   color: #b5b9bb;
 		   .footer-font(@open-sans-reg, 13px, normal);
 		}
@@ -983,6 +983,16 @@ section.normal {
 	.news-in {
 		padding: 40px 40px 40px 40px;
 		
+		.news-one-left {
+		
+			margin-top: 10px;
+			
+			.news-left-title {
+			
+				font-size: 14px;
+			}
+		}
+		
 		.news-link {
 			.footer-font(@proxima-nova-reg, 14px, normal);
 			
@@ -1014,6 +1024,57 @@ section.normal {
 				a {
 					.news-link;
 				}
+			}
+		}
+	}
+}
+
+.news-pages {
+	a {
+		
+		color: @newsColor;
+		margin: 0 5px 0 5px;
+		.footer-font(@proxima-nova-reg, 14px, 2.3571em);
+		text-decoration: none;
+	}
+}
+
+/*
+ * STATIC PAGE
+ */
+
+.static {
+	.mid_block;
+	
+	.static-title {
+		padding: 30px 0 0 40px;
+	}
+
+	.static-block {
+		width: 50%;
+		float: left;
+	
+		.static-block-in {
+			padding: 5px 40px 40px 40px;
+			
+			.static-block-title {
+				.footer-font(@proxima-nova-bold, 14px, normal);
+				.uppercase;
+				display: block;
+				
+			}
+			
+			.gen_list-item {
+				text-indent: 15px;
+				font-size: 14px;
+				
+				&::before {
+					left: -15px;
+				}
+			}
+			
+			p {
+				margin: 0 0 30px 0;
 			}
 		}
 	}
