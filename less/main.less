@@ -310,7 +310,17 @@ textarea {
   &:active { box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5); }
 }
 
-
+.placeholder {
+	&:::-webkit-input-placeholder {
+	   color: #b5b9bb;
+	   .footer-font(@open-sans-reg, 13px, normal);
+	}
+	 
+	&::-moz-placeholder {
+	   color: #b5b9bb;
+	   .footer-font(@open-sans-reg, 13px, normal);
+	}
+}
 
 .ourInput(@width: 100%) {
 	border: 1px solid #c4c7c9;
@@ -320,6 +330,17 @@ textarea {
 		border: 0 none;
 		height: 30px;
 		padding-left: 5px;
+		.placeholder
+	}
+	
+	textarea {
+		border: 0;
+		width: 100%-5px;
+		padding-left: 5px;
+		padding-top: 5px;
+		resize: none;
+		height: 100px;
+		.placeholder
 	}
 }
 
@@ -331,6 +352,12 @@ textarea {
 	clear: both;
 	visibility: hidden;
 	}
+}
+
+.small-title {
+	.footer-font(@proxima-nova-bold, 14px, normal);
+	.uppercase;
+	display: block;
 }
 
 /* ==========================================================================
@@ -684,7 +711,7 @@ header {
       content: " ";
       width: 7px;
       height: 7px;
-      background: #d68a40;
+      background: @orange;
       display: inline-block;
       margin-right: 10px;
       margin-bottom: 3px;
@@ -875,21 +902,6 @@ section.normal {
 
 .reg-input {
 	.ourInput;
-	
-	input {
-			
-		/* TODO: Разобраться с placeholder! Не работает! */
-		
-		&:::-webkit-input-placeholder {
-		   color: #b5b9bb;
-		   .footer-font(@open-sans-reg, 13px, normal);
-		}
-		 
-		&::-moz-placeholder {
-		   color: #b5b9bb;
-		   .footer-font(@open-sans-reg, 13px, normal);
-		}
-	}
 }
 
 .account-div-cont {
@@ -1058,10 +1070,8 @@ section.normal {
 			padding: 5px 40px 40px 40px;
 			
 			.static-block-title {
-				.footer-font(@proxima-nova-bold, 14px, normal);
-				.uppercase;
-				display: block;
-				
+				.small-title
+
 			}
 			
 			.gen_list-item {
@@ -1087,6 +1097,67 @@ section.normal {
 	}
 }
 
+
+/*
+ * CONTACTS PAGE
+ */
+
+.contacts {
+	.mid_block;
+	
+	.contacts-left-block {
+		width: 65%;
+		float: left;
+	
+	}
+	
+	.contacts-right-block {
+		width: 35%;
+		float: left;
+	}
+
+	.contacts-block-in {
+		padding: 40px 40px 40px 40px;
+		
+		.contacts-block-title {
+			.small-title
+			
+		}
+		
+		.contact-input {
+			.ourInput;
+			
+		}
+		
+		button {
+			.button;
+			float: right;
+			padding: 0 30px 0 30px;
+		}
+		
+		.contact-table {
+			margin: 30px 0 30px 0;
+			
+			tr {
+				height: 30px;
+			
+				td {
+					.footer-font(@proxima-nova-reg, 14px, normal);
+					
+					&:nth-of-type(1) {
+						color: #808588;
+						width: 180px;
+					}
+					
+					&:nth-of-type(2) {
+						color: @black;
+					
+					}
+				}
+			}
+		}
+	}
+}
 
 
 /* ==========================================================================
