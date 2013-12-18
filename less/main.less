@@ -311,7 +311,7 @@ textarea {
 }
 
 .placeholder {
-	&:::-webkit-input-placeholder {
+	&::-webkit-input-placeholder {
 	   color: #b5b9bb;
 	   .footer-font(@open-sans-reg, 13px, normal);
 	}
@@ -330,7 +330,9 @@ textarea {
 		border: 0 none;
 		height: 30px;
 		padding-left: 5px;
-		.placeholder
+		.placeholder;
+		width: 97%;
+		.noneOutline;
 	}
 	
 	textarea {
@@ -340,7 +342,9 @@ textarea {
 		padding-top: 5px;
 		resize: none;
 		height: 100px;
-		.placeholder
+		width: 97%;
+		.placeholder;
+		.noneOutline;
 	}
 }
 
@@ -688,7 +692,7 @@ header {
 
 .search-open {
 	position: absolute;
-	right: 100px;
+	right: 140px;
 	top: 3px;
 	text-indent: -9999px;
 	
@@ -696,8 +700,10 @@ header {
 		.transition(.2s);
 		.placeholder;
 		width: 0;
-		.footer-font(@proxima-nova-reg, 14px, 2.3571em);
-	
+		.footer-font(@proxima-nova-reg, 14px, normal);
+		height: 18px;
+		padding-left: 5px;
+		
 	}
 }
 
@@ -996,7 +1002,7 @@ section.normal {
 	.mid_block;
 
 	.news-left-div {
-		width: 40%;
+		width: 30%;
 		float: left;
 		
 		.news-link {
@@ -1006,7 +1012,7 @@ section.normal {
 	}
 	
 	.news-right-div {
-		width: 60%;
+		width: 70%;
 		float: left;
 	}
 	
