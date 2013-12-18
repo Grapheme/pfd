@@ -698,6 +698,8 @@ header {
 }
 
 .slide-item {
+  padding-left: 40px;
+  
   p {
     font-family: 'ProximaNovaBold';
     font-size: 29px;
@@ -707,6 +709,8 @@ header {
   li {
     font-family: 'ProximaNovaRegular';
     font-size: 19px;
+    line-height: 40px;
+    
     &:before {
       content: " ";
       width: 7px;
@@ -921,20 +925,20 @@ section.normal {
 	padding: 0;
 	height: 510px;
 	background: url(../img/demo-people.png) no-repeat right bottom rgba(0, 0, 0, 0);
-	
-	.download-button {
-		.button;
-		width: 100%;
-		text-align: center;
-		margin-top: 15px;
-	}
-	
-	.download-button-blue {
-		.button-blue;
-		width: 100%;
-		text-align: center;
-		margin-top: 15px;
-	}
+}
+
+.download-button {
+	.button;
+	width: 100%;
+	text-align: center;
+	margin-top: 15px;
+}
+
+.download-button-blue {
+	.button-blue;
+	width: 100%;
+	text-align: center;
+	margin-top: 15px;
 }
 
 /*
@@ -1166,10 +1170,208 @@ section.normal {
 .downloads {
 	.wrappDiv;
 	
-	.downloads-div {
+	.downloads-cont {
 		.mid_block;
+		
+		.downloads-left-block {
+			width: 75%;
+			float: left;
+			
+		}
+		
+		.downloads-right-block {
+			width: 25%;
+			float: left;			
+		
+		}
+		
+		.downloads-in-block {
+			padding: 5px 40px 40px 40px;
+			
+			.desc {
+				width: 600px;
+			}
+			
+			.downloads-title {
+				.footer-font(@proxima-nova-bold, 18px, normal);
+				.uppercase;
+				margin: 20px 0 20px 10px;
+				
+				&:before {
+			      content: "■";
+			      position: relative;
+			      top: 0;
+			      left: -10px;
+			      margin-top: -1px;
+			      font-size: 20px;
+			      color: @orange;
+			    }
+			}
+		}
 	}
 }
+
+.background-other {
+	background: url(../img/other-main.jpg);
+	background-size: 100% auto;
+	padding-top: 30px;
+}
+
+.downloads-white {
+	.wrappDiv;
+	background: @white;
+	
+	.downloads-white-cont {
+		.mid_block;
+		
+		.downloads-one-left {
+			width: 100%/3;
+			
+			.downloads-one-in {
+				
+				padding: 70px 40px 40px 40px;
+			}
+		}
+	
+		.download-button-blue {
+			font-size: 13px;
+			
+		}
+		
+		.download-white-title {
+			.f_header;
+			font-size: 14px;
+			
+			&:before {
+				content: "";
+				position: relative;
+				display: inline-block;
+				height: 13px;
+				width: 16px;
+				background-size: 100% 100%;
+				
+			}
+		}
+		
+		.white-title-windows {
+			&:before {
+				background-image: url(../img/downloads/windows.png);
+			}
+		}
+		.white-title-windows8 {
+			&:before {
+				background-image: url(../img/downloads/windows8.png);
+				width: 13px;
+				height: 14px;
+			}
+		}
+		.white-title-apple {
+			&:before {
+				background-image: url(../img/downloads/apple.png);
+				width: 13px;
+				height: 16px;
+			}
+		}
+		.white-title-android {
+			&:before {
+				background-image: url(../img/downloads/android.png);
+				width: 14px;
+				height: 15px;
+			}
+		}
+		
+		.down-block {
+			width: 100%/3;
+			float: left;
+			
+			.downloads-in {
+				padding: 5px 40px 40px 40px;
+				
+				.down-item {
+					.wrappDiv;
+					padding-bottom: 30px;
+					
+				}
+			}
+		}
+	}
+}
+
+.top-white {
+	background: url(../img/downloads/top-white.png) no-repeat right bottom;
+	height: 390px;
+}
+
+.download-panel {
+	padding-top: 20px;
+
+	.download-panel-left {
+		float: left;
+	}
+	
+	.download-panel-right {
+		float: right;
+	}
+	
+	.down-link,.down-right-link {
+		.our-link;
+		text-decoration: none;
+		.footer-font(@proxima-nova-reg, 13px, normal);
+			
+	}
+	
+	.down-right-link {
+		color: #9a9a9a;
+	}
+}
+
+.down-bottom {
+	background-color: #e6eef0;
+	
+	.downloads-cont {
+		.wrappDiv;
+		
+		height: 285px;
+	
+		background-image: url(../img/downloads/bottom.png);
+		background-position: left bottom;
+		background-repeat: no-repeat;
+	}
+	
+	.downloads-one-right {
+		float: left;
+		width: 30%;
+		padding-left: 70%;
+		padding-top: 40px;
+		
+		.download-panel {
+			padding-bottom: 25px;
+			
+		}
+		
+		.desc {
+			width: auto;
+		
+		}
+	}
+}
+
+.apple-link {
+	width: 104px;
+	height: 31px;
+	background: url(../img/downloads/appstore.png);
+	display: block;
+	margin-top: 40px;
+}
+
+.android-link {
+	height: 31px;
+	width: 93px;
+	background: url(../img/downloads/googleplay.png);
+	display: block;
+	margin-top: 40px;
+}
+
 
 
 /* ==========================================================================
