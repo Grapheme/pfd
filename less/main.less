@@ -412,6 +412,7 @@ header {
   }
   .lang-div {
     float: right;
+    position: relative;
   	width: 160px;
     margin-top: 6px;
   	
@@ -685,7 +686,18 @@ header {
 	}
 }
 
-
+.search-open {
+	position: absolute;
+	right: 100px;
+	top: 3px;
+	text-indent: -9999px;
+	
+	.search-input {
+		.transition(.2s);
+		.placeholder;
+		width: 0;
+	}
+}
 
 /*
  * Slider

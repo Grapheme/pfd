@@ -68,6 +68,11 @@ $(document).click(function(){
 	csSlide('.option-lang','hide',40);
 	$('.lang-triangle').removeClass('lang-triangle-active');
 	$lang_open = false;
+	
+	$('.search-input').css({'width': 0});
+	setTimeout(function(){
+		$('.search-open').css({'text-indent': -9999});
+	}, 200);
 });
 
 /*====================================
@@ -101,4 +106,10 @@ if (!hasPlaceholderSupport()) {
 
 $(document).on("dragstart", function() {
      return false;
+});
+
+$('.search-img').click(function(e){
+	e.stopPropagation();
+	$('.search-open').css({'text-indent': 0});
+	$('.search-input').css({'width': 180});
 });
