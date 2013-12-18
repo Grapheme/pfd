@@ -108,8 +108,11 @@ $(document).on("dragstart", function() {
      return false;
 });
 
-$('.search-img').click(function(e){
-	e.stopPropagation();
+$('.search-img').click(function(){
 	$('.search-open').css({'text-indent': 0});
 	$('.search-input').css({'width': 180});
+});
+
+$('.search-input').click(function(e){
+	e.stopPropagation();
 });
