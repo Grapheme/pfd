@@ -118,6 +118,7 @@ textarea {
 @orange: #d68a40;
 @traiderColor: #7badc6;
 @traiderColorHover: #4e98b0;
+@newsColor: #1976a5;
 
 /* ==========================================================================
    Font classes
@@ -309,7 +310,17 @@ textarea {
   &:active { box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5); }
 }
 
-
+.placeholder {
+	&::-webkit-input-placeholder {
+	   color: #b5b9bb;
+	   .footer-font(@open-sans-reg, 13px, normal);
+	}
+	 
+	&::-moz-placeholder {
+	   color: #b5b9bb;
+	   .footer-font(@open-sans-reg, 13px, normal);
+	}
+}
 
 .ourInput(@width: 100%) {
 	border: 1px solid #c4c7c9;
@@ -319,6 +330,21 @@ textarea {
 		border: 0 none;
 		height: 30px;
 		padding-left: 5px;
+		.placeholder;
+		width: 97%;
+		.noneOutline;
+	}
+	
+	textarea {
+		border: 0;
+		width: 100%-5px;
+		padding-left: 5px;
+		padding-top: 5px;
+		resize: none;
+		height: 100px;
+		width: 97%;
+		.placeholder;
+		.noneOutline;
 	}
 }
 
@@ -330,6 +356,12 @@ textarea {
 	clear: both;
 	visibility: hidden;
 	}
+}
+
+.small-title {
+	.footer-font(@proxima-nova-bold, 14px, normal);
+	.uppercase;
+	display: block;
 }
 
 /* ==========================================================================
@@ -374,6 +406,9 @@ header {
   padding-bottom: 15px;
   
   .logo-div {
+  	.noneOutline;
+  	
+  	display: block;
     float: left;
     width: 261px;
     height: 48px;
@@ -381,6 +416,7 @@ header {
   }
   .lang-div {
     float: right;
+    position: relative;
   	width: 160px;
     margin-top: 6px;
   	
@@ -390,6 +426,8 @@ header {
   		
   		.search-img {
   			float: left;
+  			position: relative;
+  			z-index: 1;
   		}
   		
   		.lang-ul {
@@ -654,6 +692,34 @@ header {
 	}
 }
 
+.search-open {
+	position: absolute;
+	right: 140px;
+	top: 3px;
+	text-indent: -9999px;
+	
+	.search-input {
+		.transition(.2s);
+		.placeholder;
+		width: 0;
+		.footer-font(@proxima-nova-reg, 14px, normal);
+		height: 18px;
+		padding-left: 5px;
+		
+	}
+}
+
+/*
+ * NORMAL LIST
+ */
+
+.normal-list {
+	.normal-list-item {
+		padding-left: 25px;
+		margin: 15px 0;
+	}
+}
+
 
 
 /*
@@ -661,11 +727,14 @@ header {
  */
 
 .fotorama-cont {
-  margin: 0 auto;
-  width: 980px;
+  .mid_block();
+  
+  background: url(../img/back-man.png) no-repeat 630px bottom;
 }
 
 .slide-item {
+  padding-left: 40px;
+  
   p {
     font-family: 'ProximaNovaBold';
     font-size: 29px;
@@ -675,11 +744,13 @@ header {
   li {
     font-family: 'ProximaNovaRegular';
     font-size: 19px;
+    line-height: 40px;
+    
     &:before {
       content: " ";
       width: 7px;
       height: 7px;
-      background: #d68a40;
+      background: @orange;
       display: inline-block;
       margin-right: 10px;
       margin-bottom: 3px;
@@ -768,6 +839,8 @@ section.traiders {
  */
 
 section.normal {
+	.wrappDiv;
+
 	background: @white;
 }
 
@@ -796,7 +869,8 @@ section.normal {
     .mid_block( 980px - 64px );
     padding: 0 2em 55px;
     .meta-trader {
-      width: 80%;
+      width: 70%;
+      padding-right: 10%;
       float: left;
     }
     .benefits {
@@ -867,23 +941,7 @@ section.normal {
 }
 
 .reg-input {
-	.ourInput;	
-  input::-webkit-input-placeholder {
-     color: #b5b9bb;
-     .footer-font(@open-sans-reg, 13px, 2.1em);
-  } 		
-  input::-moz-placeholder {
-     color: #b5b9bb;
-     .footer-font(@open-sans-reg, 13px, 2.1em);
-  }
-  input:-moz-placeholder {
-     color: #b5b9bb;
-     .footer-font(@open-sans-reg, 13px, 2.1em);
-  }
-  input:-ms-input-placeholder {
-     color: #b5b9bb;
-     .footer-font(@open-sans-reg, 13px, 2.1em);
-  }
+	.ourInput;
 }
 
 .account-div-cont {
@@ -903,20 +961,20 @@ section.normal {
 	padding: 0;
 	height: 510px;
 	background: url(../img/demo-people.png) no-repeat right bottom rgba(0, 0, 0, 0);
-	
-	.download-button {
-		.button;
-		width: 100%;
-		text-align: center;
-		margin-top: 15px;
-	}
-	
-	.download-button-blue {
-		.button-blue;
-		width: 100%;
-		text-align: center;
-		margin-top: 15px;
-	}
+}
+
+.download-button {
+	.button;
+	width: 100%;
+	text-align: center;
+	margin-top: 15px;
+}
+
+.download-button-blue {
+	.button-blue;
+	width: 100%;
+	text-align: center;
+	margin-top: 15px;
 }
 
 /*
@@ -951,6 +1009,428 @@ section.normal {
 		
 	}
 }
+
+/*
+ * PRESS ROOM
+ */
+
+.news {
+	.mid_block;
+
+	.news-left-div {
+		width: 30%;
+		float: left;
+		
+		.news-link {
+			display: block;
+			height: 27px;
+		}
+	}
+	
+	.news-right-div {
+		width: 70%;
+		float: left;
+	}
+	
+	.news-in {
+		padding: 40px 40px 40px 40px;
+		
+		.news-one-left {
+		
+			margin-top: 10px;
+			
+			.news-left-title {
+			
+				font-size: 14px;
+			}
+		}
+		
+		.news-link {
+			.footer-font(@proxima-nova-reg, 14px, normal);
+			
+			color: @newsColor;
+			text-decoration: none;
+		}
+		
+		.news-item {
+			margin-bottom: 40px;
+			
+			.f_header {
+				margin-bottom: 0;
+			}
+		
+			.news-date {
+				
+				font-size: 10px;
+				color: @newsColor;
+				text-decoration: none;
+			}
+			
+			.news-text {
+				
+				font-size: 14px;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				color: #202020;
+				
+				a {
+					.news-link;
+				}
+			}
+		}
+	}
+}
+
+.news-pages {
+	a {
+		
+		color: @newsColor;
+		margin: 0 5px 0 5px;
+		.footer-font(@proxima-nova-reg, 14px, 2.3571em);
+		text-decoration: none;
+	}
+}
+
+/*
+ * STATIC PAGE
+ */
+
+.static {
+	.mid_block;
+	
+	.static-title {
+		padding: 30px 0 0 40px;
+	}
+
+	.static-block {
+		width: 50%;
+		float: left;
+	
+		.static-block-in {
+			padding: 5px 40px 40px 40px;
+			
+			.static-block-title {
+				.small-title
+
+			}
+			
+			.gen_list-item {
+				text-indent: 15px;
+				font-size: 14px;
+				
+				&::before {
+					left: -15px;
+				}
+			}
+			
+			p {
+				margin: 0 0 30px 0;
+			}
+		}
+	}
+	
+	.static-block-full {
+		width: 100%;
+	}
+	
+	.static-img {
+		.mid_block(900px);
+		display: block;
+		margin-bottom: 30px;
+			
+	}
+}
+
+.normal-table {
+	margin: 15px 0;
+}
+
+.color-table {
+	margin-bottom: 15px;
+}
+
+.color-table tr:nth-of-type(2n+3) {
+	background: #E6E6E8;
+}
+
+.color-table tr:nth-of-type(1) {
+	background: #49769F;
+}
+
+.color-table td {
+	padding: 5px;
+}
+
+/*
+ * CONTACTS PAGE
+ */
+
+.contacts {
+	.mid_block;
+	
+	.contacts-left-block {
+		width: 65%;
+		float: left;
+	
+	}
+	
+	.contacts-right-block {
+		width: 35%;
+		float: left;
+	}
+
+	.contacts-block-in {
+		padding: 40px 40px 40px 40px;
+		
+		.contacts-block-title {
+			.small-title
+			
+		}
+		
+		.contact-input {
+			.ourInput;
+			
+		}
+		
+		button {
+			.button;
+			float: right;
+			padding: 0 30px 0 30px;
+		}
+		
+		.contact-table {
+			margin: 30px 0 30px 0;
+			
+			tr {
+				height: 30px;
+			
+				td {
+					.footer-font(@proxima-nova-reg, 14px, normal);
+					
+					&:nth-of-type(1) {
+						color: #808588;
+						width: 180px;
+					}
+					
+					&:nth-of-type(2) {
+						color: @black;
+					
+					}
+				}
+			}
+		}
+	}
+}
+
+/*
+ * DOWNLOADS
+ */
+
+.downloads {
+	.wrappDiv;
+	
+	.downloads-cont {
+		.mid_block;
+		
+		.downloads-left-block {
+			width: 75%;
+			float: left;
+			
+		}
+		
+		.downloads-right-block {
+			width: 25%;
+			float: left;			
+		
+		}
+		
+		.downloads-in-block {
+			padding: 5px 40px 40px 40px;
+			
+			.desc {
+				width: 600px;
+			}
+			
+			.downloads-title {
+				.footer-font(@proxima-nova-bold, 18px, normal);
+				.uppercase;
+				margin: 20px 0 20px 10px;
+				
+				&:before {
+			      content: "■";
+			      position: relative;
+			      top: 0;
+			      left: -10px;
+			      margin-top: -1px;
+			      font-size: 20px;
+			      color: @orange;
+			    }
+			}
+		}
+	}
+}
+
+.background-other {
+	background: url(../img/other-main.jpg);
+	background-size: 100% auto;
+	padding-top: 30px;
+}
+
+.downloads-white {
+	.wrappDiv;
+	background: @white;
+	
+	.downloads-white-cont {
+		.mid_block;
+		
+		.downloads-one-left {
+			width: 100%/3;
+			
+			.downloads-one-in {
+				
+				padding: 70px 40px 40px 40px;
+			}
+		}
+	
+		.download-button-blue {
+			font-size: 13px;
+			
+		}
+		
+		.download-white-title {
+			.f_header;
+			font-size: 14px;
+			
+			&:before {
+				content: "";
+				position: relative;
+				display: inline-block;
+				height: 13px;
+				width: 16px;
+				background-size: 100% 100%;
+				
+			}
+		}
+		
+		.white-title-windows {
+			&:before {
+				background-image: url(../img/downloads/windows.png);
+			}
+		}
+		.white-title-windows8 {
+			&:before {
+				background-image: url(../img/downloads/windows8.png);
+				width: 13px;
+				height: 14px;
+			}
+		}
+		.white-title-apple {
+			&:before {
+				background-image: url(../img/downloads/apple.png);
+				width: 13px;
+				height: 16px;
+			}
+		}
+		.white-title-android {
+			&:before {
+				background-image: url(../img/downloads/android.png);
+				width: 14px;
+				height: 15px;
+			}
+		}
+		
+		.down-block {
+			width: 100%/3;
+			float: left;
+			
+			.downloads-in {
+				padding: 5px 40px 40px 40px;
+				
+				.down-item {
+					.wrappDiv;
+					padding-bottom: 30px;
+					
+				}
+			}
+		}
+	}
+}
+
+.top-white {
+	background: url(../img/downloads/top-white.png) no-repeat right bottom;
+	height: 390px;
+}
+
+.download-panel {
+	padding-top: 20px;
+
+	.download-panel-left {
+		float: left;
+	}
+	
+	.download-panel-right {
+		float: right;
+	}
+	
+	.down-link,.down-right-link {
+		.our-link;
+		text-decoration: none;
+		.footer-font(@proxima-nova-reg, 13px, normal);
+			
+	}
+	
+	.down-right-link {
+		color: #9a9a9a;
+	}
+}
+
+.down-bottom {
+	background-color: #e6eef0;
+	
+	.downloads-cont {
+		.wrappDiv;
+		
+		height: 285px;
+	
+		background-image: url(../img/downloads/bottom.png);
+		background-position: left bottom;
+		background-repeat: no-repeat;
+	}
+	
+	.downloads-one-right {
+		float: left;
+		width: 30%;
+		padding-left: 70%;
+		padding-top: 40px;
+		
+		.download-panel {
+			padding-bottom: 25px;
+			
+		}
+		
+		.desc {
+			width: auto;
+		
+		}
+	}
+}
+
+.apple-link {
+	width: 104px;
+	height: 31px;
+	background: url(../img/downloads/appstore.png);
+	display: block;
+	margin-top: 40px;
+}
+
+.android-link {
+	height: 31px;
+	width: 93px;
+	background: url(../img/downloads/googleplay.png);
+	display: block;
+	margin-top: 40px;
+}
+
 
 
 /* ==========================================================================
