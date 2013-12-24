@@ -867,22 +867,23 @@ section.normal {
 }
 
 .reg-input {
-	.ourInput;
-	
-	input {
-			
-		/* TODO: Разобраться с placeholder! Не работает! */
-		
-		&::-webkit-input-placeholder {
-		   color: #b5b9bb;
-		   .footer-font(@open-sans-reg, 13px, normal);
-		}
-		 
-		&:-moz-placeholder {
-		   color: #b5b9bb;
-		   .footer-font(@open-sans-reg, 13px, normal);
-		}
-	}
+	.ourInput;	
+  input::-webkit-input-placeholder {
+     color: #b5b9bb;
+     .footer-font(@open-sans-reg, 13px, 2.1em);
+  } 		
+  input::-moz-placeholder {
+     color: #b5b9bb;
+     .footer-font(@open-sans-reg, 13px, 2.1em);
+  }
+  input:-moz-placeholder {
+     color: #b5b9bb;
+     .footer-font(@open-sans-reg, 13px, 2.1em);
+  }
+  input:-ms-input-placeholder {
+     color: #b5b9bb;
+     .footer-font(@open-sans-reg, 13px, 2.1em);
+  }
 }
 
 .account-div-cont {
