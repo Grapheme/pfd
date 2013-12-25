@@ -18,14 +18,14 @@
 		        				<p>An Introducing Broker (IB) is a person or a company which refers clients to PFD. As long as these clients trade, the IB receives rebate from PFD. It is a spread model, which is mutually profitable for both broker and IB.</p>
 		        				<p>	
 		        					<span class="static-block-title">How to become an IB?</span>
-		        					Open an account with PFD either online signup or paper mode application form like any other client using;
+		        					Open an account with PFD either online signup or paper mode application form like any other client using <a class="our-link" href="http://www.pfd-nz.com/open-an-account.php">"Open Account"</a>;
 		        				</p>
 		        				<div class="gen_list">
 		        					<div class="gen_list-item">
 		        						Account opened by an IB will be  treated as a rebate-cum-trading account;
 		        					</div>
 		        					<div class="gen_list-item">
-		        						Download PFD’s Introducing Broker Agreement using;
+		        						Download PFD’s Introducing Broker Agreement using<br><a class="our-link" href="mailto:info@pfd-nz.com">"IB Agreement PDF"</a>, sign and scan to <a class="our-link" href="mailto:compliance@pfd-nz.com">compliance@pfd-nz.com</a>.
 	        						</div>
 	        						<div class="gen_list-item">
 	        							PFD will discuss rebate structure with IB, accept an IB and align IB’s rebate-cum-trading account with the unique IB agreement;
@@ -57,7 +57,7 @@
 							<div class="desc">
 								<p>
 									<span class="static-block-title">How and when can an IB withdraw the rebate?</span>
-									Like any other client, an IB can download a withdrawal form from "Withdrawal Form", fill in and scan to backoffice@pfd-nz.com for real time processing to receive the payment.
+									Like any other client, an IB can download a withdrawal form from <a class="our-link" href="withdrawal">"Withdrawal Form"</a>, fill in and scan to <a class="our-link" href="mailto:backoffice@pfd-nz.com">backoffice@pfd-nz.com</a> for real time processing to receive the payment.
 								</p>
 								<p>
 									<span class="static-block-title">IB business promotion</span>
@@ -71,75 +71,14 @@
 							<div class="desc">
 								<p>
 									<span class="static-block-title">Where do I find promo items?</span>
-									PFD does a lot of ads on forex portals as could be viewed from link "Press Room". As a strategy, IBs can promote business independently making use of PFD’ accreditation and can add URL www.fd-nz.com on IB’s website and promote PFD’s brand.
+									PFD does a lot of ads on forex portals as could be viewed from link <a href="press" class="our-link">"Press Room"</a>. As a strategy, IBs can promote business independently making use of PFD’ accreditation and can add URL www.fd-nz.com on IB’s website and promote PFD’s brand.
+								</p>
+								<p>
+									For more information, please email us at <a class="our-link" href="mailto:info@pfd-nz.com">info@pfd-nz.com</a> or call us at our office numbers. <a class="our-link" href="./downloads/IB_Agreement.pdf" class="down-link">"Download IB Agreement"</a>
 								</p>
 							</div>
 						</div>
 		        	</div>
-	        	</div>
-	        	<div class="table-container">
-	        		<table>
-	        			<tr>
-	        				<th>Type
-	        				<th>Kiwi trader gold zero
-	        				<th>PFD trader(MT4)
-	        				<th>PFD Trader(options)
-	        			<tr>
-	        				<th>Software
-							<td>Kiwi trader
-							<td>MT4
-							<td>PFD Trader
-						<tr>
-	        				<th>Instruments
-							<td>Major FX
-							<td>FX, CFD, Futures, Indices FX
-							<td>FX, CFD, Futures, Indices FX
-						<tr>
-	        				<th>Spread
-							<td>Tight spread
-							<td>Tight spread
-							<td>Tight spread
-						<tr>
-	        				<th>Commission
-							<td>Zero for trade
-							<td>Zero
-							<td>Zero
-						<tr>
-	        				<th>Leverage
-							<td>1-5 : 200
-							<td>1 : 300
-							<td>1 : 100
-						<tr>
-	        				<th>Chart
-							<td><div class="tick"></div>
-							<td><div class="tick"></div>
-							<td><div class="tick"></div>
-						<tr>
-	        				<th>Technical Analysys
-							<td><div class="tick"></div>
-							<td><div class="tick"></div>
-							<td><div class="tick"></div>
-						<tr>
-	        				<th>Loss cut liquidation
-							<td>100%
-							<td>100%
-							<td>50%
-						<tr>
-	        				<th>System trade
-							<td><div class="tick"></div>
-							<td><div class="tick"></div>
-							<td><div class="minus">—</div>
-						<tr>
-	        				<th>Trade size (fx)
-							<td>0.01 lot (1,000)
-							<td>0.01 lot (1,000)
-							<td>0.01 lot (10,000)
-						<tr>
-	        				<th>Funding
-							<td>Credit/Debit Card
-							<td>Credit/Debit Card
-							<td>Credit/Debit Card
-	        		</table>
 	        	</div>
 	        </section>
 	

@@ -1,2 +1,3 @@
-Message from: {{$name}}, {{$email}} :<br>
-{{$text}}
+{{$name}} ({{$email}}) sent a message:<br><br>
+{{$text}}<br>
+pfd-nz.com

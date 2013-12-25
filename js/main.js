@@ -100,6 +100,8 @@ if (!hasPlaceholderSupport()) {
         }).blur();
 }
 
+
+
 /*
  * DISABLE DRAG IMAGES
  */
@@ -107,6 +109,12 @@ if (!hasPlaceholderSupport()) {
 $(document).on("dragstart", function() {
      return false;
 });
+
+
+
+/*
+ * Search dynamics
+ */
 
 $('.search-img').click(function(e){
 	e.stopPropagation();

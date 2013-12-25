@@ -51,14 +51,14 @@
 	        				<div class="desc">
 	        					System requirements: Windows XP a nd newer versions.
 	        				</div>
-	        				<a href="http://kiwi.pfd-nz.com/downloads/kiwitrader/KiwiTraderSetup.exe" class="download-button-blue">Free Demo account registration.exe</a>
-	        				<a href="http://kiwi.pfd-nz.com/downloads/kiwitrader/KiwiTraderSetup.exe" class="download-button-blue">Download Kiwi Trader software.exe</a>
+	        				<a href="https://kiwi.pfd-nz.com/demoreg/registration" class="download-button-blue">Free Demo account registration.exe</a>
+	        				<a href="./downloads/KiwiTraderSetup.exe" class="download-button-blue">Download Kiwi Trader software.exe</a>
 	        				<div class="download-panel">
 	        					<div class="download-panel-left">
-	        						<a href="#" class="down-link">Kiwi Trader user manual.pdf</a>
+	        						<a href="./downloads/Kiwi_Trader_Manual.pdf" class="down-link">Kiwi Trader user manual.pdf</a>
 	        					</div>
 	        					<div class="download-panel-right">
-	        						<a href="#" class="down-right-link">1.29 MB</a>
+	        						<a href="./downloads/Kiwi_Trader_Manual.pdf" class="down-right-link">0.3 MB</a>
 	        					</div>
 	        				</div>
 	        			</div>
@@ -114,13 +114,13 @@
 		        				<div class="desc">
 		        					System requirements: Windows XP a nd newer versions.
 		        				</div>
-		        				<button class="download-button-blue">Download PFD Trader setup.exe</button>
+		        				<a href="//files.metaquotes.net/pacific.financial.derivatives/mt4/pfd4setup.exe" class="download-button-blue">Download PFD Trader setup.exe</a>
 			        			<div class="download-panel">
 		        					<div class="download-panel-left">
-		        						<a href="#" class="down-link">PFD Trader user manual.pdf</a>
+		        						<a href="./downloads/PFDTraderManual.pdf" class="down-link">PFD Trader user manual.pdf</a>
 		        					</div>
 		        					<div class="download-panel-right">
-		        						<a href="#" class="down-right-link">1,79 МB</a>
+		        						<a href="./downloads/PFDTraderManual.pdf" class="down-right-link">1,3 МB</a>
 		        					</div>
 		        				</div>
 	        			</div>
@@ -134,18 +134,18 @@
 		        				<div class="desc">
 		        					MetaTrader 4 Mobile Smartphone Edition is offered Free of charge to our customers.
 		        				</div>
-		        				<button class="download-button-blue">MT4 Smartphone Edition.exe</button>
-		        				<button class="download-button-blue">MT4 Smartphone Edition.cad</button>
+		        				<a href="//files.metatrader4.com/pfd/pfd4mobilesetup.se.exe" class="download-button-blue">MT4 Smartphone Edition.exe</a>
+		        				<a href="//files.metatrader4.com/pfd/pfd4mobilesetup.se.cab" class="download-button-blue">MT4 Smartphone Edition.cad</a>
 		        			</div>
 		        			<div class="down-item">
 		        				<div class="download-white-title white-title-windows">
-		        					MT4  POCKET PC
+		        					MT4 POCKET PC
 		        				</div>
 		        				<div class="desc">
 		        					MetaTrader 4 Mobile is offered Free of charge to our customers.
 		        				</div>
-		        				<button class="download-button-blue">MT4 Smartphone Edition.exe</button>
-		        				<button class="download-button-blue">MT4 Smartphone Edition.cad</button>
+		        				<a href="//files.metatrader4.com/pfd/pfd4mobilesetup.exe" class="download-button-blue">MT4 Smartphone Edition.exe</a>
+		        				<a href="//files.metatrader4.com/pfd/pfd4mobilesetup.cab" class="download-button-blue">MT4 Smartphone Edition.cad</a>
 		        			</div>
 	        			</div>
 	        		</div>
@@ -177,38 +177,52 @@
 	        	<div class="downloads-cont">
 	        		<div class="downloads-one-right">
 	        			<div class="downloads-in-block">
+	        			
 	        				<div class="download-panel">
 	        					<div class="download-panel-left">
-	        						<a href="#" class="down-link">Discretionary Authority.pdf</a>
+	        						<a href="./downloads/PFD_General_Terms_and_Conditions.pdf" class="down-link">General Terms and Conditions</a>
 	        					</div>
 	        					<div class="download-panel-right">
-	        						<a href="#" class="down-right-link">1,35 МB</a>
+	        						<a href="./downloads/PFD_General_Terms_and_Conditions.pdf" class="down-right-link">0,3 МB</a>
 	        					</div>
 	        				</div>
+	        				
 	        				<div class="download-panel">
 	        					<div class="download-panel-left">
-	        						<a href="http://www.pfd-nz.com/pdf/IB_Agreement.pdf" class="down-link">IB Agreement.pdf</a>
+	        						<a href="./downloads/PFD_Disclosure_Statement.pdf" class="down-link">Discretionary Authority</a>
 	        					</div>
 	        					<div class="download-panel-right">
-	        						<a href="http://www.pfd-nz.com/pdf/IB_Agreement.pdf" class="down-right-link">1,35 МB</a>
+	        						<a href="./downloads/PFD_Disclosure_Statement.pdf" class="down-right-link">0,3 МB</a>
 	        					</div>
 	        				</div>
+	        				
 	        				<div class="download-panel">
 	        					<div class="download-panel-left">
-	        						<a href="https://www.pfd-nz.com/downloads/PFD%20Withdrawal%20Form.pdf" class="down-link">PFD Withdrawal Form.pdf</a>
+	        						<a href="./downloads/External_Transfer_Form.pdf" class="down-link">External Transfer Form</a>
 	        					</div>
 	        					<div class="download-panel-right">
-	        						<a href="https://www.pfd-nz.com/downloads/PFD%20Withdrawal%20Form.pdf" class="down-right-link">1,35 МB</a>
+	        						<a href="./downloads/External_Transfer_Form.pdf" class="down-right-link">0,3 МB</a>
 	        					</div>
 	        				</div>
+	        				
 	        				<div class="download-panel">
 	        					<div class="download-panel-left">
-	        						<a href="#" class="down-link">External Transfer Form.pdf</a>
+	        						<a href="./downloads/PFD_Withdrawal_Form.pdf" class="down-link">PFD Withdrawal Form</a>
 	        					</div>
 	        					<div class="download-panel-right">
-	        						<a href="#" class="down-right-link">1,35 МB</a>
+	        						<a href="./downloads/PFD_Withdrawal_Form.pdf" class="down-right-link">0,06 МB</a>
 	        					</div>
 	        				</div>
+	        				
+	        				<div class="download-panel">
+	        					<div class="download-panel-left">
+	        						<a href="./downloads/IB_Agreement.pdf" class="down-link">IB Agreement</a>
+	        					</div>
+	        					<div class="download-panel-right">
+	        						<a href="./downloads/IB_Agreement.pdf" class="down-right-link">4,4 МB</a>
+	        					</div>
+	        				</div>
+	        				
 	        			</div>
 	        		</div>
 	        	</div>

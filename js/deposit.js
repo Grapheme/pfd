@@ -1,3 +1,14 @@
+
+$('.bank-details-title').click(function(){
+	$(this).parent().find('.bank-details-desc').slideToggle();
+});
+
+$('.bank-details-desc').first().show();
+
+/*
+ * OLD CODE
+ */
+
 function validateForm(form)
 	{	
 	
@@ -68,7 +79,7 @@ $(function(){
 		event.preventDefault();
 		$('<p>The request is proccessed. Please be patient.</p>').insertAfter('#neteller__btn');
 		var params = $(this).serialize();
-		$.post('/proxy.php?'+params, function(data){
+		$.post('neteller?'+params, function(data){
 			if ( $(data).find('approval').text() == 'yes' ) {
 				window.location.replace('/payment-thankyou.php');
 			} else {

@@ -40,7 +40,7 @@
 		        			<div class="deposit-box">
             
                 <div style="margin: 0px;">
-                <img style="vertical-align:middle" alt="moneybroker" src="images/moneybookers_cup_checkout.gif">
+                <img style="vertical-align:middle" alt="moneybroker" src="img/moneybookers_cup_checkout.gif">
                 <span style="padding-left: 50px; font-family:Myriad, Verdana, Arial;font-size:12px;font-weight:normal;line-height: 24px;" align="right">* Required fields</span>
                 </div>
             
@@ -93,7 +93,7 @@
 
                   <td valign="top" align="right" class="padded">Payment method:</td>
                   <td>
-                    <select onchange="SetCUPAction()" style="height:28px; padding:5px 5px 5px 3px; width:260px" class="deposit-text" name="payment_methods" id="payment_methods">
+                    <select onchange="SetCUPAction()" style=" width:260px" class="deposit-text" name="payment_methods" id="payment_methods">
                       <option value="WLT">Moneybookers E-Wallet</option>
                       <option value="ACC">Credit / Debit Cards</option>
 					  <option value="CUP">China Union Pay</option>
@@ -108,12 +108,12 @@
               </tr>
 
                 <tr>
-                <td align="right" class="padded">First Name * :</td>
+                <td align="right" class="padded">First Name *:</td>
                   <td><input class="deposit-text" value="" id="firstname" name="firstname"></td>
                 </tr>
 
                 <tr>
-                    <td align="right" class="padded">Last Name * :</td>
+                    <td align="right" class="padded">Last Name *:</td>
                     <td><input class="deposit-text" value="" id="lastname" name="lastname"></td>
                 </tr>
 
@@ -133,9 +133,9 @@
                   <td>
                       <table cellpadding="0" border="0">
                       <tbody><tr>
-                        <td><input class="deposit-text" value="" style="width: 190px" name="amount"></td>
+                        <td><input class="deposit-text" value="" name="amount"></td>
                         <td>
-                        	<select style="width:55px; padding:4px 3px 4px 2px; height:auto;" class="deposit-text" id="cup_currency" name="currency">
+                        	<select style="width:55px;" class="deposit-text" id="cup_currency" name="currency">
                                   <option value="USD">USD </option>
                             </select>
                         </td>
@@ -157,7 +157,7 @@
 
                 <tr>
                   <td align="right"></td>
-                  <td><input type="submit" class="deposit-btn drop" value=""></td>
+                  <td><input type="submit" class="deposit-btn drop" value="Deposit Funds"></td>
                 </tr>
             </tbody>
         </table>
@@ -167,8 +167,8 @@
     
     
     <div class="deposit-box">
-        <div style="margin: 0px; margin-bottom:4px; margin-right: 0.75em;" class="left">
-            <img src="images/webmoney__logo.png" alt="Webmoney" border="0">
+        <div style="margin: 0px; margin-bottom:4px; margin-right: 0.75em; float: left;" class="left">
+            <img src="img/webmoney__logo.png" alt="Webmoney" border="0">
         </div>
         <div style="float: right;">
 			<a href="http://www.megastock.com" target="_blank"><img src="http://megastock.webmoney.ru/doc/Logo/acc_blue_on_transp_en.png" alt="www.megastock.com" border="0"></a>
@@ -204,7 +204,7 @@
 		                      <tbody><tr>
 		                        <td><input name="lmi_payment_amount" style="width: 160px" value="" class="deposit-text"></td>
 		                        <td>
-		                        	<select name="lmi_payee_purse" id="lmi_payee_purse" class="deposit-text" style="width:150px; padding:4px 3px 4px 2px; height:auto;">
+		                        	<select name="lmi_payee_purse" id="lmi_payee_purse" class="deposit-text" style="width:150px;">
 		                                  <option value="Z245162139709">WebMoney USD (WMZ)</option>
 		                            </select>
 		                        </td>
@@ -215,7 +215,7 @@
 		
 		                <tr>
 		                  <td align="right"></td>
-		                  <td><input type="submit" value="" class="deposit-btn drop"></td>
+		                  <td><input type="submit" value="Deposit Funds" class="deposit-btn drop"></td>
 		                </tr>
 		            </tbody>
 		        </table>
@@ -225,7 +225,7 @@
     
     	<div class="deposit-box">
         <div style="margin: 0px; margin-bottom:4px;">
-            <img src="images/neteller.jpg" alt="Technocash" border="0">
+            <img src="img/neteller.jpg" alt="Technocash" border="0">
         </div>
 		
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -277,7 +277,7 @@
 						<tr>
 						  <td class="padded" align="right" valign="top">Currency:</td>
 						  <td>
-							<select name="currency" class="deposit-text" style="width: 95px; padding: 4px 3px 4px 2px; height: auto;">
+							<select name="currency" class="deposit-text" style="width: 95px;">
 								  <option value="USD">USD</option>
 								  <option value="EUR">EUR</option>
 								  <option value="GBP">GBP</option>
@@ -309,7 +309,7 @@
 						
 						<tr>
 						  <td align="right"></td>
-						  <td><input type="submit" id="neteller__btn" name="button" value="Make Transfer" class="deposit-btn drop" style="text-indent: -9999px;"></td>
+						  <td><input type="submit" id="neteller__btn" name="button" value="Deposit Funds" class="deposit-btn drop"></td>
 						</tr>
 
 					</tbody>
@@ -318,7 +318,89 @@
 			  
 	    </form>
     </div>
-    
+    					<div class="desc">
+    						<p>
+	        					<span class="static-block-title">Online funding using bank transfer</span>
+	        				</p>
+	        				<p>
+	        					Please quote your full name and your PFD account number as reference and make your deposit to one of our account numbers (below) according to the currency you're depositing.
+	        				</p>
+    					</div>
+    					<div class="f_header">Bank details for wiring</div>
+    					<div class="bank-details">
+    						<div class="bank-details-title"><span class="static-block-title">USD Banking Instructions</span></div>
+    						<div class="bank-details-desc">
+								<p>1) Pay to: Bank of New Zealand., 80, Queen Street, Auckland, New Zealand., Bank & Branch no. 020100. Swift ֠BKNZNZ22</p>
+								<p>Beneficiary : Pacific Financial Derivatives Ltd - Client Bank Account</p>
+								<p>Beneficiary Account : USD 680991-0002</p>
+								<p>Payment Reference : Your account number with PFD</p>
+								<p>&nbsp;</p>
+								<p>2) Pay to : ANZ Bank Limited, New Zealand., Swift ֠ANZBNZ22</p>
+								<p>Beneficiary Name : PFD LTD ֠Client Bank Account</p>
+								<p>Account Number : PFDLTDUSD00</p>
+								<p>Payment Reference : Your account number with PFD</p>
+    						</div>
+    					</div>
+    					
+    					<div class="bank-details">
+    						<div class="bank-details-title"><span class="static-block-title">NZD Banking Instructions</span></div>
+    						<div class="bank-details-desc">
+    							<p>1) Pay to: Bank of New Zealand., 80 Queen Street, Auckland, New Zealand., Bank & Branch no. 020100, Swift ֠BKNZNZ22</p>
+								<p>Beneficiary : Pacific Financial Derivatives Ltd - Client Bank Account</p>
+								<p>Beneficiary Account : NZD 02-0290-0006987-003</p>
+								<p>Payment Reference : Your account number with PFD</p>
+								<p>&nbsp;</p>
+								<p>2) Pay to: ANZ Bank limited, New Zealand., Swift ֠ANZBNZ22</p>
+								<p>Beneficiary : Pacific Financial Derivatives Ltd - Client Bank Account</p>
+								<p>Beneficiary Account : NZD 06-0145-0277860-01</p>
+								<p>Payment Reference: Your account number with Pacific Financial Derivatives Ltd</p>
+    						</div>
+    					</div>
+    					
+    					<div class="bank-details">
+    						<div class="bank-details-title"><span class="static-block-title">GBP Banking Instructions</span></div>
+    						<div class="bank-details-desc">
+	    						<p>Pay to : Bank of New Zealand., 80 Queen Street, Auckland, New Zealand., Bank & Branch no. 020100, Swift ֠BKNZNZ22</p>
+								<p>Beneficiary : Pacific Financial Derivatives Ltd - Client Bank Account</p>
+								<p>Beneficiary Account : GBP 020100- 680991-0006</p>
+								<p>Payment Reference : Your account number with PFD</p>
+    						</div>
+    					</div>
+    					
+    					<div class="bank-details">
+    						<div class="bank-details-title"><span class="static-block-title">AUD Banking Instructions</span></div>
+    						<div class="bank-details-desc">
+    							<p>1) Pay to : Bank of New Zealand., 80 Queen Street, Auckland, New Zealand., Bank & Branch no. 020100, Swift ֠BKNZNZ22</p>
+								<p>Beneficiary : Pacific Financial Derivatives Ltd - Client Bank Account</p>
+								<p>Beneficiary Account : AUD  680991-0000</p>
+								<p>Payment Reference : Your account number with PFD</p>
+								<p>&nbsp;</p>
+								<p>2) Pay to : ANZ Bank Limited, New Zealand ֠ANZBNZ22</p>
+								<p>Beneficiary:  PFD LTD- CLIENT BANK ACCOUNT</p>
+								<p>Beneficiary Account Number : PFDCLI-AUD20</p>
+								<p>Payment Reference: Your account number with PFD</p>
+    						</div>
+    					</div>
+    					
+    					<div class="bank-details">
+    						<div class="bank-details-title"><span class="static-block-title">EUR Banking Instructions</span></div>
+    						<div class="bank-details-desc">
+    							<p>Pay to : Bank of New Zealand 80., Queen Street, Auckland, New Zealand., Bank & Branch no. 020100, Swift ֠BKNZNZ22</p>
+								<p>Beneficiary : Pacific Financial Derivatives Ltd - Client Bank Account</p>
+								<p>Beneficiary Account : EUR 020100-680991-0003</p>
+								<p>Payment Reference : Your account number with PFD</p>
+    						</div>
+    					</div>
+    					
+    					<div class="bank-details">
+    						<div class="bank-details-title"><span class="static-block-title">JPY Banking Instructions</span></div>
+    						<div class="bank-details-desc">
+    							<p>Pay to : Bank of New Zealand., 80, Queen Street, Auckland, New Zealand., Bank & Branch no. 020100, Swift ֠BKNZNZ22</p>
+								<p>Beneficiary : Pacific Financial Derivatives Ltd - Client Bank Account</p>
+								<p>Beneficiary Account : JPY 680991-0004</p>
+								<p>Payment Reference : Your account number with PFD</p>
+    						</div>
+    					</div>
 		        	</div>
 	        </section>
 	

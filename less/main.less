@@ -785,6 +785,11 @@ header {
     height: 15px;
     background: @white;
   }
+  
+  &:hover {
+  	opacity: .5;
+  
+  }
 }
 
 .left-arrow {
@@ -823,6 +828,59 @@ header {
 	border: 1px solid #cacaca;
 	width: 600px;
 	margin: 25px 0;
+	padding: 25px;
+	
+	input {
+		.footer-font(@proxima-nova-reg, 14px, 1.3571em);
+		height: 20px;
+		border: 1px solid #cacaca;
+		width: 200px;
+		margin: 5px;
+	}
+	
+	select {
+		.footer-font(@proxima-nova-reg, 14px, 1.3571em);
+		height: 24px;
+		border: 1px solid #cacaca;
+	}
+	
+	td {
+		min-width: 150px;
+	}
+	
+	img {
+		margin-bottom: 25px;
+	}
+}
+
+.deposit-btn {
+	.button;
+}
+
+.bank-details {
+	.footer-font(@proxima-nova-reg, 14px, 1.3571em);
+	padding: 15px 0;
+
+	.bank-details-title {
+		cursor: pointer;
+		
+		&:before {
+			content: "- ";
+		}
+		
+		span {
+			display: inline-block !important;
+		}
+	}
+	
+	.bank-details-desc {
+		display: none;
+		padding: 25px 0 25px 25px;
+		
+		p {
+			margin: 5px 0 !important;
+		}
+	}
 }
 
 /*
@@ -1381,6 +1439,7 @@ section.normal {
 
 	.download-panel-left {
 		float: left;
+		max-width: 170px;
 	}
 	
 	.download-panel-right {
@@ -1413,11 +1472,16 @@ section.normal {
 	}
 	
 	.downloads-one-right {
-		float: left;
 		width: 30%;
 		padding-left: 70%;
-		padding-top: 40px;
 		
+		
+		.downloads-in-block {
+			padding-top: 20px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+				
 		.download-panel {
 			padding-bottom: 25px;
 			
@@ -1530,15 +1594,16 @@ section.normal {
    width: 980px;
    margin: 0 auto;  
    
-   &:after {
-       content: "";
+   .ftr-logo {
        position: absolute;
+       display: block;
        top: 0;
        right: 0;
        z-index: 0;       
        width: 252px;
        height: 46px;
        background: url(../img/footer-logo.png);
+       .noneOutline
    }
    
    .ftr-top {  
@@ -1578,8 +1643,48 @@ section.normal {
      color: @black;
      margin: 50px 0 0;
    }
-} 
+}
 
+/*
+ * email error
+ */
+
+.contact-input {
+	
+	position: relative;
+	
+	&.error-input {
+		border-color: #a33237 !important;
+	}
+	
+	.error-input&:before {
+		content: "incorrect";
+		position: absolute;
+		top: 0;
+		right: 100%;
+		margin-right: 7px;
+		text-align: center;
+		width: 100px;
+		color: #fff;
+		height: 32px;
+		.footer-font(@open-sans-reg, 12px, 30px);
+		background: #a33237;
+	}
+	
+	.error-input&:after {
+		content: "";
+		position: absolute;
+		height: 0;
+		width: 0;
+		right: 100%;
+		margin-right: -3px;
+		margin-top: 7px;
+		border-top: 5px solid transparent;
+		border-bottom: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-left: 5px solid #a33237;
+	}
+}
 
 
 /* ==========================================================================

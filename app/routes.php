@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('downloads', function() { return View::make('downloads'); });
+Route::get('down', function() { return View::make('downloads'); });
 Route::get('about', function() { return View::make('about'); });
 Route::get('cfd', function() { return View::make('cfd'); });
 Route::get('chat', function() { return View::make('chat'); });
@@ -32,4 +32,5 @@ Route::get('white', function() { return View::make('white'); });
 Route::get('withdrawal', function() { return View::make('withdrawal'); });
 Route::get('spread', function() { return View::make('spread'); });
 Route::get('deposit', function() { return View::make('deposit'); });
+Route::post('neteller', "HomeController@neteller");
 Route::post('contact_send', "HomeController@contact_send");

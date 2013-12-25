@@ -118,7 +118,7 @@
 		        				<button class="contact-send">Send</button>
 	        				</form>
 	        				<div class="contact-sent" style="display: none">
-	        					<div class="desc">The message is sent!</div>
+	        					<div class="desc">Thank you. Your message has been sent.</div>
 	        				</div>
 	        			</div>
 	        		</div>

@@ -106,7 +106,8 @@
 	        				<span class="desc">Once you have decided which of the account forms are right for you, please download the corresponding PDF form from our website right here. Now you can proceed and fill the account opening form.</span>
 	        			</a>
 	        		<li>
-	        			<a href="reg#online" class="traider-link">
+	        			<!--<a href="reg#online" class="traider-link">-->
+	        				<a href="https://kiwi.pfd-nz.com/signup/logon" class="traider-link">
 	        				<span class="f_header">Online sign up</span>
 	        				<span class="desc">Online sign up is intended to be completed in conjunction with the relevant provisions of Pacific Financial Derivative Limited’s Individual Account Client Services Agreement Individual Account. First step is to register user name, password and email id.</span>
 	        			</a>
@@ -155,6 +156,7 @@
 	        		<div class="ftr-copyright">
 	        			&copy; 2013 Pacific Financial Derivatives Ltd. All Rights Reserved.
 	        		</div>
+	        		<a href="./" class="ftr-logo"></div>
 	        	</div>
 	        </footer>
 		
