@@ -15,9 +15,20 @@ class HomeController extends BaseController {
 	|
 	*/
 
-	public function showWelcome()
+	public function contact_send()
 	{
-		return View::make('hello');
+		$name = Input::get('name');
+		$email = Input::get('email');
+		$text = Input::get('text');
+		
+		$data = array(	'name' => $name,
+						'email' => $email,
+						'text' => $text
+						);
+    	Mail::send('emails.contact', $data, function($message)
+		{
+    	$message->from('pfd-nz@yandex.ru', 'PFD');
+	    $message->to('kd@grapheme.ru')->subject('Message from site!');
+		});
 	}
-
 }

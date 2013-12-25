@@ -87,7 +87,7 @@
 	        					    <li><a href="chat">Chat/Phone Trading</a>
 	        					</ul>
 	        				<li><a href="product-multi">MAM</a>
-	        				<li><a href="spread">Spread Comprasion</a>
+	        				<li><a href="spread">Spread Comparison</a>
 	        				<li><a href="contacts">Contact</a>
 	        			</ul>
 	        		</nav>
@@ -124,7 +124,7 @@
 	        	<div class="footer-content cleafix">
 	        		<div class="ftr-top clearfix">
 		        		<ul class="ftr-links-list">
-		        			<li class="ftr-links-item"><a href="">Home</a>
+		        			<li class="ftr-links-item"><a href="./">Home</a>
 		        			<li class="ftr-links-item"><a href="product-multi">MAM</a>
 		        			<li class="ftr-links-item"><a href="legal">Legal</a>
 		        			<li class="ftr-links-item"><a href="spread">Spread comparison</a>
@@ -146,7 +146,7 @@
 		        		<ul class="ftr-links-list operations">
 		        			<li class="ftr-links-item list-head">Operations
 		        			<li class="ftr-links-item"><a href="reg">Open an account</a>
-		        			<li class="ftr-links-item"><a href="#">Deposit options</a>
+		        			<li class="ftr-links-item"><a href="deposit">Deposit options</a>
 		        			<li class="ftr-links-item"><a href="withdrawal">With drawals</a>
 		        			<li class="ftr-links-item"><a href="support">Technical support</a>
 		        			<li class="ftr-links-item"><a href="chat">Phone trading</a>

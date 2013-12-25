@@ -49,7 +49,8 @@
 						</div>
 		        	</div>
 		        	
-		        	<img class="static-img" src="img/static-img.jpg">
+		        	<!--<img class="static-img" src="img/static-img.jpg">-->
+		        	<div class="clearfix"></div>
 		        	
 		        	<div class="static-block">
 		        		<div class="static-block-in">

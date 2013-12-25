@@ -4,6 +4,10 @@
 	wrapper
 @stop
 
+@section('scripts')
+	<script src="<?=URL::to('js/contacts.js')?>"></script>
+@stop
+
 @section('content')
 	
 	
@@ -108,11 +112,14 @@
 	        			<div class="contacts-block-in">
 	        				<div class="f_header">Contact form</div>
 	        				<form>
-		        				<div class="contact-input"><input type="text" placeholder="Name"></div>
-		        				<div class="contact-input"><input type="text" placeholder="Email"></div>
-		        				<div class="contact-input"><textarea placeholder="Message"></textarea></div>
-		        				<button>Send</button>
+		        				<div class="contact-input"><input id="name" type="text" placeholder="Name"></div>
+		        				<div class="contact-input"><input id="email" type="text" placeholder="Email"></div>
+		        				<div class="contact-input"><textarea id="message" placeholder="Message"></textarea></div>
+		        				<button class="contact-send">Send</button>
 	        				</form>
+	        				<div class="contact-sent" style="display: none">
+	        					<div class="desc">The message is sent!</div>
+	        				</div>
 	        			</div>
 	        		</div>
 	        	</div>

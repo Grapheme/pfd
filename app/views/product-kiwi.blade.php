@@ -13,7 +13,7 @@
 	        		<div class="desc">
 	        			Kiwi Trader is the most user friendly trading platform which PFD offers for PFD clients.
 	        		</div>
-	        		<a href="downloads.html" class="product-dl">Downloads</a>
+	        		<a href="downloads" class="product-dl">Downloads</a>
 	        	</div>
 	        	<div class="benefits">
 	        		<h2 class="s_header">Benefits</h2>
@@ -32,13 +32,6 @@
 	        		</ul>
 	        	</div>
 	        </section>
-	        <section class="devices">
-	        	<div class="devices-content">
-		        	<div class="iphone"></div>
-		        	<div class="imac"></div>
-		        	<div class="ipad"></div>
-	        	</div>
-	        </section>
 	        <section class="table">
 	        	<div class="table-container">
 	        		<table>
@@ -46,60 +39,48 @@
 	        				<th>Type
 	        				<th>Kiwi trader gold zero
 	        				<th>PFD trader(MT4)
-	        				<th>PFD Trader(options)
 	        			<tr>
 	        				<th>Software
 							<td>Kiwi trader
 							<td>MT4
-							<td>PFD Trader
 						<tr>
 	        				<th>Instruments
 							<td>Major FX
 							<td>FX, CFD, Futures, Indices FX
-							<td>FX, CFD, Futures, Indices FX
 						<tr>
 	        				<th>Spread
-							<td>Tight spread
 							<td>Tight spread
 							<td>Tight spread
 						<tr>
 	        				<th>Commission
 							<td>Zero for trade
 							<td>Zero
-							<td>Zero
 						<tr>
 	        				<th>Leverage
 							<td>1-5 : 200
 							<td>1 : 300
-							<td>1 : 100
 						<tr>
 	        				<th>Chart
-							<td><div class="tick"></div>
 							<td><div class="tick"></div>
 							<td><div class="tick"></div>
 						<tr>
 	        				<th>Technical Analysys
 							<td><div class="tick"></div>
 							<td><div class="tick"></div>
-							<td><div class="tick"></div>
 						<tr>
 	        				<th>Loss cut liquidation
 							<td>100%
 							<td>100%
-							<td>50%
 						<tr>
 	        				<th>System trade
 							<td><div class="tick"></div>
 							<td><div class="tick"></div>
-							<td><div class="minus">—</div>
 						<tr>
 	        				<th>Trade size (fx)
 							<td>0.01 lot (1,000)
 							<td>0.01 lot (1,000)
-							<td>0.01 lot (10,000)
 						<tr>
 	        				<th>Funding
-							<td>Credit/Debit Card
 							<td>Credit/Debit Card
 							<td>Credit/Debit Card
 	        		</table>

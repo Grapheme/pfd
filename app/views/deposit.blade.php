@@ -167,34 +167,117 @@
     
     
     <div class="deposit-box">
-        <div style="margin: 0px; margin-bottom:4px;">
-            <img border="0" alt="Technocash" src="images/neteller.jpg">
+        <div style="margin: 0px; margin-bottom:4px; margin-right: 0.75em;" class="left">
+            <img src="images/webmoney__logo.png" alt="Webmoney" border="0">
         </div>
+        <div style="float: right;">
+			<a href="http://www.megastock.com" target="_blank"><img src="http://megastock.webmoney.ru/doc/Logo/acc_blue_on_transp_en.png" alt="www.megastock.com" border="0"></a>
+		</div>
+	    <div style="float: right;">
+			<a href="https://passport.webmoney.ru/asp/certview.asp?wmid=108044683718 " target="_blank"><img src="http://megastock.webmoney.ru/doc/Logo/v_blue_on_transp_en.png" alt="Here you can find information as to the passport for our WM-identifier 108044683718" border="0"></a>
+		</div>
+		<div style="clear:both;"> </div>
+
+	     <div class="cont">
+		  	<form method="post" action="https://merchant.wmtransfer.com/lmi/payment.asp?at=authtype_8">
+			    <table class="contact-table" style="margin:0">
+		            <tbody>
+		                <tr style="display:none;">
+		                  <td></td>
+		                  <td>
+							<input type="hidden" name="lmi_payment_desc" value="Payment description">
+							<input type="hidden" name="lmi_payment_no" value="Order number">
+							<input type="hidden" name="lmi_sim_mode" value="1">
+						  </td>
+		                </tr>
+						
+						<tr>
+		                    <td class="padded" align="right">Account # *:</td>
+		                    <td>
+		                      <input name="detail1_text" id="detail1_text" value="" class="deposit-text">
+		                      <input type="hidden" name="detail1_description" value="PFD Account Number"></td>
+		              </tr>
+		                <tr>
+		                  <td class="padded" align="right">Deposit Amount *:</td>
+		                  <td>
+		                      <table border="0" cellpadding="0">
+		                      <tbody><tr>
+		                        <td><input name="lmi_payment_amount" style="width: 160px" value="" class="deposit-text"></td>
+		                        <td>
+		                        	<select name="lmi_payee_purse" id="lmi_payee_purse" class="deposit-text" style="width:150px; padding:4px 3px 4px 2px; height:auto;">
+		                                  <option value="Z245162139709">WebMoney USD (WMZ)</option>
+		                            </select>
+		                        </td>
+		                      </tr>
+		                    </tbody></table>
+		                 </td>
+		               </tr>
+		
+		                <tr>
+		                  <td align="right"></td>
+		                  <td><input type="submit" value="" class="deposit-btn drop"></td>
+		                </tr>
+		            </tbody>
+		        </table>
+		  	</form>
+		</div>
+    </div>
+    
+    	<div class="deposit-box">
+        <div style="margin: 0px; margin-bottom:4px;">
+            <img src="images/neteller.jpg" alt="Technocash" border="0">
+        </div>
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			window.onload = function(){
+				var transactionID = new Date().getTime();
+				document.getElementById('merch_transid').value = transactionID;	
+			}
+			$(function(){
+				$( "#neteller_form" ).on( "submit", function( event ) {
+					event.preventDefault();
+					$('<p>The request is proccessed. Please be patient.</p>').insertAfter('#neteller__btn');
+					var params = $(this).serialize();
+					$.post('/proxy.php?'+params, function(data){
+						if ( $(data).find('approval').text() == 'yes' ) {
+							window.location.replace('/payment-thankyou.php');
+						} else {
+							window.location.replace('/payment-thankyou.php?neteller=error&msg='+$(data).find('error_message').text());
+						}
+					})
+					
+					// refresh transaction ID
+					var transactionID = new Date().getTime();
+					document.getElementById('merch_transid').value = transactionID;
+				});
+			});
+		</script>
 				
-		<form action="https://api.neteller.com/netdirect" method="post" name="neteller_form" id="neteller_form">
+		<form id="neteller_form" name="neteller_form" method="post" action="https://api.neteller.com/netdirect">
 	          <!--
 			  <input type="hidden" name="language_code" value="Client Language">
 			  <input type="hidden" name="merch_account" value="john123" maxlength="50">
 			  -->
 			  
-			  <table style="margin:0" class="contact-table">
+			  <table class="contact-table" style="margin:0">
 					<tbody>
 						<tr>
-						  <td valign="top" align="right" class="padded">Deposit Amount *:</td>
+						  <td class="padded" align="right" valign="top">Deposit Amount *:</td>
 						  <td>
-							<input type="text" maxlength="10" size="10" name="amount">
-							<input type="hidden" value="4.1" name="version">
-							<input type="hidden" value="20858" name="merchant_id">
-			  				<input type="hidden" value="594847" name="merch_key">
-			  				<input type="hidden" maxlength="50" value="1387902805455" id="merch_transid" name="merch_transid">
-			  				<input type="hidden" value="PFD-NZ" name="merch_name">  
+							<input type="text" name="amount" size="10" maxlength="10">
+							<input type="hidden" name="version" value="4.1">
+							<input type="hidden" name="merchant_id" value="20858">
+			  				<input type="hidden" name="merch_key" value="594847">
+			  				<input type="hidden" name="merch_transid" id="merch_transid" value="1387918382596" maxlength="50">
+			  				<input type="hidden" name="merch_name" value="PFD-NZ">  
 						  </td>
 						</tr>
 						
 						<tr>
-						  <td valign="top" align="right" class="padded">Currency:</td>
+						  <td class="padded" align="right" valign="top">Currency:</td>
 						  <td>
-							<select style="width: 95px; padding: 4px 3px 4px 2px; height: auto;" class="deposit-text" name="currency">
+							<select name="currency" class="deposit-text" style="width: 95px; padding: 4px 3px 4px 2px; height: auto;">
 								  <option value="USD">USD</option>
 								  <option value="EUR">EUR</option>
 								  <option value="GBP">GBP</option>
@@ -204,29 +287,29 @@
 						</tr>
 						
 						<tr>
-							<td align="right" class="padded">PFD Account Number *:</td>
+							<td class="padded" align="right">PFD Account Number *:</td>
 							<td>
-							  <input type="text" class="deposit-text" maxlength="50" value="" name="custom_1" id="detail1_text">
+							  <input type="text" id="detail1_text" name="custom_1" value="" maxlength="50" class="deposit-text">
 							</td>
 						</tr>
 						
 						<tr>
-						  <td valign="top" align="right" class="padded">Neteller Account ID *:</td>
+						  <td class="padded" align="right" valign="top">Neteller Account ID *:</td>
 						  <td>
-							<input type="text" maxlength="100" size="20" name="net_account">
+							<input type="text" name="net_account" size="20" maxlength="100">
 						  </td>
 						</tr>
 						
 						<tr>
-						  <td valign="top" align="right" class="padded">Secure ID *:</td>
+						  <td class="padded" align="right" valign="top">Secure ID *:</td>
 						  <td>
-							<input type="text" maxlength="6" size="10" name="secure_id">
+							<input type="text" name="secure_id" size="10" maxlength="6">
 						  </td>
 						</tr>
 						
 						<tr>
 						  <td align="right"></td>
-						  <td><input type="submit" style="text-indent: -9999px;" class="deposit-btn drop" value="Make Transfer" name="button" id="neteller__btn"></td>
+						  <td><input type="submit" id="neteller__btn" name="button" value="Make Transfer" class="deposit-btn drop" style="text-indent: -9999px;"></td>
 						</tr>
 
 					</tbody>

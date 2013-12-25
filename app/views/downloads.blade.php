@@ -51,8 +51,8 @@
 	        				<div class="desc">
 	        					System requirements: Windows XP a nd newer versions.
 	        				</div>
-	        				<button class="download-button-blue">Free Demo account registration.exe</button>
-	        				<button class="download-button-blue">Download Kiwi Trader software.exe</button>
+	        				<a href="http://kiwi.pfd-nz.com/downloads/kiwitrader/KiwiTraderSetup.exe" class="download-button-blue">Free Demo account registration.exe</a>
+	        				<a href="http://kiwi.pfd-nz.com/downloads/kiwitrader/KiwiTraderSetup.exe" class="download-button-blue">Download Kiwi Trader software.exe</a>
 	        				<div class="download-panel">
 	        					<div class="download-panel-left">
 	        						<a href="#" class="down-link">Kiwi Trader user manual.pdf</a>
@@ -158,7 +158,7 @@
 		        				<div class="desc">
 		        					MetaTrader 4 for iPhone is offered Free of charge to our customers.
 		        				</div>
-		        				<a href="#" class="apple-link"></a>
+		        				<a href="https://itunes.apple.com/ru/app/metatrader-4/id496212596?mt=8" class="apple-link"></a>
 		        			</div>
 		        			<div class="down-item">
 		        				<div class="download-white-title white-title-android">
@@ -167,7 +167,7 @@
 		        				<div class="desc">
 		        					MetaTrader 4 for Android is offered Free of charge to our customers.
 		        				</div>
-		        				<a href="#" class="android-link"></a>
+		        				<a href="https://play.google.com/store/apps/details?id=net.metaquotes.metatrader4&hl=ru" class="android-link"></a>
 		        			</div>
 	        			</div>
 	        		</div>
@@ -187,18 +187,18 @@
 	        				</div>
 	        				<div class="download-panel">
 	        					<div class="download-panel-left">
-	        						<a href="#" class="down-link">IB Agreement.pdf</a>
+	        						<a href="http://www.pfd-nz.com/pdf/IB_Agreement.pdf" class="down-link">IB Agreement.pdf</a>
 	        					</div>
 	        					<div class="download-panel-right">
-	        						<a href="#" class="down-right-link">1,35 МB</a>
+	        						<a href="http://www.pfd-nz.com/pdf/IB_Agreement.pdf" class="down-right-link">1,35 МB</a>
 	        					</div>
 	        				</div>
 	        				<div class="download-panel">
 	        					<div class="download-panel-left">
-	        						<a href="#" class="down-link">PFD Withdrawal Form.pdf</a>
+	        						<a href="https://www.pfd-nz.com/downloads/PFD%20Withdrawal%20Form.pdf" class="down-link">PFD Withdrawal Form.pdf</a>
 	        					</div>
 	        					<div class="download-panel-right">
-	        						<a href="#" class="down-right-link">1,35 МB</a>
+	        						<a href="https://www.pfd-nz.com/downloads/PFD%20Withdrawal%20Form.pdf" class="down-right-link">1,35 МB</a>
 	        					</div>
 	        				</div>
 	        				<div class="download-panel">
