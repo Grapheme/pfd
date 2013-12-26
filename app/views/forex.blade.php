@@ -210,7 +210,7 @@
 	        						Try out PFDTrader (MT4) and KiwiTrader Gold Zero free demo trading accounts right now and you can test it yourself in just few minutes.
 	        					</p>
 	        					<p>
-	        						Want to <a href="//en.wikipedia.org/wiki/Foreign_exchange_market" target="_blank" class="our-link">know the definition of FX</a> ?
+	        						Want to <a href="//en.wikipedia.org/wiki/Foreign_exchange_market" target="_blank" class="our-link">know the definition of FX</a>?
 	        					</p>
 		        			</div>
 		        			<div class="f_header">Risk Warning:</div>

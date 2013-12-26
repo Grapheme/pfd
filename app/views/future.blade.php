@@ -21,21 +21,24 @@
 		        				<p>
 		        					<span class="static-block-title">Futures CFDs tradable in PFD Trader (MT4)</span>
 		        				</p>
-		        				<table cellspacing="0" cellpadding="0" border="0" style="border:1px solid #ccc; margin-bottom:14px;">
+		        			</div>
+		        			
+		        				<div class="table-container" style="padding: 0;">
+		        				<table cellspacing="0" cellpadding="0" border="0">
 				                    <tbody><tr>
-				                    <td width="4%" bgcolor="#49769F" style="width:4.92%;background:#49769f;padding:1.5pt 1.5pt 1.5pt 1.5pt;min-height:22.5pt"><p align="center" style="color:white;"><strong>Symbol</strong></p>
+				                    <td width="4%" style="width:4.92%;;padding:1.5pt 1.5pt 1.5pt 1.5pt;min-height:22.5pt"><p align="center"><strong>Symbol</strong></p>
 				                    </td>
-				                    <td width="14%" bgcolor="#49769F" style="width:14.86%;background:#49769f;padding:1.5pt 1.5pt 1.5pt 1.5pt;min-height:22.5pt"><p align="left" style="color:white;"><strong>Contract Description</strong></p>
+				                    <td width="14%" style="width:14.86%;;padding:1.5pt 1.5pt 1.5pt 1.5pt;min-height:22.5pt"><p align="left"><strong>Contract Description</strong></p>
 				                    </td>
-				                    <td width="11%" bgcolor="#49769F" style="width:11.88%;background:#49769f;padding:1.5pt 1.5pt 1.5pt 1.5pt;min-height:22.5pt"><p align="left" style="color:white;"><strong>Size</strong></p>
+				                    <td width="11%" style="width:11.88%;;padding:1.5pt 1.5pt 1.5pt 1.5pt;min-height:22.5pt"><p align="left"><strong>Size</strong></p>
 				                    </td>
-				                    <td width="11%" bgcolor="#49769F" style="width:11.88%;background:#49769f;padding:1.5pt 1.5pt 1.5pt 1.5pt;min-height:22.5pt"><p align="left" style="color:white;"><strong>Initial <br>Margin</strong></p>
+				                    <td width="11%" style="width:11.88%;;padding:1.5pt 1.5pt 1.5pt 1.5pt;min-height:22.5pt"><p align="left"><strong>Initial <br>Margin</strong></p>
 				                    </td>
-				                    <td width="11%" bgcolor="#49769F" style="width:11.88%;background:#49769f;padding:1.5pt 1.5pt 1.5pt 1.5pt;min-height:22.5pt"><p align="left" style="color:white;"><strong>Maintenance <br>Margin</strong></p>
+				                    <td width="11%" style="width:11.88%;;padding:1.5pt 1.5pt 1.5pt 1.5pt;min-height:22.5pt"><p align="left"><strong>Maintenance <br>Margin</strong></p>
 				                    </td>
-				                    <td width="11%" bgcolor="#49769F" style="width:11.88%;background:#49769f;padding:1.5pt 1.5pt 1.5pt 1.5pt;min-height:22.5pt"><p align="left" style="color:white;"><strong>Commission Per side /Lot</strong></p>
+				                    <td width="11%" style="width:11.88%;;padding:1.5pt 1.5pt 1.5pt 1.5pt;min-height:22.5pt"><p align="left"><strong>Commission Per side /Lot</strong></p>
 				                    </td>
-				                    <td width="11%" bgcolor="#49769F" style="width:11.88%;background:#49769f;padding:1.5pt 1.5pt 1.5pt 1.5pt;min-height:22.5pt"><p align="left" style="color:white;"><strong>Expiry</strong></p>
+				                    <td width="11%" style="width:11.88%;;padding:1.5pt 1.5pt 1.5pt 1.5pt;min-height:22.5pt"><p align="left"><strong>Expiry</strong></p>
 				                    </td>
 				                </tr>
                     
@@ -138,10 +141,11 @@
 							  <td valign="top" style="padding:1.5pt 1.5pt 1.5pt 1.5pt" class="even"><p align="left">$20</p></td>
 							  <td valign="top" style="padding:1.5pt 1.5pt 1.5pt 1.5pt" class="even"><p align="left">Expiry</p></td>
 							</tr>
-							                    </tbody></table>
-		        				
+						</tbody></table></div>
+		        			
+		        			<div class="desc">	
 		        				<p>
-									Want to <a href="//en.wikipedia.org/wiki/Contract_for_difference" target="_blank" class="our-link">know the definition of CFD’s</a> ?	        					
+									Want to <a href="//en.wikipedia.org/wiki/Contract_for_difference" target="_blank" class="our-link">know the definition of CFD’s</a>?	        					
 								</p>
 		        			</div>
 		        			<div class="f_header">Risk Warning:</div>
