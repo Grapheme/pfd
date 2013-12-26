@@ -51,7 +51,7 @@
 	        </section>
 	        <section class="traiders">
 	        	<ul>
-	        		<li><a href="product-kiwi.html" class="traider-link">
+	        		<li><a href="product-kiwi" class="traider-link">
 	        			<span class="f_header">
 							Kiwi Trader Gold Zero
 						</span>
@@ -59,7 +59,7 @@
 	        				Kiwi Trader is the most user friendly trading platform which PFD offers for PFD clients.
 	        			</span></a>
 	        			
-	        		<li><a href="product.html" class="traider-link">
+	        		<li><a href="product" class="traider-link">
 	        			<span class="f_header">
 							PFD Trader (MT4)
 						</span>
@@ -67,13 +67,13 @@
 							PFD Trader (MT4) is a user friendly dealing and order management system which allows PFD clients to access global markets in real time.	        			
 						</span></a>
 	        		
-	        		<!--<li><a href="#" class="traider-link">
+	        		<li><a href="product-multi" class="traider-link">
 	        			<span class="f_header">
-							PFD Trader (Options)
+							Multi Account Manager
 						</span>
 	        			<span class="desc">
-							The system is a comprehensive internet based trading platform that provides real time charting which also allows clients to manage their portfolio from anywhere in the world.
-						</span></a>-->
+							MAM is a plug-in for MT4 which allows money managers to operate with multiple clients using just one master account.
+						</span></a>
 	        	</ul>
 	        </section>
 	       	<section class="normal">

@@ -6,12 +6,11 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>PFD</title>
+        <title>Pacific Financial Derivatives Ltd: The online trading provider matching highest standards in integrity and safety</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-		
+		<link href="<?=URL::to('favicon.ico');?>" rel="shortcut icon" type="image/x-icon" />
 		<link rel="stylesheet" href="<?=URL::to('css/fonts.css');?>">
         <link rel="stylesheet" href="<?=URL::to('css/normalize.css');?>">
         <link rel="stylesheet/less" type="text/css" href="<?=URL::to('less/main.less');?>">
@@ -58,8 +57,9 @@
 	        	<div class="header-nav">
 	        		<nav>
 	        			<ul>
-	        				<li><a href="about">About Us</a>
+	        				<li><a href="#">About Us</a>
 	        					<ul class="header-sub-menu">
+	        						<li><a href="about">Company profile</a>
 	        						<li><a href="white">White label</a>
 	        						<li><a href="broker">Introducing broker</a>
 	        						<li><a href="press">Press room</a>
@@ -136,19 +136,20 @@
 		        			<li class="ftr-links-item list-head">About Us</a>
 		        			<li class="ftr-links-item"><a href="about">Welcome</a>
 		        			<li class="ftr-links-item"><a href="white">White label</a>
-		        			<li class="ftr-links-item"><a href="static">Introducing broker</a>
+		        			<li class="ftr-links-item"><a href="broker">Introducing broker</a>
 		        			<li class="ftr-links-item"><a href="press">Press room</a>
 		        		</ul>
 		        		<ul class="ftr-links-list products">
 		        			<li class="ftr-links-item list-head">Products
 		        			<li class="ftr-links-item"><a href="forex">Forex</a>
-		        			<li class="ftr-links-item"><a href="future">Features</a>
+    						<li class="ftr-links-item"><a href="cfd">CFD</a>
+    						<li class="ftr-links-item"><a href="future">Futures CFDs</a>
 		        		</ul>
 		        		<ul class="ftr-links-list operations">
 		        			<li class="ftr-links-item list-head">Operations
 		        			<li class="ftr-links-item"><a href="reg">Open an account</a>
 		        			<li class="ftr-links-item"><a href="deposit">Deposit options</a>
-		        			<li class="ftr-links-item"><a href="withdrawal">With drawals</a>
+		        			<li class="ftr-links-item"><a href="withdrawal">Withdrawals</a>
 		        			<li class="ftr-links-item"><a href="support">Technical support</a>
 		        			<li class="ftr-links-item"><a href="chat">Phone trading</a>
 		        		</ul>

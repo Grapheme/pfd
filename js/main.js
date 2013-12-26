@@ -1,3 +1,7 @@
+$('.header-nav a[href=#]').click(function(){
+	return false;
+});
+
 var $fotoramaDiv = $('.fotorama').fotorama();
 var fotorama = $fotoramaDiv.data('fotorama');
 

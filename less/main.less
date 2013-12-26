@@ -567,6 +567,7 @@ header {
         
         a {
           .heightWline(@menu-height);
+          .noneOutline;
           
           padding-left: 30px;
           padding-right: 30px;
@@ -832,16 +833,18 @@ header {
 	
 	input {
 		.footer-font(@proxima-nova-reg, 14px, 1.3571em);
-		height: 20px;
+		height: 30px;
 		border: 1px solid #cacaca;
 		width: 200px;
 		margin: 5px;
+		padding: 0;
 	}
 	
 	select {
 		.footer-font(@proxima-nova-reg, 14px, 1.3571em);
-		height: 24px;
+		height: 32px;
 		border: 1px solid #cacaca;
+		margin: 5px;
 	}
 	
 	td {
@@ -1220,10 +1223,24 @@ section.normal {
 
 .color-table {
 	margin-bottom: 15px;
+	
+	table {
+      .footer-font(@proxima-nova-bold, .875em, 2.3571em);
+      width: 100%;         
+      th {
+        .uppercase;
+        padding: 0 0 0 24px;
+        text-align: left;
+      }
+      td {        
+        padding: 0 0 0 24px;
+        font-family: @proxima-nova-reg;
+      }
+    }
 }
 
 .color-table tr:nth-of-type(2n+3) {
-	background: #E6E6E8;
+	background: #dcebf3;
 }
 
 .color-table tr:nth-of-type(1) {

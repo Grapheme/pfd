@@ -13,7 +13,7 @@
 	        		<div class="desc">
 	        			Kiwi Trader is the most user friendly trading platform which PFD offers for PFD clients.
 	        		</div>
-	        		<a href="downloads" class="product-dl">Downloads</a>
+	        		<a href="down" class="product-dl">Downloads</a>
 	        	</div>
 	        	<div class="benefits">
 	        		<h2 class="s_header">Benefits</h2>

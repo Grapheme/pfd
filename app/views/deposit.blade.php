@@ -91,9 +91,9 @@
 
                 <tr>
 
-                  <td valign="top" align="right" class="padded">Payment method:</td>
+                  <td  align="right" class="padded">Payment method:</td>
                   <td>
-                    <select onchange="SetCUPAction()" style=" width:260px" class="deposit-text" name="payment_methods" id="payment_methods">
+                    <select onchange="SetCUPAction()" style=" width:203px" class="deposit-text" name="payment_methods" id="payment_methods">
                       <option value="WLT">Moneybookers E-Wallet</option>
                       <option value="ACC">Credit / Debit Cards</option>
 					  <option value="CUP">China Union Pay</option>
@@ -168,11 +168,11 @@
     
     <div class="deposit-box">
         <div style="margin: 0px; margin-bottom:4px; margin-right: 0.75em; float: left;" class="left">
-            <img src="img/webmoney__logo.png" alt="Webmoney" border="0">
+            <a href="http://www.megastock.com" target="_blank"><img src="img/webmoney__logo.png" alt="Webmoney" border="0"></a>
         </div>
-        <div style="float: right;">
+        <!--<div style="float: right;">
 			<a href="http://www.megastock.com" target="_blank"><img src="http://megastock.webmoney.ru/doc/Logo/acc_blue_on_transp_en.png" alt="www.megastock.com" border="0"></a>
-		</div>
+		</div>-->
 	    <div style="float: right;">
 			<a href="https://passport.webmoney.ru/asp/certview.asp?wmid=108044683718 " target="_blank"><img src="http://megastock.webmoney.ru/doc/Logo/v_blue_on_transp_en.png" alt="Here you can find information as to the passport for our WM-identifier 108044683718" border="0"></a>
 		</div>
@@ -227,32 +227,7 @@
         <div style="margin: 0px; margin-bottom:4px;">
             <img src="img/neteller.jpg" alt="Technocash" border="0">
         </div>
-		
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script type="text/javascript">
-			window.onload = function(){
-				var transactionID = new Date().getTime();
-				document.getElementById('merch_transid').value = transactionID;	
-			}
-			$(function(){
-				$( "#neteller_form" ).on( "submit", function( event ) {
-					event.preventDefault();
-					$('<p>The request is proccessed. Please be patient.</p>').insertAfter('#neteller__btn');
-					var params = $(this).serialize();
-					$.post('/proxy.php?'+params, function(data){
-						if ( $(data).find('approval').text() == 'yes' ) {
-							window.location.replace('/payment-thankyou.php');
-						} else {
-							window.location.replace('/payment-thankyou.php?neteller=error&msg='+$(data).find('error_message').text());
-						}
-					})
-					
-					// refresh transaction ID
-					var transactionID = new Date().getTime();
-					document.getElementById('merch_transid').value = transactionID;
-				});
-			});
-		</script>
+
 				
 		<form id="neteller_form" name="neteller_form" method="post" action="https://api.neteller.com/netdirect">
 	          <!--
@@ -263,7 +238,7 @@
 			  <table class="contact-table" style="margin:0">
 					<tbody>
 						<tr>
-						  <td class="padded" align="right" valign="top">Deposit Amount *:</td>
+						  <td class="padded" align="right" >Deposit Amount *:</td>
 						  <td>
 							<input type="text" name="amount" size="10" maxlength="10">
 							<input type="hidden" name="version" value="4.1">
@@ -275,7 +250,7 @@
 						</tr>
 						
 						<tr>
-						  <td class="padded" align="right" valign="top">Currency:</td>
+						  <td class="padded" align="right" >Currency:</td>
 						  <td>
 							<select name="currency" class="deposit-text" style="width: 95px;">
 								  <option value="USD">USD</option>
@@ -294,14 +269,14 @@
 						</tr>
 						
 						<tr>
-						  <td class="padded" align="right" valign="top">Neteller Account ID *:</td>
+						  <td class="padded" align="right" >Neteller Account ID *:</td>
 						  <td>
 							<input type="text" name="net_account" size="20" maxlength="100">
 						  </td>
 						</tr>
 						
 						<tr>
-						  <td class="padded" align="right" valign="top">Secure ID *:</td>
+						  <td class="padded" align="right" >Secure ID *:</td>
 						  <td>
 							<input type="text" name="secure_id" size="10" maxlength="6">
 						  </td>

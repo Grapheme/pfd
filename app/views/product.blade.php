@@ -19,7 +19,7 @@
 						trader terminal also allows clients to view all their trading history and open positions on-line 24<br>
 						hours per day.
 	        		</div>
-	        		<a href="downloads" class="product-dl">Downloads</a>
+	        		<a href="down" class="product-dl">Downloads</a>
 	        	</div>
 	        	<div class="benefits">
 	        		<h2 class="s_header">Benefits</h2>

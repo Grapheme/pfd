@@ -33,6 +33,7 @@ class HomeController extends BaseController {
 	}
 	
 	public function neteller() {
+		
 		$postdata = http_build_query(
 	    array(
 	        'version' => '4.1',
@@ -80,7 +81,7 @@ class HomeController extends BaseController {
 			echo($result);
 			exit;
 		}
-		
+		/*
 		file_put_contents(getcwd()."/neteller/". time() . '_neteller.txt', 'merch_transid: ' . @$_REQUEST['merch_transid'] . "\n", FILE_APPEND | LOCK_EX);
 		file_put_contents(getcwd()."/neteller/". time() . '_neteller.txt', 'amount: ' . @$_REQUEST['amount'] . "\n", FILE_APPEND | LOCK_EX);
 		file_put_contents(getcwd()."/neteller/". time() . '_neteller.txt', 'net_account: ' . @$_REQUEST['net_account'] . "\n", FILE_APPEND | LOCK_EX);
@@ -88,7 +89,7 @@ class HomeController extends BaseController {
 		file_put_contents(getcwd()."/neteller/". time() . '_neteller.txt', 'PFD account number: ' . @$_REQUEST['detail1_text'] . "\n\n", FILE_APPEND | LOCK_EX);
 		
 		file_put_contents(getcwd()."/neteller/". time() . '_neteller.txt', $result, FILE_APPEND | LOCK_EX);
-		
+		*/
 		header('Content-type: text/xml');
 		echo($result);
 	}

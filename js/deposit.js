@@ -81,11 +81,11 @@ $(function(){
 		var params = $(this).serialize();
 		$.post('neteller?'+params, function(data){
 			if ( $(data).find('approval').text() == 'yes' ) {
-				window.location.replace('/payment-thankyou.php');
+				window.location.href = 'http://www.pfd-nz.com/payment-thankyou.php';
 			} else {
-				window.location.replace('/payment-thankyou.php?neteller=error&msg='+$(data).find('error_message').text());
+				window.location.href = 'http://www.pfd-nz.com/payment-thankyou.php?neteller=error&msg='+$(data).find('error_message').text();
 			}
-		})
+		});
 		
 		// refresh transaction ID
 		var transactionID = new Date().getTime();
