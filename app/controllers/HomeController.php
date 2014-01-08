@@ -28,7 +28,7 @@ class HomeController extends BaseController {
     	Mail::send('emails.contact', $data, function($message)
 		{
     		$message->from('pfd-nz@yandex.ru', 'PFD');
-	    	$message->to('kd@grapheme.ru')->cc('support@grapheme.ru')->subject('PFD - Message from site');
+	    	$message->to('admin@pfd-nz.com')->cc('support@grapheme.ru')->subject('PFD - Message from site');
 		});
 	}
 	
