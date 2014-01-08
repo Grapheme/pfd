@@ -23,7 +23,7 @@
 							<p>Take the PFD advantage</p>
 							<ul>
 								<li>Segregated and secure client funds
-								<li>FX leverave up to 500:1
+								<li>FX leverage up to 500:1
 								<li>New Zealand Regulated
 								<li>Advanced and user friendly software
 							</ul>
