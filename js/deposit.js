@@ -81,9 +81,9 @@ $(function(){
 		var params = $(this).serialize();
 		$.post('neteller?'+params, function(data){
 			if ( $(data).find('approval').text() == 'yes' ) {
-				window.location.href = 'http://www.pfd-nz.com/payment-thankyou.php';
+				window.location.href = 'http://www.pfd-nz.com/thanks';
 			} else {
-				window.location.href = 'http://www.pfd-nz.com/payment-thankyou.php?neteller=error&msg='+$(data).find('error_message').text();
+				window.location.href = 'http://www.pfd-nz.com/thanks?neteller=error&msg='+$(data).find('error_message').text();
 			}
 		});
 		

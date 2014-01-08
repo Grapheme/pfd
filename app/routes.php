@@ -32,5 +32,8 @@ Route::get('white', function() { return View::make('white'); });
 Route::get('withdrawal', function() { return View::make('withdrawal'); });
 Route::get('spread', function() { return View::make('spread'); });
 Route::get('deposit', function() { return View::make('deposit'); });
+
+Route::get('thanks', function() { return View::make('thanks'); });
+
 Route::post('neteller', "HomeController@neteller");
 Route::post('contact_send', "HomeController@contact_send");

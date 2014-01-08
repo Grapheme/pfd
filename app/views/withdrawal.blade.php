@@ -18,16 +18,25 @@
 		        				<p>
 		        					<span class="static-block-title">Please fill out the form below and send</span>
 		        				</p>
-		        				<div class="normal-list">
-		        					<div class="normal-list-title">1.) if in physical form to:</div>
-		        					<div class="normal-list-item">
-			        					Pacific Financial Derivatives Ltd.
-										<br>PO Box 10041, Dominion Road,
-										<br>Auckland 1446
-										<br>New Zealand 
-		        					</div>
-		        					<div class="normal-list-title">2.) if in digital form to <a class="our-link" href="mailto:backoffice@pfd-nz.com">backoffice@pfd-nz.com</a></div>
-		        				</div>
+		        				<p>
+			        				<div class="normal-list">
+			        					<div class="normal-list-title">1.) if in physical form to:</div>
+			        					<div class="normal-list-item">
+				        					Pacific Financial Derivatives Ltd.
+											<br>PO Box 10041, Dominion Road,
+											<br>Auckland 1446
+											<br>New Zealand 
+			        					</div>
+			        					<div class="normal-list-title">2.) if in digital form to <a class="our-link" href="mailto:backoffice@pfd-nz.com">backoffice@pfd-nz.com</a></div>
+			        				</div>
+			        			</p>
+		        			</div>
+		        			<div class="desc">
+				            	<p>
+				            		<span class="static-block-title">PFD Withdrawal Form</span>
+				            	</p>
+				                <p>Withdrawal form is  essentially designed for overseas bank wire. However, clients may use the same  form irrespective of the mode of &nbsp;withdrawal and fill in needed  particulars therein. </p>
+		        				<a href="./downloads/PFD_Withdrawal_Form.pdf" class="our-button" target="_blank">Download Withdrawal Form</a>
 		        			</div>
 		        	</div>
 	        </section>

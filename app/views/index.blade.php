@@ -42,7 +42,7 @@
 	        
 	        <section class="main-menu">
 	        	<ul>
-	        		<li><a href="reg#online">Online sign up<br>for individuals</a>
+	        		<li><a href="https://kiwi.pfd-nz.com/signup/logon">Online sign up<br>for individuals</a>
 	        		<li><a href="reg#paper">Paper mode<br>account opening</a>
 	        		<li><a href="reg#demo">Demo account<br>registration</a>
 	        		<li><a href="deposit">Deposit<br>Options</a>
