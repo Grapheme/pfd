@@ -1,10 +1,5 @@
 @extends('layouts/main')
 
-<?php
-var_dump($_REQUEST);
-exit;
-?>
-
 @section('wrapper')
 	wrapper
 @stop
@@ -21,9 +16,6 @@ exit;
 
 		        				<?php
 
-		        				var_dump($_REQUEST);
-
-
 		        				if ( isset($_GET["msg"]) ) {
 									echo '<h1>ERROR. Transaction is NOT completed.</h1><p>' . $_GET['msg'] . '</p>';
 								} else {
@@ -35,7 +27,8 @@ exit;
 									</p>';
 								}
 
-								?>	
+								?>
+								
 		        			</div>
 		        	</div>
 	        </section>
