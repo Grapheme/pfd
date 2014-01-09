@@ -81,9 +81,9 @@
 	        		@include('layouts/ptable')
 	        	</div>
 	        	<div class="main-desc">
-	        		<div class="main-desc-title">Risk Warning & Disclaimer</div>
-	        		<div class="main-desc-text">Trading in futures, options, forex and Over the Counter (OTC) products offered as Contract For Differences (CFDs) by Pacific Financial Derivatives Limited, company #973842 is speculative in nature and not appropriate for all investors. Investors should only use risk capital when trading futures, options, forex and CFDs because there is always the risk of substantial loss. It is important investors carefully consider their objective, financial situation and level of experience. It is recommended that investors seek independent advice before trading. Account access, trade executions and system response may be adversely affected by market conditions, quote delays, system performance and other factors. 
-					PFD Disclosure Statement and PFD General Terms & Conditions are available at www.pfd-nz.com.</div>
+	        		<div class="f_header">Risk Warning & Disclaimer</div>
+	        		<div class="main-desc-text risk-text">Trading in futures, options, forex and Over the Counter (OTC) products offered as Contract For Differences (CFDs) by Pacific Financial Derivatives Limited, company #973842 is speculative in nature and not appropriate for all investors. Investors should only use risk capital when trading futures, options, forex and CFDs because there is always the risk of substantial loss. It is important investors carefully consider their objective, financial situation and level of experience. It is recommended that investors seek independent advice before trading. Account access, trade executions and system response may be adversely affected by market conditions, quote delays, system performance and other factors.<br> 
+					<a href="./downloads/PFD_Disclosure_Statement.pdf" class="our-link">PFD Disclosure Statement</a> and <a href="./downloads/PFD_General_Terms_and_Conditions.pdf" class="our-link">PFD General Terms & Conditions</a><!-- are available at www.pfd-nz.com.--></div>
 	        	</div>
 	        </section>
 	

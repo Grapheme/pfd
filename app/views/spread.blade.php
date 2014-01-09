@@ -46,9 +46,10 @@
 		        				<p>
 		        					Trust you liked what you saw. <a href="reg#demo" class="our-link">Open a demo PFDTrader (MT4) account today</a> and start making the most out of your trades. You'll benefit from ECN/STP broker one of the best execution and trading conditions.
 		        				</p>
-		        				<p>
-		        					Disclaimer: All data feeds presented are live feeds directly from each broker's trading platform. Myfxbook/PFD is not liable for any inaccuracies contained in the data presented.
-		        				</p>
+		        			</div>
+		        			<div class="f_header">Disclaimer:</div>
+		        			<div class="desc risk-text">
+		        					All data feeds presented are live feeds directly from each broker's trading platform. Myfxbook/PFD is not liable for any inaccuracies contained in the data presented.
 		        			</div>
 		        	</div>
 	        </section>

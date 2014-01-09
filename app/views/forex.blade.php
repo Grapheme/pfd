@@ -214,7 +214,7 @@
 	        					</p>
 		        			</div>
 		        			<div class="f_header">Risk Warning:</div>
-		        			<div class="desc">
+		        			<div class="desc risk-text">
 		        				Trading in FX products involves risks. FX products carry a high degree of risk; any transaction involving currencies is exposed to, among other things, changes in a country’s political condition, economic climate, acts of nature and so on, all of which may substantially affect the price or availability of a given currency.
 		        			</div>
 		        	</div>

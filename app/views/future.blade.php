@@ -149,7 +149,7 @@
 								</p>
 		        			</div>
 		        			<div class="f_header">Risk Warning:</div>
-		        			<div class="desc">
+		        			<div class="desc risk-text">
 		        				Derivative markets can be highly volatile. Accordingly, the risk of loss in trading in derivatives (which includes Futures Contracts) can be substantial. Over The Counter (OTC)/Off-Exchange Products offered as CFDs involve significant risks and may not be suitable for all investors.
 		        			</div>
 		        	</div>
