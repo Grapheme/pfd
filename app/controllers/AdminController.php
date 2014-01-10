@@ -15,22 +15,46 @@ class AdminController extends BaseController {
 	|
 	*/
 
-	public function login()
+	public function index()
 	{
 				/*if($_GET['pass'] == $user[0]->pass) {
 					return Redirect::to('user/login');
 				}*/
-
-				if (Auth::attempt(array('user' => 'admin','password' => '123456')))
-				{
-				    echo 1;
-				} else {
-					echo 2;
-				}
-				if (Auth::check())
+		
+				
+				/*if (Auth::check())
 				{
 				     return "You're logged in!";
-				}
+				}*/
+		if (Auth::check())
+		{
+			return Redirect::to('panel');
+		} else {
 			return View::make('admin.login');
+		}
+	}
+
+	public function login() {
+		if (Auth::attempt(array('user' => Input::get('user'),'password' => Input::get('password') )))
+		{
+		    return Redirect::to('panel');
+		} else {
+			echo "Your password or user are not correct";
+		}
+
+		if (Auth::check())
+		{
+		    return Redirect::to('panel');
+		}
+	}
+
+	public function panel() {
+		return View::make('admin.panel');
+	}
+
+	public function logout()
+	{
+		Auth::logout();
+		return Redirect::route('login');
 	}
 }

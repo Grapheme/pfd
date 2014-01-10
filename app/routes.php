@@ -33,7 +33,10 @@ Route::get('withdrawal', function() { return View::make('withdrawal'); });
 Route::get('spread', function() { return View::make('spread'); });
 Route::get('deposit', function() { return View::make('deposit'); });
 
-Route::get('login', "AdminController@login");
+Route::get('login', array('as' => 'login', 'uses' => "AdminController@index"));
+Route::post('login', "AdminController@login");
+Route::get('panel', array('before' => 'auth', 'uses' => "AdminController@panel"));
+Route::get('logout', "AdminController@logout");
 
 Route::get('thanks', function() { return View::make('thanks'); });
 

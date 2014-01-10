@@ -1,5 +1,6 @@
-{{ Form::open(array(
-            "action" => "AdminController@login",
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
+
+<div style="width: 300px; margin: 0 auto;">{{ Form::open(array(
             'class' => 'pure-form pure-form-stacked'
         )) 
     }}
@@ -23,3 +24,4 @@
     }}
 
     {{ Form::close() }}
+</div>

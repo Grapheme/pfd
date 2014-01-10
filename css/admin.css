@@ -1,0 +1,29 @@
+
+.left-panel {
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 250px;
+	background: #cacaca;
+}
+
+.left-option {
+	display: block;
+	width: 100%;
+	height: 50px;
+	color: #000;
+	text-decoration: none;
+	font-size: 20px;
+	line-height: 50px;
+	text-indent: 30px;
+}
+
+.left-option:hover {
+	background: #fff;
+}
+
+.logout {
+	position: absolute;
+	bottom: 0;
+}
