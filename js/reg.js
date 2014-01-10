@@ -1,6 +1,10 @@
 function regStart() {
 	var $toCat = window.location.hash;
 	$toCat = $toCat.replace('#','');
+
+	//redirect to old site
+	if($toCat == 'online') window.location.href = "https://kiwi.pfd-nz.com/signup/logon"; return false;
+
 	$('.account-choose-a[data-type=' + $toCat + ']').addClass('active');
 	$('.account-div[data-type=' + $toCat + ']').fadeIn();
 	if($toCat == '') {

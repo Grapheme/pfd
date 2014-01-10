@@ -7,7 +7,7 @@
 
 
 @section('scripts')
-	<script src="<?=URL::to('js/reg.js');?>"></script>
+	<script src="js/reg.js"></script>
 @stop
 
 

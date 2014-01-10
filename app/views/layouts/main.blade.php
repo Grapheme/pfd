@@ -25,12 +25,12 @@
 		<meta name="ICBM" content="-36.904472, 174.74346" />
 
 		<link href="./favicon.ico" rel="shortcut icon" type="image/x-icon" />
-		<link rel="stylesheet" href="./css/fonts.css">
-        <link rel="stylesheet" href="./css/normalize.css">
-        <link rel="stylesheet/less" type="text/css" href="./less/main.less">
-        <link href="./css/fotorama.css" rel="stylesheet">
-		<script src="./js/vendor/less-1.5.0.min.js"></script>
-        <script src="./js/vendor/modernizr-2.6.2.min.js"></script>
+		<link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet/less" type="text/css" href="less/main.less">
+        <link href="css/fotorama.css" rel="stylesheet">
+		<script src="js/vendor/less-1.5.0.min.js"></script>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     <body class="main">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -178,7 +178,7 @@
 		</div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="./js/vendor/fotorama.js"></script>
+        <script src="js/vendor/fotorama.js"></script>
         @yield('scripts')
-        <script src="./js/plugins.js"></script>
-        <script src="./js/main.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
