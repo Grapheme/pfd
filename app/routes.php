@@ -33,6 +33,8 @@ Route::get('withdrawal', function() { return View::make('withdrawal'); });
 Route::get('spread', function() { return View::make('spread'); });
 Route::get('deposit', function() { return View::make('deposit'); });
 
+Route::get('login', "AdminController@login");
+
 Route::get('thanks', function() { return View::make('thanks'); });
 
 Route::post('neteller', "HomeController@neteller");

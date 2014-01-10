@@ -9,14 +9,28 @@
         <title>Pacific Financial Derivatives Ltd: The online trading provider matching highest standards in integrity and safety</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Keywords" content="online cfd trading, best execution broker, fx trading, fx trading nz, forex trading nz, tight fx spreads"/>
+		<meta name="Description" content="PFD is the best execution broker dealing in FX trading NZ and PFD trading. Enjoy benefits including segregated and secure client funds, flexible technical analysis function and many more."/>
+		<meta name="Author" content="Pacific Financial Derivatives Ltd."/>
+		<meta name="Copyright" content="Pacific Financial Derivatives Ltd."/>
+		<meta name="Email" content="info@pfd-nz.com"/>
+		<meta name="Distribution" content="Global"/>
+		<meta name="Rating" content="General"/>
+		<meta name="Language" content="en"/>
+		<meta name="google-site-verification" content="ULOfWrgfRc-WcGFRkRXPBacWaucFLF_OOXc0Yx3JkI8" />
+		<meta name="msvalidate.01" content="8DC20B3DBB489C542A9C57883A7C16B5" />
+		<meta name="DC.title" content="Tight FX spreads, Regulated FX broker , Best execution broker, Fx trading, Nz derivatives broker, Nz futures broker, System trading broker" />
+		<meta name="geo.region" content="NZ-AUK" />
+		<meta name="geo.position" content="-36.904472;174.74346" />
+		<meta name="ICBM" content="-36.904472, 174.74346" />
 
-		<link href="<?=URL::to('favicon.ico');?>" rel="shortcut icon" type="image/x-icon" />
-		<link rel="stylesheet" href="<?=URL::to('css/fonts.css');?>">
-        <link rel="stylesheet" href="<?=URL::to('css/normalize.css');?>">
-        <link rel="stylesheet/less" type="text/css" href="<?=URL::to('less/main.less');?>">
-        <link href="<?=URL::to('css/fotorama.css');?>" rel="stylesheet">
-		<script src="<?=URL::to('js/vendor/less-1.5.0.min.js');?>"></script>
-        <script src="<?=URL::to('js/vendor/modernizr-2.6.2.min.js');?>"></script>
+		<link href="./favicon.ico" rel="shortcut icon" type="image/x-icon" />
+		<link rel="stylesheet" href="./css/fonts.css">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet/less" type="text/css" href="./less/main.less">
+        <link href="./css/fotorama.css" rel="stylesheet">
+		<script src="./js/vendor/less-1.5.0.min.js"></script>
+        <script src="./js/vendor/modernizr-2.6.2.min.js"></script>
     <body class="main">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -164,7 +178,7 @@
 		</div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="<?=URL::to('js/vendor/fotorama.js');?>"></script>
+        <script src="./js/vendor/fotorama.js"></script>
         @yield('scripts')
-        <script src="<?=URL::to('js/plugins.js');?>"></script>
-        <script src="<?=URL::to('js/main.js');?>"></script>
+        <script src="./js/plugins.js"></script>
+        <script src="./js/main.js"></script>

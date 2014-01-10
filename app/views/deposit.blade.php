@@ -7,7 +7,7 @@
 @section('content')
 
 @section('scripts')
-	<script src="<?=URL::to('js/deposit.js');?>"></script>
+	<script src="./js/deposit.js"></script>
 @stop	
 	
 			<section class="normal">
