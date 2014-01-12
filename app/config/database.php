@@ -57,7 +57,7 @@ return array(
 			'host'      => 'localhost',
 			'database'  => 'pfd',
 			'username'  => 'root',
-			'password'  => '',
+			'password'  => 'GaopI4',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
