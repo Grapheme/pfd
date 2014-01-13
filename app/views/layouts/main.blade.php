@@ -6,12 +6,9 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Pacific Financial Derivatives Ltd: The online trading provider matching highest standards in integrity and safety</title>
-        <meta name="description" content="">
+        @yield('meta')
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="Keywords" content="online cfd trading, best execution broker, fx trading, fx trading nz, forex trading nz, tight fx spreads"/>
-		<meta name="Description" content="PFD is the best execution broker dealing in FX trading NZ and PFD trading. Enjoy benefits including segregated and secure client funds, flexible technical analysis function and many more."/>
-		<meta name="Author" content="Pacific Financial Derivatives Ltd."/>
+        <meta name="Author" content="Pacific Financial Derivatives Ltd."/>
 		<meta name="Copyright" content="Pacific Financial Derivatives Ltd."/>
 		<meta name="Email" content="info@pfd-nz.com"/>
 		<meta name="Distribution" content="Global"/>
@@ -23,6 +20,7 @@
 		<meta name="geo.region" content="NZ-AUK" />
 		<meta name="geo.position" content="-36.904472;174.74346" />
 		<meta name="ICBM" content="-36.904472, 174.74346" />
+		<meta name="alexaVerifyID" content="e8CVzPl22NmC66poVlA1IgSW0PY" />
 
 		<link href="./favicon.ico" rel="shortcut icon" type="image/x-icon" />
 		<link rel="stylesheet" href="css/fonts.css">
@@ -173,6 +171,14 @@
 	        		</div>
 	        		<a href="./" class="ftr-logo"></div>
 	        	</div>
+
+	        	<!--do not modify this script -->
+				<div class='nanorep_loadingData' id='nanoRepProxyContainer' style='position:absolute;top:-500px;left:0px;'></div>
+				<script type='text/javascript'>var _nRepData = _nRepData || []; _nRepData['kb'] = '23452028'; _nRepData['float'] = {account: 'pfdnz', cdcVersion: 3, cdcFrame: '', scriptVersion: '2.22.2.31'}
+				/* API here */;
+				(function(){var windowLoadFunc = function(){var _nRepData = window._nRepData || [];_nRepData['windowLoaded'] = true;if (typeof(_nRepData['windowOnload']) === 'function') _nRepData['windowOnload']();};if (window.attachEvent)window.attachEvent('onload', windowLoadFunc);else if (window.addEventListener)window.addEventListener('load', windowLoadFunc, false);var sc = document.createElement('script');sc.type = 'text/javascript';sc.async = true;sc.defer = true;sc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'my.nanorep.com/widget/scripts/float.js';var _head = document.getElementsByTagName('head')[0];_head.appendChild(sc);})();
+				</script>
+				
 	        </footer>
 		
 		</div>

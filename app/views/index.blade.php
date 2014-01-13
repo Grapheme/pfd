@@ -1,5 +1,11 @@
 @extends('layouts/main')
 
+@section('meta')
+	<title>Best Forex Broker Online, FX Trading Nz</title>
+	<meta name="Description" content="PFD is the best execution broker dealing in FX trading NZ and PFD trading. Enjoy benefits of flexible technical analysis function and many more."/>
+	<meta name="Keyword" content="Best Forex Broker Online, FX Trading Nz, Best Execution Broker"/>
+@stop
+
 @section('wrapper')
 	index-wrapper wrapper
 @stop

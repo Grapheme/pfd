@@ -1,5 +1,11 @@
 @extends('layouts/main')
 
+@section('meta')
+	<title>Nz futures broker, Nz CFD broker</title>
+	<meta name="Description" content="Pacific financial derivatives provide you Clients fund secured broker services in new Zealand. We provide our customers one of the top trading systems available in the world."/>
+	<meta name="Keyword" content="Nz futures broker, Nz CFD broker, Clients fund secured broker"/>
+@stop
+
 @section('wrapper')
 	wrapper
 @stop

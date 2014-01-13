@@ -2,5 +2,5 @@
 
 
 @section('content')
-	Main Admin Page
+	Главная страница
 @stop

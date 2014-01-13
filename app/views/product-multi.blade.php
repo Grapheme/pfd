@@ -1,5 +1,11 @@
 @extends('layouts/main')
 
+@section('meta')
+	<title>Forex Practice Account</title>
+	<meta name="Description" content="Multi Account Manager (MAM) is designed for Money Managers to execute block orders on the Master Account. For more information contact on + 64 9 6320129"/>
+	<meta name="Keyword" content="Forex Practice Account"/>
+@stop
+
 @section('wrapper')
 	wrapper
 @stop

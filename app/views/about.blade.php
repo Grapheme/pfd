@@ -1,5 +1,11 @@
 @extends('layouts/main')
 
+@section('meta')
+	<title>About Us - Pacific Financial Derivatives </title>
+	<meta name="Description" content="We are the leading company offers world-class brokerage and trading platforms for trading in Spot Foreign Exchange, Spot Metals, Spot Oil, Commodities etc"/>
+	<meta name="Keyword" content="Pacific Financial Derivatives"/>
+@stop
+
 @section('wrapper')
 	wrapper
 @stop

@@ -1,5 +1,11 @@
 @extends('layouts/main')
 
+@section('meta')
+	<title>Best Mt4 Forex Broker, Regulated FX Broker, Demo Metatrader4</title>
+	<meta name="Description" content="PFD Trader is user friendly dealing and order management system which allows PFD clients to access global markets in real time."/>
+	<meta name="Keyword" content="Best Mt4 Forex Broker, Regulated FX Broker, Demo Metatrader4"/>
+@stop
+
 @section('wrapper')
 	wrapper
 @stop

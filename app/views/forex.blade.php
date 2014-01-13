@@ -1,5 +1,11 @@
 @extends('layouts/main')
 
+@section('meta')
+	<title>Forex Trading Nz, FX Trading</title>
+	<meta name="Description" content="PFD is a 100% NZ operated foreign currency exchange firm providing comprehensive FX Trading services to its global clients. Enquiry now."/>
+	<meta name="Keyword" content="Forex Trading Nz, FX Trading"/>
+@stop
+
 @section('wrapper')
 	wrapper
 @stop

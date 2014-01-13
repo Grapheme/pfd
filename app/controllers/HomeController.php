@@ -28,8 +28,19 @@ class HomeController extends BaseController {
     	Mail::send('emails.contact', $data, function($message)
 		{
     		$message->from('pfd-nz@yandex.ru', 'PFD');
-	    	$message->to('admin@pfd-nz.com')->cc('support@grapheme.ru')->subject('PFD - Message from site');
+	    	$message->to('admin@pfd-nz.com')->subject('PFD - Message from site');
 		});
+	}
+
+	public function newsPage() {
+		$news = News::all();
+		return View::make('press', array('news' => $news, 'action' => ''));
+	}
+
+	public function newsOnePage($id) {
+		$news = News::all();
+		$oneNews = News::find($id);
+		return View::make('press', array('news' => $news, 'oneNews' => $oneNews, 'action' => 'one'));
 	}
 	
 	public function neteller() {

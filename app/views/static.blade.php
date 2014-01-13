@@ -1,5 +1,11 @@
 @extends('layouts/main')
 
+@section('meta')
+	<title>Nz Derivatives Broker, Nz FX Broker, Best Option Broker</title>
+	<meta name="Description" content="Pacific Financial Derivatives is the logical choice when looking for brokering services to serve the customer in very efficient way."/>
+	<meta name="Keyword" content="Nz Derivatives Broker, Nz FX Broker, Best Option Broker"/>
+@stop
+
 @section('wrapper')
 	wrapper
 @stop

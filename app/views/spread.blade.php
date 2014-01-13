@@ -1,5 +1,11 @@
 @extends('layouts/main')
 
+@section('meta')
+	<title>Tight FX Spreads, Zero Spread Broker</title>
+	<meta name="Description" content="In this section we offer Zero Spread Broker services to serve the clients worldwide in very efficient way. PFD prides that our spreads are among the most competitive in the industry."/>
+	<meta name="Keyword" content="Tight FX Spreads, Zero Spread Broker"/>
+@stop
+
 @section('wrapper')
 	wrapper
 @stop

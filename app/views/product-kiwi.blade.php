@@ -1,5 +1,11 @@
 @extends('layouts/main')
 
+@section('meta')
+	<title>Nz Online Trading, System Trading Broker, Fast Trading Broker</title>
+	<meta name="Description" content="Kiwi Trader is the most user friendly trading platform which PFD offers to serve for PFD clients worldwide. Please stay in touch on info@pfd-nz.com"/>
+	<meta name="Keyword" content="Nz Online Trading, System Trading Broker, Fast Trading Broker"/>
+@stop
+
 @section('wrapper')
 	wrapper
 @stop

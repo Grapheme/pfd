@@ -1,5 +1,11 @@
 @extends('layouts/main')
 
+@section('meta')
+	<title>Contact Us - Pacific Financial Derivatives </title>
+	<meta name="Description" content="At Pacific financial derivatives we are always interested in hearing from you. Although, we offer world-class brokerage and trading platforms. Please stay on touch on  HYPERLINK "mailto:info@pfd-nz.com" info@pfd-nz.com"/>
+	<meta name="Keyword" content="Pacific Financial Derivatives "/>
+@stop
+
 @section('wrapper')
 	wrapper
 @stop
