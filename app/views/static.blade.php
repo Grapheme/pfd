@@ -1,9 +1,9 @@
 @extends('layouts/main')
 
 @section('meta')
-	<title>Nz Derivatives Broker, Nz FX Broker, Best Option Broker</title>
+	<title>Nz Derivatives Broker, Nz FX Broker</title>
 	<meta name="Description" content="Pacific Financial Derivatives is the logical choice when looking for brokering services to serve the customer in very efficient way."/>
-	<meta name="Keyword" content="Nz Derivatives Broker, Nz FX Broker, Best Option Broker"/>
+	<meta name="Keyword" content="Nz Derivatives Broker, Nz FX Broker"/>
 @stop
 
 @section('wrapper')
@@ -41,7 +41,7 @@
 		        				</p>
 		        				<p>
 									<span class="static-block-title">How and when can an IB withdraw the rebate?</span>
-									Like any other client, an IB can download a withdrawal <a class="our-link" href="withdrawal">Withdrawal Form</a>, fill in and scan to <a class="our-link" href="mailto:backoffice@pfd-nz.com">backoffice@pfd-nz.com</a> for real time processing to receive the payment.
+									Like any other client, an IB can download a <a class="our-link" href="withdrawal">Withdrawal Form</a>, fill in and scan to <a class="our-link" href="mailto:backoffice@pfd-nz.com">backoffice@pfd-nz.com</a> for real time processing to receive the payment.
 								</p>
 		        			</div>
 		        		</div>
@@ -60,7 +60,7 @@
 								
 								<p>
 									<span class="static-block-title">IB business promotion</span>
-									PFD values its IBs and always supports IBs and keep in touch with IBs to make the partnership mutually beneficial. IBs can create their own website and promote PFD as their favourite broker.
+									PFD values its IBs and always supports IBs and keeps in touch with IBs to make the partnership mutually beneficial. IBs can create their own website and promote PFD as their favourite broker.
 								</p>
 								<p>
 									<span class="static-block-title">Where do I find promo items?</span>

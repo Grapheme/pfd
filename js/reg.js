@@ -4,8 +4,8 @@ function regStart() {
 	$('.account-choose-a[data-type=' + $toCat + ']').addClass('active');
 	$('.account-div[data-type=' + $toCat + ']').fadeIn();
 	if($toCat == '') {
-		$('.account-choose-a[data-type=paper]').addClass('active');
-		$('.account-div[data-type=paper]').show();
+		$('.account-choose-a[data-type=demo]').addClass('active');
+		$('.account-div[data-type=demo]').show();
 	} else if($toCat == 'online') {
 		window.location.href = "https://kiwi.pfd-nz.com/signup/logon";
 	}

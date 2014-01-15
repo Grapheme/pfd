@@ -12,7 +12,7 @@
 
 
 @section('scripts')
-	<script src="js/reg.js"></script>
+	<script src="<?=slink::path('js/reg.js')?>"></script>
 @stop
 
 
@@ -21,9 +21,9 @@
 	
 			<section class="account-choose">
 	        	<ul class="account-ul">
-	        		<li class="account-li"><a href="#" class="account-choose-a" data-type="paper">paper mode account</a>
-	        		<li class="account-li"><a href="https://kiwi.pfd-nz.com/signup/logon" class="account-choose-a" data-type="online">Online sign up</a>
 	        		<li class="account-li"><a href="#" class="account-choose-a" data-type="demo">Demo account</a>
+	        		<li class="account-li"><a href="https://kiwi.pfd-nz.com/signup/logon" class="account-choose-a" data-type="online">Online sign up</a>
+	        		<li class="account-li"><a href="#" class="account-choose-a" data-type="paper">paper mode account</a>
 	        	</ul>
 	        </section>
 	       	<section class="normal">
@@ -140,6 +140,17 @@
 		       			<div class="account-in-div">
 		       				<div class="account-div-cont">
 			       				<div class="f_header">
+			       					PFD Trader Demo (MT4)
+			       				</div>
+			       				<div class="desc">
+			       					System requirements: Windows XP and newer versions
+			       				</div>
+			       				<a href="./downloads/pfd4setup.exe" class="download-button-blue">Download PFD Trader setup.exe</a>
+			       			</div>
+			       		</div>
+		       			<div class="account-in-div">
+		       				<div class="account-div-cont">
+			       				<div class="f_header">
 			       					Kiwi Trader Gold Zero
 			       				</div>
 			       				<div class="desc">
@@ -149,17 +160,6 @@
 			       				<a href="./downloads/KiwiTraderSetup.exe" class="download-button-blue">Download Kiwi Trader software.exe</a>
 			       			</div>
 		       			</div>
-		       			<div class="account-in-div">
-		       				<div class="account-div-cont">
-			       				<div class="f_header">
-			       					PFD Trader Demo (MT4)
-			       				</div>
-			       				<div class="desc">
-			       					System requirements: Windows XP and newer versions
-			       				</div>
-			       				<a href="./downloads/pfd4setup.exe" class="download-button-blue">Download PFD Trader setup.exe</a>
-			       			</div>
-			       		</div>
 		       		</div>
 		       	</div>
 	        </section>

@@ -67,7 +67,11 @@ class AdminController extends BaseController {
 	}
 
 	public function doNew() {
-		$news = News::create(array('title' => Input::get('title'), 'text' => Input::get('text'), 'desc' => Input::get('desc')));
+		$news = News::create(array(
+			'title' => Input::get('title'), 
+			'text' => Input::get('text'), 
+			'desc' => Input::get('desc')
+			));
 		return Redirect::to('admin/news');
 	}
 
@@ -84,6 +88,49 @@ class AdminController extends BaseController {
 	public function newsDelete($id) {
 		News::destroy($id);
 		return Redirect::to('admin/news');
+	}
+
+	public function pages() {
+		$pages = Page::all();
+		return View::make('admin.pages', array('pages' => $pages, 'action' => ''));
+	}
+
+	public function pagesEdit($id) {
+		$pages = Page::find($id);
+		return View::make('admin.pages', array('pages' => $pages, 'action' => 'edit'));
+	}
+
+	public function pagesDoEdit($id) {
+		$pages = Page::find($id);
+		$pages->name = Input::get('name');
+		$pages->url = Input::get('url');
+		$pages->meta = Input::get('meta');
+		$pages->scripts = Input::get('scripts');
+		$pages->content = Input::get('content');
+		$pages->wrapper = Input::get('wrapper');
+		$pages->save();
+		return Redirect::to('admin/pages');
+	}
+
+	public function pagesNew() {
+		return View::make('admin.pages', array('action' => 'new'));
+	}
+
+	public function pagesDelete($id) {
+		Page::destroy($id);
+		return Redirect::to('admin/pages');
+	}
+
+	public function pagesDoNew() {
+		$pages = Page::create(array(
+			'name' => Input::get('name'),
+			'url' => Input::get('url'),
+			'meta' => Input::get('meta'),
+			'scripts' => Input::get('scripts'),
+			'content' => Input::get('content'),
+			'wrapper' => Input::get('wrapper')
+			));
+		return Redirect::to('admin/pages');
 	}
 
 	public function logout()

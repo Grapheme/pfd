@@ -106,6 +106,20 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.kiwi-back {
+  background: url(../img/ipad-kiwi.png) no-repeat bottom left;
+}
+
+.asterisk {
+  color: red;
+  margin-left: 5px;
+}
+
+.column-red, .span-red {
+  color: red;
+  font-weight: 700;
+}
+
 /*
  * All variables
  */
@@ -237,7 +251,8 @@ textarea {
 	height: 10px;
 	width: 10px;
 	margin-left: 4px;
-    margin-top: 10px;
+  top: 5px;
+  display: inline-block;
 	
 	&:before {
 		content: "";
@@ -355,7 +370,8 @@ textarea {
 	input {
 		border: 0 none;
 		height: 30px;
-		padding-left: 5px;
+    padding-right: 0;
+		padding-left: 3%;
 		.placeholder;
 		width: 97%;
 		.noneOutline;
@@ -1069,7 +1085,7 @@ section.normal {
 
 .account-div[data-type=demo] {
 	padding: 0;
-	height: 510px;
+	height: 540px;
 	background: url(../img/demo-people.png) no-repeat right bottom rgba(0, 0, 0, 0);
 }
 
@@ -1317,6 +1333,10 @@ section.normal {
  * CONTACTS PAGE
  */
 
+.contact-input {
+  .ourInput; 
+}
+
 .contacts {
 	.mid_block;
 	
@@ -1336,11 +1356,6 @@ section.normal {
 		
 		.contacts-block-title {
 			.small-title
-			
-		}
-		
-		.contact-input {
-			.ourInput;
 			
 		}
 		

@@ -22,13 +22,13 @@
 		<meta name="ICBM" content="-36.904472, 174.74346" />
 		<meta name="alexaVerifyID" content="e8CVzPl22NmC66poVlA1IgSW0PY" />
 
-		<link href="./favicon.ico" rel="shortcut icon" type="image/x-icon" />
-		<link rel="stylesheet" href="css/fonts.css">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet/less" type="text/css" href="less/main.less">
-        <link href="css/fotorama.css" rel="stylesheet">
-		<script src="js/vendor/less-1.5.0.min.js"></script>
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+		<link href="<?=slink::path('favicon.ico');?>" rel="shortcut icon" type="image/x-icon" />
+		<link rel="stylesheet" href="<?=slink::path('css/fonts.css');?>">
+        <link rel="stylesheet" href="<?=slink::path('css/normalize.css');?>">
+        <link rel="stylesheet/less" type="text/css" href="<?=slink::path('less/main.less');?>">
+        <link href="<?=slink::path('css/fotorama.css');?>" rel="stylesheet">
+		<script src="<?=slink::path('js/vendor/less-1.5.0.min.js');?>"></script>
+        <script src="<?=slink::path('js/vendor/modernizr-2.6.2.min.js');?>"></script>
     <body class="main">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -76,7 +76,7 @@
 	        						<li><a href="broker">Introducing broker</a>
 	        						<li><a href="press">Press room</a>
 	        					</ul>
-	        				<li><a href="#">Platform</a>
+	        				<li><a href="#">Platforms</a>
 	        					<ul class="header-sub-menu">
 	        						<li><a href="product-kiwi">Kiwi trader</a>
 	        						<li><a href="product">PFD trader (MT4)</a>
@@ -99,7 +99,7 @@
 	        					    <li><a href="chat">Chat/Phone Trading</a>
 	        					</ul>
 	        				<li><a href="product-multi">MAM</a>
-	        				<li><a href="spread">Spread Comparison</a>
+	        				<li><a href="spread">Spreads Comparison</a>
 	        				<li><a href="contacts">Contact</a>
 	        			</ul>
 	        		</nav>
@@ -113,9 +113,9 @@
 	        	</div>
 	        	<ul>
 	        		<li>
-	        			<a href="reg#paper" class="traider-link">
-	        				<span class="f_header">Paper mode account</span>
-	        				<span class="desc">Once you have decided which of the account forms are right for you, please download the corresponding PDF form from our website right here. Now you can proceed and fill the account opening form.</span>
+	        			<a href="reg#demo" class="traider-link">
+	        				<span class="f_header">Demo account</span>
+	        				<span class="desc">Test your trading strategies in a real-time environment and familiarize yourself with all the features of PFD Demonstrations's PFDTrader - with no risk and no obligation. Register below and we'll give you PFD Demonstrations's $50,000 virtual margin deposit and access to a fully functional version of PFDTrader for the next 15-days.</span>
 	        			</a>
 	        		<li>
 	        			<!--<a href="reg#online" class="traider-link">-->
@@ -124,9 +124,9 @@
 	        				<span class="desc">Online sign up is intended to be completed in conjunction with the relevant provisions of Pacific Financial Derivative Limited’s Individual Account Client Services Agreement Individual Account. First step is to register user name, password and email id.</span>
 	        			</a>
 	        		<li>
-	        			<a href="reg#demo" class="traider-link">
-	        				<span class="f_header">Demo account</span>
-	        				<span class="desc">Test your trading strategies in a real-time environment and familiarize yourself with all the features of PFD Demonstrations's PFDTrader - with no risk and no obligation. Register below and we'll give you PFD Demonstrations's $50,000 virtual margin deposit and access to a fully functional version of PFDTrader for the next 15-days.</span>
+	        			<a href="reg#paper" class="traider-link">
+	        				<span class="f_header">Paper mode account</span>
+	        				<span class="desc">Once you have decided which of the account forms are right for you, please download the corresponding PDF form from our website right here. Now you can proceed and fill the account opening form.</span>
 	        			</a>
 	        	</ul>
 	        </div>
@@ -169,7 +169,7 @@
 	        		<div class="ftr-copyright">
 	        			&copy; 2013 Pacific Financial Derivatives Ltd. All Rights Reserved.
 	        		</div>
-	        		<a href="./" class="ftr-logo"></div>
+	        		<a href="./" class="ftr-logo"></a>
 	        	</div>
 
 	        	<!--do not modify this script -->
@@ -182,9 +182,10 @@
 	        </footer>
 		
 		</div>
+	</body>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/vendor/fotorama.js"></script>
+        <script src="<?=slink::path('js/vendor/fotorama.js');?>"></script>
         @yield('scripts')
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <script src="<?=slink::path('js/plugins.js');?>"></script>
+        <script src="<?=slink::path('js/main.js');?>"></script>

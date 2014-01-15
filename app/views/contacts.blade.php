@@ -116,7 +116,13 @@
 	        		</div>
 	        		<div class="contacts-right-block">
 	        			<div class="contacts-block-in">
-	        				<div class="f_header">Contact form</div>
+	        				<div class="f_header">Popular questions</div>
+	        				<!--do not modify this script -->
+								<div id='nanoRepEmbedContainer'></div><script type='text/javascript'>var _nRepData = _nRepData || [];_nRepData['kb'] = '23452028';
+								/* API here */;
+								_nRepData['embed'] = {width:'260', height:'530', container: 'nanoRepEmbedContainer', account:'pfdnz', scriptVersion: '2.22.2.31'};(function(){var windowLoadFunc = function(){var _nRepData = window._nRepData || [];_nRepData['windowLoaded'] = true;if (typeof(_nRepData['windowOnload']) === 'function') _nRepData['windowOnload']();};if (window.attachEvent)window.attachEvent('onload', windowLoadFunc);else if (window.addEventListener)window.addEventListener('load', windowLoadFunc, false);var sc = document.createElement('script');sc.type = 'text/javascript';sc.async = true;sc.defer = true;sc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'my.nanorep.com/widget/scripts/embed.js'; var _head = document.getElementsByTagName('head')[0];_head.appendChild(sc);})();
+								</script>
+							<div class="f_header">Contact form</div>
 	        				<form>
 		        				<div class="contact-input"><input id="name" type="text" placeholder="Name"></div>
 		        				<div class="contact-input"><input id="email" type="text" placeholder="Email"></div>

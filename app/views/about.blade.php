@@ -39,8 +39,6 @@
 		       					<div class="gen_list">
 							    <div class="gen_list-item">NZ Financial Service Provider Register</div>
 							    <div class="gen_list-item">NZ Financial Dispute Resolution</div>
-							    <div class="gen_list-item"> Broker clearing member, Dubai Gold </div>    
-							    <div class="gen_list-item">& Commodities Exchange.</div>
 							    </div>
 		       				</div>
 		       			</div>
@@ -48,7 +46,7 @@
 		       		<div class="about-div">
 	       				<div class="about-div-cont">
 		       				<div class="desc">
-		       					<p>PFD offers world-class brokerage services and trading platforms for trading in Spot Foreign Exchange, Spot Metals, Spot Oil, Commodities, FX Options, CFDs, Indices and deals in Futures Contracts for small, medium and large investors and market participants across the globe. PFD has a blend of the best-in-class trading technology platforms, hassle-free trading execution and exceptional customer service. Based in Auckland, the financial centre of New Zealand where the financial market opens first in the world, PFD is the logical choice when looking for a broker of high end performance with a personal approach.</p>
+		       					<p>PFD offers world-class brokerage services and trading platforms for trading in Spot Foreign Exchange, Spot Metals, Spot Oil, Commodities, CFDs, Indices and deals in Futures CFD Contracts for small, medium and large investors and market participants across the globe. PFD has a blend of the best-in-class trading technology platforms, hassle-free trading execution and exceptional customer service. Based in Auckland, the financial centre of New Zealand where the financial market opens first in the world, PFD is the logical choice when looking for a broker of high end performance with a personal approach.</p>
 		       				</div>
 		       			</div>
 		       		</div>
@@ -79,7 +77,6 @@
 				             		documents of the companies.
 				             	</p>
 				             	<div class="gen_list">
-			       					<div class="gen_list-item">Broker Clearing Member of the Dubai Gold Commodities Exchange.</div>
 			       					<div class="gen_list-item">Member, Financial Service Provider Register, FSP 28944</div>
 			       				</div>
 			       				<a target="_blank" href="http://www.business.govt.nz/fsp/app/ui/fsp/version/searchSummaryCompanyFSP/FSP28944/13.do"><img alt="" src="img/nz.PNG"></a>

@@ -45,7 +45,7 @@
 
 		        				<div class="news-item">
 			        				<div class="f_header">{{$oneNews->title}}</div>
-			        				<a href="one-news?news=digital" class="news-date">{{date('d.m.y',strtotime($oneNews->created_at))}}</a>
+			        				<a href="press{{$oneNews->id}}" class="news-date">{{date('d.m.y',strtotime($oneNews->created_at))}}</a>
 			        				<div class="news-text">
 			        					{{$oneNews->text}}
 			        				</div>
@@ -59,7 +59,7 @@
 
 		        				<div class="news-item">
 			        				<div class="f_header">{{$new->title}}</div>
-			        				<a href="one-news?news=digital" class="news-date">{{date('d.m.y',strtotime($new->created_at))}}</a>
+			        				<a href="press{{$new->id}}" class="news-date">{{date('d.m.y',strtotime($new->created_at))}}</a>
 			        				<div class="news-text">
 			        					{{$new->desc}}
 			        				</div>

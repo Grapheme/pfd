@@ -15,6 +15,13 @@ class HomeController extends BaseController {
 	|
 	*/
 
+	public function getPage($page)
+	{
+		$page = Page::where('url', $page)->firstOrFail();
+		$data = array('meta' => $page->meta, 'wrapper' => $page->wrapper, 'content' => $page->content, 'scripts' => $page->scripts);
+		return View::make('pages', $data);
+	}
+
 	public function contact_send()
 	{
 		$name = Input::get('name');
@@ -29,6 +36,29 @@ class HomeController extends BaseController {
 		{
     		$message->from('pfd-nz@yandex.ru', 'PFD');
 	    	$message->to('admin@pfd-nz.com')->subject('PFD - Message from site');
+		});
+	}
+
+	public function mam_send()
+	{
+		$firstname = Input::get('firstname');
+		$lastname = Input::get('lastname');
+		$email = Input::get('email');
+		$phone = Input::get('phone');
+		$company = Input::get('company');
+		$country = Input::get('country');
+		
+		$data = array(	'firstname' => $firstname,
+						'lastname' => $lastname,
+						'email' => $email,
+						'phone' => $phone,
+						'company' => $company,
+						'country' => $country,
+						);
+    	Mail::send('emails.mam', $data, function($message)
+		{
+    		$message->from('pfd-nz@yandex.ru', 'PFD');
+	    	$message->to('admin@pfd-nz.com')->subject('PFD - APPLY FOR MAM ACCESS');
 		});
 	}
 

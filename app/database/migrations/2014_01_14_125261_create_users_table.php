@@ -28,6 +28,18 @@ class CreateUsersTable extends Migration {
 			$table->mediumText('text');
 			$table->timestamps();
 		});
+
+		Schema::create('pages', function(Blueprint $table)
+		{
+			$table->increments('id');
+			$table->string('name', 200);
+			$table->string('url', 200);
+			$table->text('meta');
+			$table->string('wrapper', 200);
+			$table->mediumText('content');
+			$table->text('scripts');
+			$table->timestamps();
+		});
 	}
 
 	/**

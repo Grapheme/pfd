@@ -38,10 +38,10 @@
 		        						The partner will handle and accept his own clients, accept clients’ deposits and manage clients’ funds.
 	        						</div>
 	        						<div class="gen_list-item">
-	        							White label partner will manage his clients’ orders, deal and order tracking for Margin FX.
+	        							White label partner can either manage his clients’ orders, deal and order tracking for Margin FX or clear with PFD.
 		        					</div>
 		        					<div class="gen_list-item">
-		        						PFD will support system and provide liquidity.
+		        						PFD can support both system and also provide executable liquidity.
 		        					</div>
 		        				</div>
 		        			</div>
@@ -52,12 +52,11 @@
 							<div class="desc">
 								<p>
 									<span class="static-block-title">Risk Management and Liability:</span>
-									PFD can work as an execution broker for the white label partner. PFD has the capability to STP/clear the white label partner’s clients’ trades and PFD provide reliable, executable liquidity in a transparent environment. The margin funds the partner maintains with PFD will enjoy clients fund protection as available under Futures Industry (Clients Funds) Regulation Act 1990.
+									PFD can work as an execution broker for the white label partner. PFD has the capability to STP/clear the white label partner’s clients’ trades and PFD provides reliable, executable liquidity in a transparent environment. The margin funds the partner maintain with PFD will enjoy clients fund protection as available under Futures Industry (Clients Funds) Regulation Act 1990.
 								</p>
 								<p>
 									<span class="static-block-title">Benefits:</span>
-									With a White Label from PFD, the partner will earn rebates for every trade, clients in a white label platform make and which is cleared with PFD. PFD has capability to offer base spreads to the partner’s clients and offer rebates to the partner.
-								</p>
+									With a White Label from PFD, the partner has the flexibility to risk manage its clients’s trades or enjoy executable liquidity from PFD.  PFD has capability to offer tight spreads to the partners’ clients.  On the top of the price,  PFD will charge commission @ US$10 per million per side for trades up to 10000 lots & @US$7 per million per side for trades over and above 10000 lots on a monthly basis. 								</p>
 								<p>
 									<span class="static-block-title">Pricing:</span>
 									PFD charges a one-time fee of USD $5,000 to set you up with the popular MT4 Trading platform plus USD $750 per month for technical support.

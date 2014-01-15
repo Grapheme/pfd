@@ -51,3 +51,43 @@ $('.contact-send').click(function(){
 	}
 	return false;
 });
+
+$('.mam-send').click(function(){
+	var $form = $(this).parent();
+	var $button = $(this);
+	var errors = 0;
+	$form.find('input').not('#email').not('#company').each(function(){
+		if($(this).val().length < 2) {
+			$(this).parent().addClass('error-input');
+			errors++;
+		} else {
+			$(this).parent().removeClass('error-input');
+		}
+	});
+	$form.find('input#email').each(function(){
+		if(!validateEmail($(this).val())) {
+			$(this).parent().addClass('error-input');
+			errors++;
+		} else {
+			$(this).parent().removeClass('error-input');
+		}
+	});
+	if(errors == 0) {
+		$button.fadeOut();
+		$.post( "mam_send", { 
+			firstname: $('#firstname').val(),
+			lastname: $('#lastname').val(),
+			email: $('#email').val(), 
+			phone: $('#phone').val(),
+			company: $('#company').val(),
+			country: $('#country').val(),
+			})
+		  .done(function( data ) {
+		    $form.fadeOut(function(){
+				$('.contact-sent').fadeIn();
+			});
+		  });
+		
+	}
+	return false;
+});
