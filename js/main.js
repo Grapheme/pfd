@@ -1,3 +1,7 @@
+$('.header-nav a[href=#]').click(function(){
+	return false;
+});
+
 var $fotoramaDiv = $('.fotorama').fotorama();
 var fotorama = $fotoramaDiv.data('fotorama');
 
@@ -100,6 +104,8 @@ if (!hasPlaceholderSupport()) {
         }).blur();
 }
 
+
+
 /*
  * DISABLE DRAG IMAGES
  */
@@ -107,6 +113,12 @@ if (!hasPlaceholderSupport()) {
 $(document).on("dragstart", function() {
      return false;
 });
+
+
+
+/*
+ * Search dynamics
+ */
 
 $('.search-img').click(function(e){
 	e.stopPropagation();

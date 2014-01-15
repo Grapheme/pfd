@@ -6,18 +6,29 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>PFD</title>
-        <meta name="description" content="">
+        @yield('meta')
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Author" content="Pacific Financial Derivatives Ltd."/>
+		<meta name="Copyright" content="Pacific Financial Derivatives Ltd."/>
+		<meta name="Email" content="info@pfd-nz.com"/>
+		<meta name="Distribution" content="Global"/>
+		<meta name="Rating" content="General"/>
+		<meta name="Language" content="en"/>
+		<meta name="google-site-verification" content="ULOfWrgfRc-WcGFRkRXPBacWaucFLF_OOXc0Yx3JkI8" />
+		<meta name="msvalidate.01" content="8DC20B3DBB489C542A9C57883A7C16B5" />
+		<meta name="DC.title" content="Tight FX spreads, Regulated FX broker , Best execution broker, Fx trading, Nz derivatives broker, Nz futures broker, System trading broker" />
+		<meta name="geo.region" content="NZ-AUK" />
+		<meta name="geo.position" content="-36.904472;174.74346" />
+		<meta name="ICBM" content="-36.904472, 174.74346" />
+		<meta name="alexaVerifyID" content="e8CVzPl22NmC66poVlA1IgSW0PY" />
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-		
-		<link rel="stylesheet" href="<?=URL::to('css/fonts.css');?>">
-        <link rel="stylesheet" href="<?=URL::to('css/normalize.css');?>">
-        <link rel="stylesheet/less" type="text/css" href="<?=URL::to('less/main.less');?>">
-        <link href="<?=URL::to('css/fotorama.css');?>" rel="stylesheet">
-		<script src="<?=URL::to('js/vendor/less-1.5.0.min.js');?>"></script>
-        <script src="<?=URL::to('js/vendor/modernizr-2.6.2.min.js');?>"></script>
+		<link href="./favicon.ico" rel="shortcut icon" type="image/x-icon" />
+		<link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet/less" type="text/css" href="less/main.less">
+        <link href="css/fotorama.css" rel="stylesheet">
+		<script src="js/vendor/less-1.5.0.min.js"></script>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     <body class="main">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -58,8 +69,9 @@
 	        	<div class="header-nav">
 	        		<nav>
 	        			<ul>
-	        				<li><a href="about">About Us</a>
+	        				<li><a href="#">About Us</a>
 	        					<ul class="header-sub-menu">
+	        						<li><a href="about">Company profile</a>
 	        						<li><a href="white">White label</a>
 	        						<li><a href="broker">Introducing broker</a>
 	        						<li><a href="press">Press room</a>
@@ -87,7 +99,7 @@
 	        					    <li><a href="chat">Chat/Phone Trading</a>
 	        					</ul>
 	        				<li><a href="product-multi">MAM</a>
-	        				<li><a href="spread">Spread Comprasion</a>
+	        				<li><a href="spread">Spread Comparison</a>
 	        				<li><a href="contacts">Contact</a>
 	        			</ul>
 	        		</nav>
@@ -106,7 +118,8 @@
 	        				<span class="desc">Once you have decided which of the account forms are right for you, please download the corresponding PDF form from our website right here. Now you can proceed and fill the account opening form.</span>
 	        			</a>
 	        		<li>
-	        			<a href="reg#online" class="traider-link">
+	        			<!--<a href="reg#online" class="traider-link">-->
+	        				<a href="https://kiwi.pfd-nz.com/signup/logon" class="traider-link">
 	        				<span class="f_header">Online sign up</span>
 	        				<span class="desc">Online sign up is intended to be completed in conjunction with the relevant provisions of Pacific Financial Derivative Limited’s Individual Account Client Services Agreement Individual Account. First step is to register user name, password and email id.</span>
 	        			</a>
@@ -124,7 +137,7 @@
 	        	<div class="footer-content cleafix">
 	        		<div class="ftr-top clearfix">
 		        		<ul class="ftr-links-list">
-		        			<li class="ftr-links-item"><a href="">Home</a>
+		        			<li class="ftr-links-item"><a href="./">Home</a>
 		        			<li class="ftr-links-item"><a href="product-multi">MAM</a>
 		        			<li class="ftr-links-item"><a href="legal">Legal</a>
 		        			<li class="ftr-links-item"><a href="spread">Spread comparison</a>
@@ -135,19 +148,20 @@
 		        			<li class="ftr-links-item list-head">About Us</a>
 		        			<li class="ftr-links-item"><a href="about">Welcome</a>
 		        			<li class="ftr-links-item"><a href="white">White label</a>
-		        			<li class="ftr-links-item"><a href="static">Introducing broker</a>
+		        			<li class="ftr-links-item"><a href="broker">Introducing broker</a>
 		        			<li class="ftr-links-item"><a href="press">Press room</a>
 		        		</ul>
 		        		<ul class="ftr-links-list products">
 		        			<li class="ftr-links-item list-head">Products
 		        			<li class="ftr-links-item"><a href="forex">Forex</a>
-		        			<li class="ftr-links-item"><a href="future">Features</a>
+    						<li class="ftr-links-item"><a href="cfd">CFD</a>
+    						<li class="ftr-links-item"><a href="future">Futures CFDs</a>
 		        		</ul>
 		        		<ul class="ftr-links-list operations">
 		        			<li class="ftr-links-item list-head">Operations
 		        			<li class="ftr-links-item"><a href="reg">Open an account</a>
-		        			<li class="ftr-links-item"><a href="#">Deposit options</a>
-		        			<li class="ftr-links-item"><a href="withdrawal">With drawals</a>
+		        			<li class="ftr-links-item"><a href="deposit">Deposit options</a>
+		        			<li class="ftr-links-item"><a href="withdrawal">Withdrawals</a>
 		        			<li class="ftr-links-item"><a href="support">Technical support</a>
 		        			<li class="ftr-links-item"><a href="chat">Phone trading</a>
 		        		</ul>
@@ -155,13 +169,22 @@
 	        		<div class="ftr-copyright">
 	        			&copy; 2013 Pacific Financial Derivatives Ltd. All Rights Reserved.
 	        		</div>
+	        		<a href="./" class="ftr-logo"></div>
 	        	</div>
+
+	        	<!--do not modify this script -->
+				<div class='nanorep_loadingData' id='nanoRepProxyContainer' style='position:absolute;top:-500px;left:0px;'></div>
+				<script type='text/javascript'>var _nRepData = _nRepData || []; _nRepData['kb'] = '23452028'; _nRepData['float'] = {account: 'pfdnz', cdcVersion: 3, cdcFrame: '', scriptVersion: '2.22.2.31'}
+				/* API here */;
+				(function(){var windowLoadFunc = function(){var _nRepData = window._nRepData || [];_nRepData['windowLoaded'] = true;if (typeof(_nRepData['windowOnload']) === 'function') _nRepData['windowOnload']();};if (window.attachEvent)window.attachEvent('onload', windowLoadFunc);else if (window.addEventListener)window.addEventListener('load', windowLoadFunc, false);var sc = document.createElement('script');sc.type = 'text/javascript';sc.async = true;sc.defer = true;sc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'my.nanorep.com/widget/scripts/float.js';var _head = document.getElementsByTagName('head')[0];_head.appendChild(sc);})();
+				</script>
+				
 	        </footer>
 		
 		</div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="<?=URL::to('js/vendor/fotorama.js');?>"></script>
+        <script src="js/vendor/fotorama.js"></script>
         @yield('scripts')
-        <script src="<?=URL::to('js/plugins.js');?>"></script>
-        <script src="<?=URL::to('js/main.js');?>"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>

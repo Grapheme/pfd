@@ -1,7 +1,17 @@
 @extends('layouts/main')
 
+@section('meta')
+	<title>Contact Us - Pacific Financial Derivatives </title>
+	<meta name="Description" content="At Pacific financial derivatives we are always interested in hearing from you. Although, we offer world-class brokerage and trading platforms. Please stay on touch on  HYPERLINK "mailto:info@pfd-nz.com" info@pfd-nz.com"/>
+	<meta name="Keyword" content="Pacific Financial Derivatives "/>
+@stop
+
 @section('wrapper')
 	wrapper
+@stop
+
+@section('scripts')
+	<script src="<?=URL::to('js/contacts.js')?>"></script>
 @stop
 
 @section('content')
@@ -108,11 +118,14 @@
 	        			<div class="contacts-block-in">
 	        				<div class="f_header">Contact form</div>
 	        				<form>
-		        				<div class="contact-input"><input type="text" placeholder="Name"></div>
-		        				<div class="contact-input"><input type="text" placeholder="Email"></div>
-		        				<div class="contact-input"><textarea placeholder="Message"></textarea></div>
-		        				<button>Send</button>
+		        				<div class="contact-input"><input id="name" type="text" placeholder="Name"></div>
+		        				<div class="contact-input"><input id="email" type="text" placeholder="Email"></div>
+		        				<div class="contact-input"><textarea id="message" placeholder="Message"></textarea></div>
+		        				<button class="contact-send">Send</button>
 	        				</form>
+	        				<div class="contact-sent" style="display: none">
+	        					<div class="desc">Thank you. Your message has been sent.</div>
+	        				</div>
 	        			</div>
 	        		</div>
 	        	</div>

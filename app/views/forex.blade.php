@@ -1,5 +1,11 @@
 @extends('layouts/main')
 
+@section('meta')
+	<title>Forex Trading Nz, FX Trading</title>
+	<meta name="Description" content="PFD is a 100% NZ operated foreign currency exchange firm providing comprehensive FX Trading services to its global clients. Enquiry now."/>
+	<meta name="Keyword" content="Forex Trading Nz, FX Trading"/>
+@stop
+
 @section('wrapper')
 	wrapper
 @stop
@@ -210,11 +216,11 @@
 	        						Try out PFDTrader (MT4) and KiwiTrader Gold Zero free demo trading accounts right now and you can test it yourself in just few minutes.
 	        					</p>
 	        					<p>
-	        						Want to <a href="//en.wikipedia.org/wiki/Foreign_exchange_market" target="_blank" class="our-link">know the definition of FX</a> ?
+	        						Want to <a href="//en.wikipedia.org/wiki/Foreign_exchange_market" target="_blank" class="our-link">know the definition of FX</a>?
 	        					</p>
 		        			</div>
 		        			<div class="f_header">Risk Warning:</div>
-		        			<div class="desc">
+		        			<div class="desc risk-text">
 		        				Trading in FX products involves risks. FX products carry a high degree of risk; any transaction involving currencies is exposed to, among other things, changes in a country’s political condition, economic climate, acts of nature and so on, all of which may substantially affect the price or availability of a given currency.
 		        			</div>
 		        	</div>

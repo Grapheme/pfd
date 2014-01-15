@@ -1,3 +1,14 @@
+
+$('.bank-details-title').click(function(){
+	$(this).parent().find('.bank-details-desc').slideToggle();
+});
+
+$('.bank-details-desc').first().show();
+
+/*
+ * OLD CODE
+ */
+
 function validateForm(form)
 	{	
 	
@@ -68,13 +79,13 @@ $(function(){
 		event.preventDefault();
 		$('<p>The request is proccessed. Please be patient.</p>').insertAfter('#neteller__btn');
 		var params = $(this).serialize();
-		$.post('/proxy.php?'+params, function(data){
+		$.post('neteller?'+params, function(data){
 			if ( $(data).find('approval').text() == 'yes' ) {
-				window.location.replace('/payment-thankyou.php');
+				window.location.href = 'http://www.pfd-nz.com/thanks';
 			} else {
-				window.location.replace('/payment-thankyou.php?neteller=error&msg='+$(data).find('error_message').text());
+				window.location.href = 'http://www.pfd-nz.com/thanks?neteller=error&msg='+$(data).find('error_message').text();
 			}
-		})
+		});
 		
 		// refresh transaction ID
 		var transactionID = new Date().getTime();

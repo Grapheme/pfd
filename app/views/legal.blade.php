@@ -1,5 +1,11 @@
 @extends('layouts/main')
 
+@section('meta')
+	<title>Pacific Financial Derivatives Ltd: The online trading provider matching highest standards in integrity and safety</title>
+	<meta name="Keywords" content="online cfd trading, best execution broker, fx trading, fx trading nz, forex trading nz, tight fx spreads"/>
+	<meta name="Description" content="PFD is the best execution broker dealing in FX trading NZ and PFD trading. Enjoy benefits including segregated and secure client funds, flexible technical analysis function and many more."/>
+@stop
+
 @section('wrapper')
 	wrapper
 @stop

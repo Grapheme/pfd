@@ -1,5 +1,11 @@
 @extends('layouts/main')
 
+@section('meta')
+	<title>Pacific Financial Derivatives Ltd: The online trading provider matching highest standards in integrity and safety</title>
+	<meta name="Keywords" content="online cfd trading, best execution broker, fx trading, fx trading nz, forex trading nz, tight fx spreads"/>
+	<meta name="Description" content="PFD is the best execution broker dealing in FX trading NZ and PFD trading. Enjoy benefits including segregated and secure client funds, flexible technical analysis function and many more."/>
+@stop
+
 @section('wrapper')
 	wrapper
 @stop
@@ -51,14 +57,14 @@
 	        				<div class="desc">
 	        					System requirements: Windows XP a nd newer versions.
 	        				</div>
-	        				<button class="download-button-blue">Free Demo account registration.exe</button>
-	        				<button class="download-button-blue">Download Kiwi Trader software.exe</button>
+	        				<a href="https://kiwi.pfd-nz.com/demoreg/registration" class="download-button-blue">Free Demo account registration.exe</a>
+	        				<a href="./downloads/KiwiTraderSetup.exe" class="download-button-blue">Download Kiwi Trader software.exe</a>
 	        				<div class="download-panel">
 	        					<div class="download-panel-left">
-	        						<a href="#" class="down-link">Kiwi Trader user manual.pdf</a>
+	        						<a href="./downloads/Kiwi_Trader_Manual.pdf" class="down-link">Kiwi Trader user manual.pdf</a>
 	        					</div>
 	        					<div class="download-panel-right">
-	        						<a href="#" class="down-right-link">1.29 MB</a>
+	        						<a href="./downloads/Kiwi_Trader_Manual.pdf" class="down-right-link">0.3 MB</a>
 	        					</div>
 	        				</div>
 	        			</div>
@@ -114,13 +120,13 @@
 		        				<div class="desc">
 		        					System requirements: Windows XP a nd newer versions.
 		        				</div>
-		        				<button class="download-button-blue">Download PFD Trader setup.exe</button>
+		        				<a href="//files.metaquotes.net/pacific.financial.derivatives/mt4/pfd4setup.exe" class="download-button-blue">Download PFD Trader setup.exe</a>
 			        			<div class="download-panel">
 		        					<div class="download-panel-left">
-		        						<a href="#" class="down-link">PFD Trader user manual.pdf</a>
+		        						<a href="./downloads/PFDTraderManual.pdf" class="down-link">PFD Trader user manual.pdf</a>
 		        					</div>
 		        					<div class="download-panel-right">
-		        						<a href="#" class="down-right-link">1,79 МB</a>
+		        						<a href="./downloads/PFDTraderManual.pdf" class="down-right-link">1,3 МB</a>
 		        					</div>
 		        				</div>
 	        			</div>
@@ -134,18 +140,18 @@
 		        				<div class="desc">
 		        					MetaTrader 4 Mobile Smartphone Edition is offered Free of charge to our customers.
 		        				</div>
-		        				<button class="download-button-blue">MT4 Smartphone Edition.exe</button>
-		        				<button class="download-button-blue">MT4 Smartphone Edition.cad</button>
+		        				<a href="//files.metatrader4.com/pfd/pfd4mobilesetup.se.exe" class="download-button-blue">MT4 Smartphone Edition.exe</a>
+		        				<a href="//files.metatrader4.com/pfd/pfd4mobilesetup.se.cab" class="download-button-blue">MT4 Smartphone Edition.cad</a>
 		        			</div>
 		        			<div class="down-item">
 		        				<div class="download-white-title white-title-windows">
-		        					MT4  POCKET PC
+		        					MT4 POCKET PC
 		        				</div>
 		        				<div class="desc">
 		        					MetaTrader 4 Mobile is offered Free of charge to our customers.
 		        				</div>
-		        				<button class="download-button-blue">MT4 Smartphone Edition.exe</button>
-		        				<button class="download-button-blue">MT4 Smartphone Edition.cad</button>
+		        				<a href="//files.metatrader4.com/pfd/pfd4mobilesetup.exe" class="download-button-blue">MT4 Smartphone Edition.exe</a>
+		        				<a href="//files.metatrader4.com/pfd/pfd4mobilesetup.cab" class="download-button-blue">MT4 Smartphone Edition.cad</a>
 		        			</div>
 	        			</div>
 	        		</div>
@@ -158,7 +164,7 @@
 		        				<div class="desc">
 		        					MetaTrader 4 for iPhone is offered Free of charge to our customers.
 		        				</div>
-		        				<a href="#" class="apple-link"></a>
+		        				<a href="https://itunes.apple.com/ru/app/metatrader-4/id496212596?mt=8" class="apple-link"></a>
 		        			</div>
 		        			<div class="down-item">
 		        				<div class="download-white-title white-title-android">
@@ -167,7 +173,7 @@
 		        				<div class="desc">
 		        					MetaTrader 4 for Android is offered Free of charge to our customers.
 		        				</div>
-		        				<a href="#" class="android-link"></a>
+		        				<a href="https://play.google.com/store/apps/details?id=net.metaquotes.metatrader4&hl=ru" class="android-link"></a>
 		        			</div>
 	        			</div>
 	        		</div>
@@ -177,38 +183,52 @@
 	        	<div class="downloads-cont">
 	        		<div class="downloads-one-right">
 	        			<div class="downloads-in-block">
+	        			
 	        				<div class="download-panel">
 	        					<div class="download-panel-left">
-	        						<a href="#" class="down-link">Discretionary Authority.pdf</a>
+	        						<a href="./downloads/PFD_General_Terms_and_Conditions.pdf" class="down-link">General Terms and Conditions</a>
 	        					</div>
 	        					<div class="download-panel-right">
-	        						<a href="#" class="down-right-link">1,35 МB</a>
+	        						<a href="./downloads/PFD_General_Terms_and_Conditions.pdf" class="down-right-link">0,3 МB</a>
 	        					</div>
 	        				</div>
+	        				
 	        				<div class="download-panel">
 	        					<div class="download-panel-left">
-	        						<a href="#" class="down-link">IB Agreement.pdf</a>
+	        						<a href="./downloads/PFD_Disclosure_Statement.pdf" class="down-link">Discretionary Authority</a>
 	        					</div>
 	        					<div class="download-panel-right">
-	        						<a href="#" class="down-right-link">1,35 МB</a>
+	        						<a href="./downloads/PFD_Disclosure_Statement.pdf" class="down-right-link">0,3 МB</a>
 	        					</div>
 	        				</div>
+	        				
 	        				<div class="download-panel">
 	        					<div class="download-panel-left">
-	        						<a href="#" class="down-link">PFD Withdrawal Form.pdf</a>
+	        						<a href="./downloads/External_Transfer_Form.pdf" class="down-link">External Transfer Form</a>
 	        					</div>
 	        					<div class="download-panel-right">
-	        						<a href="#" class="down-right-link">1,35 МB</a>
+	        						<a href="./downloads/External_Transfer_Form.pdf" class="down-right-link">0,3 МB</a>
 	        					</div>
 	        				</div>
+	        				
 	        				<div class="download-panel">
 	        					<div class="download-panel-left">
-	        						<a href="#" class="down-link">External Transfer Form.pdf</a>
+	        						<a href="./downloads/PFD_Withdrawal_Form.pdf" class="down-link">PFD Withdrawal Form</a>
 	        					</div>
 	        					<div class="download-panel-right">
-	        						<a href="#" class="down-right-link">1,35 МB</a>
+	        						<a href="./downloads/PFD_Withdrawal_Form.pdf" class="down-right-link">0,06 МB</a>
 	        					</div>
 	        				</div>
+	        				
+	        				<div class="download-panel">
+	        					<div class="download-panel-left">
+	        						<a href="./downloads/IB_Agreement.pdf" class="down-link">IB Agreement</a>
+	        					</div>
+	        					<div class="download-panel-right">
+	        						<a href="./downloads/IB_Agreement.pdf" class="down-right-link">4,4 МB</a>
+	        					</div>
+	        				</div>
+	        				
 	        			</div>
 	        		</div>
 	        	</div>

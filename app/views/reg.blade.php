@@ -1,5 +1,10 @@
 @extends('layouts/main')
 
+@section('meta')
+	<title>Pacific Financial Derivatives Ltd: The online trading provider matching highest standards in integrity and safety</title>
+	<meta name="Keywords" content="online cfd trading, best execution broker, fx trading, fx trading nz, forex trading nz, tight fx spreads"/>
+	<meta name="Description" content="PFD is the best execution broker dealing in FX trading NZ and PFD trading. Enjoy benefits including segregated and secure client funds, flexible technical analysis function and many more."/>
+@stop
 
 @section('wrapper')
 	wrapper
@@ -7,7 +12,7 @@
 
 
 @section('scripts')
-	<script src="<?=URL::to('js/reg.js');?>"></script>
+	<script src="js/reg.js"></script>
 @stop
 
 
@@ -17,7 +22,7 @@
 			<section class="account-choose">
 	        	<ul class="account-ul">
 	        		<li class="account-li"><a href="#" class="account-choose-a" data-type="paper">paper mode account</a>
-	        		<li class="account-li"><a href="#" class="account-choose-a" data-type="online">Online sign up</a>
+	        		<li class="account-li"><a href="https://kiwi.pfd-nz.com/signup/logon" class="account-choose-a" data-type="online">Online sign up</a>
 	        		<li class="account-li"><a href="#" class="account-choose-a" data-type="demo">Demo account</a>
 	        	</ul>
 	        </section>
@@ -30,7 +35,13 @@
 			       					Step 1
 			       				</div>
 			       				<div class="desc">
-			       					Once you have decided which of the account forms are right for you, please download the corresponding PDF form from our website right here. Make sure you have read and understood the following documents
+			       					<p>Once you have decided which of the account forms are right for you, please download the corresponding PDF form from our website right here. Make sure you have read and understood the following documents:</p>
+			       					<p>
+			       						<p><a class="our-link" href="./downloads/PFD_Client_Services_Agreement_Individual.pdf">PFD Client Services Agreement - Individual</a></p>
+			       						<p><a class="our-link" href="./downloads/PFD_Client_Services_Agreement_Company.pdf">PFD Client Services Agreement - Company</a></p>
+			       						<p><a class="our-link" href="./downloads/PFD_Disclosure_Statement.pdf">PFD Disclosure Statement </a></p>
+			       						<p><a class="our-link" href="./downloads/PFD_General_Terms_and_Conditions.pdf">PFD General Terms & Conditions</a></p>
+			       					</p>
 			       				</div>
 			       			</div>
 		       			</div>
@@ -57,6 +68,9 @@
 										<br>PO Box 10041, Dominion Road
 										<br>Auckland 1446
 										<br>New Zealand
+									</p>
+									<p>
+										Funding your account once the account is set up is very easy. You have the choice between the classical Swift transfer and a fast and easy online funding. <a href="deposit" class="our-link">(Depositing Funds)</a>
 									</p>
 								</div>
 			       			</div>
@@ -131,8 +145,8 @@
 			       				<div class="desc">
 			       					System requirements: Windows XP and newer versions
 			       				</div>
-			       				<a href="#" class="download-button">Free demo account registration</a>
-			       				<a href="#" class="download-button-blue">Download Kiwi Trader software.exe</a>
+			       				<a href="https://kiwi.pfd-nz.com/demoreg/registration" class="download-button">Free demo account registration</a>
+			       				<a href="./downloads/KiwiTraderSetup.exe" class="download-button-blue">Download Kiwi Trader software.exe</a>
 			       			</div>
 		       			</div>
 		       			<div class="account-in-div">
@@ -143,7 +157,7 @@
 			       				<div class="desc">
 			       					System requirements: Windows XP and newer versions
 			       				</div>
-			       				<a href="#" class="download-button-blue">Download PFD Trader setup.exe</a>
+			       				<a href="./downloads/pfd4setup.exe" class="download-button-blue">Download PFD Trader setup.exe</a>
 			       			</div>
 			       		</div>
 		       		</div>

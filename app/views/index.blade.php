@@ -1,5 +1,11 @@
 @extends('layouts/main')
 
+@section('meta')
+	<title>Best Forex Broker Online, FX Trading Nz</title>
+	<meta name="Description" content="PFD is the best execution broker dealing in FX trading NZ and PFD trading. Enjoy benefits of flexible technical analysis function and many more."/>
+	<meta name="Keyword" content="Best Forex Broker Online, FX Trading Nz, Best Execution Broker"/>
+@stop
+
 @section('wrapper')
 	index-wrapper wrapper
 @stop
@@ -23,7 +29,7 @@
 							<p>Take the PFD advantage</p>
 							<ul>
 								<li>Segregated and secure client funds
-								<li>FX leverave up to 500:1
+								<li>FX leverage up to 500:1
 								<li>New Zealand Regulated
 								<li>Advanced and user friendly software
 							</ul>
@@ -42,16 +48,16 @@
 	        
 	        <section class="main-menu">
 	        	<ul>
-	        		<li><a href="reg#online">Online sign up<br>for individuals</a>
+	        		<li><a href="https://kiwi.pfd-nz.com/signup/logon">Online sign up<br>for individuals</a>
 	        		<li><a href="reg#paper">Paper mode<br>account opening</a>
 	        		<li><a href="reg#demo">Demo account<br>registration</a>
-	        		<li><a href="">Deposit<br>Options</a>
-	        		<li><a href="downloads">Downloads<br>products</a>
+	        		<li><a href="deposit">Deposit<br>Options</a>
+	        		<li><a href="down">Download<br>products</a>
 	        	</ul>
 	        </section>
 	        <section class="traiders">
 	        	<ul>
-	        		<li><a href="product-kiwi.html" class="traider-link">
+	        		<li><a href="product-kiwi" class="traider-link">
 	        			<span class="f_header">
 							Kiwi Trader Gold Zero
 						</span>
@@ -59,7 +65,7 @@
 	        				Kiwi Trader is the most user friendly trading platform which PFD offers for PFD clients.
 	        			</span></a>
 	        			
-	        		<li><a href="product.html" class="traider-link">
+	        		<li><a href="product" class="traider-link">
 	        			<span class="f_header">
 							PFD Trader (MT4)
 						</span>
@@ -67,84 +73,23 @@
 							PFD Trader (MT4) is a user friendly dealing and order management system which allows PFD clients to access global markets in real time.	        			
 						</span></a>
 	        		
-	        		<li><a href="#" class="traider-link">
+	        		<li><a href="product-multi" class="traider-link">
 	        			<span class="f_header">
-							PFD Trader (Options)
+							Multi Account Manager
 						</span>
 	        			<span class="desc">
-							The system is a comprehensive internet based trading platform that provides real time charting which also allows clients to manage their portfolio from anywhere in the world.
+							MAM is a plug-in for MT4 which allows money managers to operate with multiple clients using just one master account.
 						</span></a>
 	        	</ul>
 	        </section>
 	       	<section class="normal">
 	        	<div class="table-container">
-	        		<table>
-	        			<tr>
-	        				<th>Type
-	        				<th>Kiwi trader gold zero
-	        				<th>PFD trader(MT4)
-	        				<th>PFD Trader(options)
-	        			<tr>
-	        				<th>Software
-							<td>Kiwi trader
-							<td>MT4
-							<td>PFD Trader
-						<tr>
-	        				<th>Instruments
-							<td>Major FX
-							<td>FX, CFD, Futures, Indices FX
-							<td>FX, CFD, Futures, Indices FX
-						<tr>
-	        				<th>Spread
-							<td>Tight spread
-							<td>Tight spread
-							<td>Tight spread
-						<tr>
-	        				<th>Commission
-							<td>Zero for trade
-							<td>Zero
-							<td>Zero
-						<tr>
-	        				<th>Leverage
-							<td>1-5 : 200
-							<td>1 : 300
-							<td>1 : 100
-						<tr>
-	        				<th>Chart
-							<td><div class="tick"></div>
-							<td><div class="tick"></div>
-							<td><div class="tick"></div>
-						<tr>
-	        				<th>Technical Analysys
-							<td><div class="tick"></div>
-							<td><div class="tick"></div>
-							<td><div class="tick"></div>
-						<tr>
-	        				<th>Loss cut liquidation
-							<td>100%
-							<td>100%
-							<td>50%
-						<tr>
-	        				<th>System trade
-							<td><div class="tick"></div>
-							<td><div class="tick"></div>
-							<td><div class="minus">—</div>
-						<tr>
-	        				<th>Trade size (fx)
-							<td>0.01 lot (1,000)
-							<td>0.01 lot (1,000)
-							<td>0.01 lot (10,000)
-						<tr>
-	        				<th>Funding
-							<td>Credit/Debit Card
-							<td>Credit/Debit Card
-							<td>Credit/Debit Card
-	        		</table>
+	        		@include('layouts/ptable')
 	        	</div>
 	        	<div class="main-desc">
-	        		<div class="main-desc-title">Risk Warning & Disclaimer</div>
-	        		<div class="main-desc-text">Trading in futures, options, forex and Over the Counter (OTC) products offered as Contract For Differences (CFDs) by Pacific Financial Derivatives Limited, company #973842 is speculative in nature and not appropriate for all investors. Investors should only use risk capital when trading futures, options, forex and CFDs because there is always the risk of substantial loss. It is important investors carefully consider their objective, financial situation and level of experience. It is recommended that investors seek independent advice before trading. Account access, trade executions and system response may be adversely affected by market conditions, quote delays, system performance and other factors. 
-					<br>PFD Disclosure Statement and PFD General Terms & Conditions are available at <a href="www.pfd-nz.com" target="_blank">www.pfd-nz.com</a>.</div>
+	        		<div class="f_header">Risk Warning & Disclaimer</div>
+	        		<div class="main-desc-text risk-text">Trading in futures, options, forex and Over the Counter (OTC) products offered as Contract For Differences (CFDs) by Pacific Financial Derivatives Limited, company #973842 is speculative in nature and not appropriate for all investors. Investors should only use risk capital when trading futures, options, forex and CFDs because there is always the risk of substantial loss. It is important investors carefully consider their objective, financial situation and level of experience. It is recommended that investors seek independent advice before trading. Account access, trade executions and system response may be adversely affected by market conditions, quote delays, system performance and other factors.<br> 
+					<a href="./downloads/PFD_Disclosure_Statement.pdf" class="our-link">PFD Disclosure Statement</a> and <a href="./downloads/PFD_General_Terms_and_Conditions.pdf" class="our-link">PFD General Terms & Conditions</a><!-- are available at www.pfd-nz.com.--></div>
 	        	</div>
 	        </section>
 	

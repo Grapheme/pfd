@@ -232,6 +232,32 @@ textarea {
   height: 10px;
   background: url(../img/tick.png) no-repeat center center;
 }
+.tick-none {
+	position: relative;
+	height: 10px;
+	width: 10px;
+	margin-left: 4px;
+    margin-top: 10px;
+	
+	&:before {
+		content: "";
+		height: 1px;
+		width: 15px;
+		background: #aaa;
+		.rotate(45deg);
+		display: inline-block;
+		position: absolute;
+	}
+	&:after {
+		content: "";
+		height: 1px;
+		width: 15px;
+		background: #aaa;
+		.rotate(-45deg);
+		display: inline-block;
+		position: absolute;
+	}
+}
 .minus {
   font-weight: 700;
   margin: 0 0 0 5px;
@@ -541,6 +567,10 @@ header {
 	}
 }
 
+.our-button {
+  .button(inline-block);
+}
+
 /*
  * Header Navigation
  */
@@ -552,7 +582,7 @@ header {
     background: @white;
     border-top: 1px solid #eaecec;
     height: @menu-height;
-    z-index: 2;
+    z-index: 20;
     
     ul {
       text-align: center;
@@ -567,6 +597,7 @@ header {
         
         a {
           .heightWline(@menu-height);
+          .noneOutline;
           
           padding-left: 30px;
           padding-right: 30px;
@@ -785,6 +816,11 @@ header {
     height: 15px;
     background: @white;
   }
+  
+  &:hover {
+  	opacity: .5;
+  
+  }
 }
 
 .left-arrow {
@@ -819,7 +855,65 @@ header {
  */
 
 .deposit-box {
-	border: 1px solid #000;
+  .footer-font(@proxima-nova-reg, .875em, 1.3571em);
+	border: 1px solid #cacaca;
+	width: 600px;
+	margin: 25px 0;
+	padding: 25px;
+	
+	input {
+		.footer-font(@proxima-nova-reg, 14px, 1.3571em);
+		height: 30px;
+		border: 1px solid #cacaca;
+		width: 200px;
+		margin: 5px;
+		padding: 0;
+	}
+	
+	select {
+		.footer-font(@proxima-nova-reg, 14px, 1.3571em);
+		height: 32px;
+		border: 1px solid #cacaca;
+		margin: 5px;
+	}
+	
+	td {
+		min-width: 150px;
+	}
+	
+	img {
+		margin-bottom: 25px;
+	}
+}
+
+.deposit-btn {
+	.button;
+}
+
+.bank-details {
+	.footer-font(@proxima-nova-reg, 14px, 1.3571em);
+	padding: 15px 0;
+
+	.bank-details-title {
+		cursor: pointer;
+		
+		&:before {
+			content: "- ";
+		}
+		
+		span {
+			display: inline-block !important;
+		}
+	}
+	
+	.bank-details-desc {
+		display: none;
+		padding: 25px 0 25px 25px;
+		
+		p {
+			margin: 5px 0 !important;
+		}
+	}
 }
 
 /*
@@ -872,6 +966,10 @@ section.normal {
 			.our-link;
 		}
 	}
+}
+
+.risk-text {
+  color: #aaa;
 }
 
 /* ==========================================================================
@@ -1013,6 +1111,18 @@ section.normal {
 				line-height: normal;
 			}
 		}
+		
+		&.about-div-full {
+			width: 100%;
+			
+			.gen_list {
+				margin-top: 25px;
+				
+				.gen_list-item:before {
+					right: 101%;
+				}
+			}
+		}
 	}
 	
 	.fotorama {
@@ -1122,7 +1232,7 @@ section.normal {
 			padding: 5px 40px 40px 40px;
 			
 			.static-block-title {
-				.small-title
+				.small-title;
 
 			}
 			
@@ -1137,6 +1247,18 @@ section.normal {
 			
 			p {
 				margin: 0 0 30px 0;
+			}
+			
+			table p {
+				margin: 0;
+			}
+			
+			table tr:nth-of-type(1) {
+				line-height: 20px;
+			}
+			
+			.table-container {
+				margin-bottom: 25px;
 			}
 		}
 	}
@@ -1153,16 +1275,34 @@ section.normal {
 	}
 }
 
+.static-block-title {
+	.small-title;
+}
+
 .normal-table {
 	margin: 15px 0;
 }
 
 .color-table {
 	margin-bottom: 15px;
+	
+	table {
+      .footer-font(@proxima-nova-bold, .875em, 2.3571em);
+      width: 100%;         
+      th {
+        .uppercase;
+        padding: 0 0 0 24px;
+        text-align: left;
+      }
+      td {        
+        padding: 0 0 0 24px;
+        font-family: @proxima-nova-reg;
+      }
+    }
 }
 
 .color-table tr:nth-of-type(2n+3) {
-	background: #E6E6E8;
+	background: #dcebf3;
 }
 
 .color-table tr:nth-of-type(1) {
@@ -1378,6 +1518,7 @@ section.normal {
 
 	.download-panel-left {
 		float: left;
+		max-width: 170px;
 	}
 	
 	.download-panel-right {
@@ -1410,11 +1551,16 @@ section.normal {
 	}
 	
 	.downloads-one-right {
-		float: left;
 		width: 30%;
 		padding-left: 70%;
-		padding-top: 40px;
 		
+		
+		.downloads-in-block {
+			padding-top: 20px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+				
 		.download-panel {
 			padding-bottom: 25px;
 			
@@ -1441,6 +1587,16 @@ section.normal {
 	background: url(../img/downloads/googleplay.png);
 	display: block;
 	margin-top: 40px;
+}
+
+
+/*
+ * SPREAD
+ */
+
+.spread {
+	.mid_block;
+	.wrappDiv;
 }
 
 
@@ -1527,15 +1683,16 @@ section.normal {
    width: 980px;
    margin: 0 auto;  
    
-   &:after {
-       content: "";
+   .ftr-logo {
        position: absolute;
+       display: block;
        top: 0;
        right: 0;
        z-index: 0;       
        width: 252px;
        height: 46px;
        background: url(../img/footer-logo.png);
+       .noneOutline
    }
    
    .ftr-top {  
@@ -1575,8 +1732,48 @@ section.normal {
      color: @black;
      margin: 50px 0 0;
    }
-} 
+}
 
+/*
+ * email error
+ */
+
+.contact-input {
+	
+	position: relative;
+	
+	&.error-input {
+		border-color: #a33237 !important;
+	}
+	
+	.error-input&:before {
+		content: "incorrect";
+		position: absolute;
+		top: 0;
+		right: 100%;
+		margin-right: 7px;
+		text-align: center;
+		width: 100px;
+		color: #fff;
+		height: 32px;
+		.footer-font(@open-sans-reg, 12px, 30px);
+		background: #a33237;
+	}
+	
+	.error-input&:after {
+		content: "";
+		position: absolute;
+		height: 0;
+		width: 0;
+		right: 100%;
+		margin-right: -3px;
+		margin-top: 7px;
+		border-top: 5px solid transparent;
+		border-bottom: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-left: 5px solid #a33237;
+	}
+}
 
 
 /* ==========================================================================

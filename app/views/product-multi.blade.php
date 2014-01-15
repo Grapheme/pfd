@@ -1,5 +1,11 @@
 @extends('layouts/main')
 
+@section('meta')
+	<title>Forex Practice Account</title>
+	<meta name="Description" content="Multi Account Manager (MAM) is designed for Money Managers to execute block orders on the Master Account. For more information contact on + 64 9 6320129"/>
+	<meta name="Keyword" content="Forex Practice Account"/>
+@stop
+
 @section('wrapper')
 	wrapper
 @stop
@@ -19,13 +25,12 @@
 	        		</div>
 	        		<div class="gen_list">
 	        			<div class="gen_list-item">Minimum of 10 slave/sub-accounts</div>
-	        			<div class="gen_list-item">MAM Power of Attorney and Compensation Acknowledgement Forms must be provided for any slave/sub - accounts</div>
+	        			<div class="gen_list-item"><a class="our-link" href="./downloads/power-of-attorney-and-compensation-acknowledgement.pdf">MAM Power of Attorney and Compensation Acknowledgement Forms</a> must be provided for any slave/sub - accounts</div>
 	        			<div class="gen_list-item">The Money Manager must hold relevant licence/authorisation as it may be required in the respective jurisdiction he is operating in</div>
 	        		</div>
 	        		<div class="desc">
 	        			<p>If you feel that you will satisfy this criteria please feel free to continue with the application.</p>
 	        		</div>
-	        		<a href="downloads.html" class="product-dl">Downloads</a>
 	        	</div>
 	        	<div class="benefits">
 	        		<h2 class="s_header">Benefits</h2>
@@ -38,79 +43,6 @@
 	        			<li class="gen_list-item">Monitor commissions and performance real time
 	        		</ul>
 	        	</div>
-	        </section>
-	        <section class="devices">
-	        	<div class="devices-content">
-		        	<div class="iphone"></div>
-		        	<div class="imac"></div>
-		        	<div class="ipad"></div>
-	        	</div>
-	        </section>
-	        <section class="table">
-	        	<div class="table-container">
-	        		<table>
-	        			<tr>
-	        				<th>Type
-	        				<th>Kiwi trader gold zero
-	        				<th>PFD trader(MT4)
-	        				<th>PFD Trader(options)
-	        			<tr>
-	        				<th>Software
-							<td>Kiwi trader
-							<td>MT4
-							<td>PFD Trader
-						<tr>
-	        				<th>Instruments
-							<td>Major FX
-							<td>FX, CFD, Futures, Indices FX
-							<td>FX, CFD, Futures, Indices FX
-						<tr>
-	        				<th>Spread
-							<td>Tight spread
-							<td>Tight spread
-							<td>Tight spread
-						<tr>
-	        				<th>Commission
-							<td>Zero for trade
-							<td>Zero
-							<td>Zero
-						<tr>
-	        				<th>Leverage
-							<td>1-5 : 200
-							<td>1 : 300
-							<td>1 : 100
-						<tr>
-	        				<th>Chart
-							<td><div class="tick"></div>
-							<td><div class="tick"></div>
-							<td><div class="tick"></div>
-						<tr>
-	        				<th>Technical Analysys
-							<td><div class="tick"></div>
-							<td><div class="tick"></div>
-							<td><div class="tick"></div>
-						<tr>
-	        				<th>Loss cut liquidation
-							<td>100%
-							<td>100%
-							<td>50%
-						<tr>
-	        				<th>System trade
-							<td><div class="tick"></div>
-							<td><div class="tick"></div>
-							<td><div class="minus">—</div>
-						<tr>
-	        				<th>Trade size (fx)
-							<td>0.01 lot (1,000)
-							<td>0.01 lot (1,000)
-							<td>0.01 lot (10,000)
-						<tr>
-	        				<th>Funding
-							<td>Credit/Debit Card
-							<td>Credit/Debit Card
-							<td>Credit/Debit Card
-	        		</table>
-	        	</div>	        	
 	        </section>
 	
 	
