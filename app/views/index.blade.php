@@ -48,15 +48,23 @@
 	        
 	        <section class="main-menu">
 	        	<ul>
+	        		<li><a href="reg#demo">Demo account<br>registration</a>
 	        		<li><a href="https://kiwi.pfd-nz.com/signup/logon">Online sign up<br>for individuals</a>
 	        		<li><a href="reg#paper">Paper mode<br>account opening</a>
-	        		<li><a href="reg#demo">Demo account<br>registration</a>
-	        		<li><a href="deposit">Deposit<br>Options</a>
 	        		<li><a href="down">Download<br>products</a>
+	        		<li><a href="deposit">Deposit<br>Options</a>
 	        	</ul>
 	        </section>
 	        <section class="traiders">
 	        	<ul>
+	        		<li><a href="product" class="traider-link">
+	        			<span class="f_header">
+							PFD Trader (MT4)
+						</span>
+	        			<span class="desc">
+							PFD Trader (MT4) is a user friendly dealing and order management system which allows PFD clients to access global markets in real time.	        			
+						</span></a>
+						
 	        		<li><a href="product-kiwi" class="traider-link">
 	        			<span class="f_header">
 							Kiwi Trader Gold Zero
@@ -65,14 +73,6 @@
 	        				Kiwi Trader is the most user friendly trading platform which PFD offers for PFD clients.
 	        			</span></a>
 	        			
-	        		<li><a href="product" class="traider-link">
-	        			<span class="f_header">
-							PFD Trader (MT4)
-						</span>
-	        			<span class="desc">
-							PFD Trader (MT4) is a user friendly dealing and order management system which allows PFD clients to access global markets in real time.	        			
-						</span></a>
-	        		
 	        		<li><a href="product-multi" class="traider-link">
 	        			<span class="f_header">
 							Multi Account Manager

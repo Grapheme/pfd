@@ -16,7 +16,7 @@
 
 @section('content')
 	
-	
+		<section class="normal">
 			<section class="product clearfix">
 	        	<div class="meta-trader">
 	        		<h1 class="f_header">Multi Account Manager</h1>
@@ -35,14 +35,13 @@
 	        		<div class="desc">
 	        			<p>If you feel that you will satisfy this criteria please feel free to continue with the application.</p>
 	        		</div>
-	        			<div style="width: 300px;">
+	        			<div class="deposit-box mam-form">
 							<form>
-		        				<div class="contact-input"><input id="firstname" type="text" placeholder="First Name"></div>
-		        				<div class="contact-input"><input id="lastname" type="text" placeholder="Last Name"></div>
-		        				<div class="contact-input"><input id="email" type="text" placeholder="Email"></div>
-		        				<div class="contact-input"><input id="phone" type="text" placeholder="Phone Number"></div>
-		        				<div class="contact-input"><input id="company" type="text" placeholder="Company"></div>
-		        				<div class="contact-input" style="border: 0;">
+		        				<input id="firstname" type="text" placeholder="First Name"><br>
+		        				<input id="lastname" type="text" placeholder="Last Name"><br>
+		        				<input id="email" type="text" placeholder="Email"><br>
+		        				<input id="phone" type="text" placeholder="Phone Number"><br>
+		        				<input id="company" type="text" placeholder="Company"><br>
 		        					<select id="country" style="width: 300px;">
 										<option value="Unspecified">Country</option>
 										<option value="Afghanistan">Afghanistan</option>
@@ -290,7 +289,7 @@
 										<option value="Zambia">Zambia</option>
 										<option value="Zimbabwe">Zimbabwe</option>
 									</select>
-		        				</div>
+		        				
 		        				<button class="our-button mam-send">Send</button>
 	        				</form>
 	        			</div>
@@ -307,6 +306,8 @@
 	        		</ul>
 	        	</div>
 	        </section>
+	        <div style="text-align:center;"><img src="<?=slink::path('img/ipad-mam.png')?>" alt=""></div>
+	    </section>
 	
 	
 @stop

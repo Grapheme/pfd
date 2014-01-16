@@ -34,9 +34,13 @@ class CreateUsersTable extends Migration {
 			$table->increments('id');
 			$table->string('name', 200);
 			$table->string('url', 200);
-			$table->text('meta');
 			$table->string('wrapper', 200);
-			$table->mediumText('content');
+			$table->text('meta_en');
+			$table->text('meta_ch');
+			$table->text('meta_vi');
+			$table->mediumText('content_en');
+			$table->mediumText('content_ch');
+			$table->mediumText('content_vi');
 			$table->text('scripts');
 			$table->timestamps();
 		});
@@ -50,6 +54,8 @@ class CreateUsersTable extends Migration {
 	public function down()
 	{
 		Schema::drop('users');
+		Schema::drop('news');
+		Schema::drop('pages');
 	}
 
 }

@@ -17,8 +17,11 @@ class HomeController extends BaseController {
 
 	public function getPage($page)
 	{
+
 		$page = Page::where('url', $page)->firstOrFail();
-		$data = array('meta' => $page->meta, 'wrapper' => $page->wrapper, 'content' => $page->content, 'scripts' => $page->scripts);
+		$metaLang = 'meta_'.Config::get('app.locale');
+		$contentLang = 'content_'.Config::get('app.locale');
+		$data = array('meta' => $page->metaLang, 'wrapper' => $page->wrapper, 'content' => $page->contentLang, 'scripts' => $page->scripts);
 		return View::make('pages', $data);
 	}
 

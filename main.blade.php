@@ -77,8 +77,8 @@
 	        					</ul>
 	        				<li><a href="#">Platforms</a>
 	        					<ul class="header-sub-menu">
-	        						<li><a href="product">PFD trader (MT4)</a>
 	        						<li><a href="product-kiwi">Kiwi trader</a>
+	        						<li><a href="product">PFD trader (MT4)</a>
 	        						<li><a href="product-multi">Multi Account Manager</a>
 	        					</ul>
 	        				<li><a href="#">Products</a>
@@ -99,7 +99,7 @@
 	        					</ul>
 	        				<li><a href="product-multi">MAM</a>
 	        				<li><a href="spread">Spreads Comparison</a>
-	        				<li><a href="contacts">Contacts</a>
+	        				<li><a href="contacts">Contact</a>
 	        			</ul>
 	        		</nav>
 	        		<div class="shadow"></div>
@@ -137,17 +137,17 @@
 	        		<div class="ftr-top clearfix">
 		        		<ul class="ftr-links-list">
 		        			<li class="ftr-links-item"><a href="./">Home</a>
-		        			<li class="ftr-links-item"><a href="white">White label</a>
-		        			<li class="ftr-links-item"><a href="broker">Introducing broker</a>
+		        			<li class="ftr-links-item"><a href="product-multi">MAM</a>
+		        			<li class="ftr-links-item"><a href="legal">Legal</a>
 		        			<li class="ftr-links-item"><a href="spread">Spread comparison</a>
 		        			<li class="ftr-links-item"><a href="product">Meta trader 4</a>
-		        			<li class="ftr-links-item"><a href="contacts">Contacts</a>
+		        			<li class="ftr-links-item"><a href="contacts">Contact</a>
 		        		</ul>
 		        		<ul class="ftr-links-list about-us">
 		        			<li class="ftr-links-item list-head">About Us</a>
 		        			<li class="ftr-links-item"><a href="about">Welcome</a>
-		        			<li class="ftr-links-item"><a href="product-multi">MAM</a>
-		        			<li class="ftr-links-item"><a href="legal">Legal</a>
+		        			<li class="ftr-links-item"><a href="white">White label</a>
+		        			<li class="ftr-links-item"><a href="broker">Introducing broker</a>
 		        			<li class="ftr-links-item"><a href="press">Press room</a>
 		        		</ul>
 		        		<ul class="ftr-links-list products">
@@ -162,7 +162,7 @@
 		        			<li class="ftr-links-item"><a href="deposit">Deposit options</a>
 		        			<li class="ftr-links-item"><a href="withdrawal">Withdrawals</a>
 		        			<li class="ftr-links-item"><a href="support">Technical support</a>
-		        			<!--<li class="ftr-links-item"><a href="chat">Phone trading</a>-->
+		        			<li class="ftr-links-item"><a href="chat">Phone trading</a>
 		        		</ul>
 	        		</div>
 	        		<div class="ftr-copyright">

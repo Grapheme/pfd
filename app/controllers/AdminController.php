@@ -104,9 +104,13 @@ class AdminController extends BaseController {
 		$pages = Page::find($id);
 		$pages->name = Input::get('name');
 		$pages->url = Input::get('url');
-		$pages->meta = Input::get('meta');
 		$pages->scripts = Input::get('scripts');
-		$pages->content = Input::get('content');
+		$pages->meta_en = Input::get('meta_en');
+		$pages->meta_ch = Input::get('meta_ch');
+		$pages->meta_vi = Input::get('meta_vi');
+		$pages->content = Input::get('content_en');
+		$pages->content = Input::get('content_ch');
+		$pages->content = Input::get('content_vi');
 		$pages->wrapper = Input::get('wrapper');
 		$pages->save();
 		return Redirect::to('admin/pages');
@@ -125,9 +129,13 @@ class AdminController extends BaseController {
 		$pages = Page::create(array(
 			'name' => Input::get('name'),
 			'url' => Input::get('url'),
-			'meta' => Input::get('meta'),
 			'scripts' => Input::get('scripts'),
-			'content' => Input::get('content'),
+			'meta' => Input::get('meta_en'),
+			'meta' => Input::get('meta_ch'),
+			'meta' => Input::get('meta_vi'),
+			'content' => Input::get('content_en'),
+			'content' => Input::get('content_ch'),
+			'content' => Input::get('content_vi'),
 			'wrapper' => Input::get('wrapper')
 			));
 		return Redirect::to('admin/pages');

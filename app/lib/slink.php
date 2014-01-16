@@ -19,11 +19,8 @@ class slink {
 
 	public static function path($link)
 	{
-		if (Request::secure())
-		{
-			return secure_asset($link);
-		} else {
+		
 			return asset($link);
-		}
+
 	}
 }
