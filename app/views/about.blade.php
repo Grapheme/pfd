@@ -79,11 +79,11 @@
 				             	<div class="gen_list">
 			       					<div class="gen_list-item">Member, Financial Service Provider Register, FSP 28944</div>
 			       				</div>
-			       				<a target="_blank" href="http://www.business.govt.nz/fsp/app/ui/fsp/version/searchSummaryCompanyFSP/FSP28944/13.do"><img alt="" src="img/nz.PNG"></a>
+			       				<a target="_blank" href="http://www.business.govt.nz/fsp/app/ui/fsp/version/searchSummaryCompanyFSP/FSP28944/13.do"><img alt="" src="/img/nz.PNG"></a>
 			       				<div class="gen_list">
 			       					<div class="gen_list-item">Member of the Financial Dispute Resolution (FDR scheme), New Zealand.</div>
 			       				</div>
-			       				<a target="_blank" href="http://fdr.org.nz/"><img alt="Financial Dispute Resolution" src="img/fdr2.png"></a>
+			       				<a target="_blank" href="http://fdr.org.nz/"><img alt="Financial Dispute Resolution" src="/img/fdr2.png"></a>
 		       				</div>
 		       			</div>
 		       		</div>
@@ -136,9 +136,9 @@
 		       		</div>
 		       		<div class="clearfix"></div>
 		       		<div class="fotorama" data-nav="false" data-arrows="false" data-autoplay="5000" data-height="500" data-fit="false" data-swipe="false" data-transition="crossfade">
-		       			<img src="img/about/slide1.jpg" alt="">
-		       			<img src="img/about/slide2.jpg" alt="">
-		       			<img src="img/about/slide3.jpg" alt="">
+		       			<img src="/img/about/slide1.jpg" alt="">
+		       			<img src="/img/about/slide2.jpg" alt="">
+		       			<img src="/img/about/slide3.jpg" alt="">
 		       		</div>
 		       		
 	        	</div>

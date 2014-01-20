@@ -21,13 +21,13 @@
 		<meta name="geo.position" content="-36.904472;174.74346" />
 		<meta name="ICBM" content="-36.904472, 174.74346" />
 		<meta name="alexaVerifyID" content="e8CVzPl22NmC66poVlA1IgSW0PY" />
-		<link href="<?=slink::path('favicon.ico');?>" rel="shortcut icon" type="image/x-icon" />
-		<link rel="stylesheet" href="<?=slink::path('css/fonts.css');?>">
-        <link rel="stylesheet" href="<?=slink::path('css/normalize.css');?>">
-        <link rel="stylesheet/less" type="text/css" href="<?=slink::path('less/main.less');?>">
-        <link href="<?=slink::path('css/fotorama.css');?>" rel="stylesheet">
-		<script src="<?=slink::path('js/vendor/less-1.5.0.min.js');?>"></script>
-        <script src="<?=slink::path('js/vendor/modernizr-2.6.2.min.js');?>"></script>
+		<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+		<link rel="stylesheet" href="/css/fonts.css">
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet/less" type="text/css" href="/less/main.less">
+        <link href="/css/fotorama.css" rel="stylesheet">
+		<script src="/js/vendor/less-1.5.0.min.js"></script>
+        <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
     <body class="main">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -177,28 +177,52 @@
 				/* API here */;
 				(function(){var windowLoadFunc = function(){var _nRepData = window._nRepData || [];_nRepData['windowLoaded'] = true;if (typeof(_nRepData['windowOnload']) === 'function') _nRepData['windowOnload']();};if (window.attachEvent)window.attachEvent('onload', windowLoadFunc);else if (window.addEventListener)window.addEventListener('load', windowLoadFunc, false);var sc = document.createElement('script');sc.type = 'text/javascript';sc.async = true;sc.defer = true;sc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'my.nanorep.com/widget/scripts/float.js';var _head = document.getElementsByTagName('head')[0];_head.appendChild(sc);})();
 				</script>
-				<script type="text/javascript">
-
-				  var _gaq = _gaq || [];
-				  _gaq.push(['_setAccount', 'UA-30012186-1']);
-				  _gaq.push(['_setDomainName', 'pfd-nz.com']);
-				  _gaq.push(['_trackPageview']);
-
-				  (function() {
-				    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-				    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-				    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-				  })();
-
-				</script>
 				
 	        </footer>
 		
 		</div>
 	</body>
+
+		<!--GOOGLE-->
+
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-30012186-1']);
+		  _gaq.push(['_setDomainName', 'pfd-nz.com']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+
+		<!-- AdRoll Smart Pixel -->
+
+		<script type="text/javascript">
+		adroll_adv_id = "JRTN6BXMPVGFJLJ2CBL37T";
+		adroll_pix_id = "6EPWSQAEURDR5JJTUCCC2V";
+		(function () {
+		var oldonload = window.onload;
+		window.onload = function(){
+		   __adroll_loaded=true;
+		   var scr = document.createElement("script");
+		   var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+		   scr.setAttribute('async', 'true');
+		   scr.type = "text/javascript";
+		   scr.src = host + "/j/roundtrip.js";
+		   ((document.getElementsByTagName('head') || [null])[0] ||
+		    document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+		   if(oldonload){oldonload()}};
+		}());
+		</script>
+
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="<?=slink::path('js/vendor/fotorama.js');?>"></script>
+        <script src="/js/vendor/fotorama.js"></script>
         @yield('scripts')
-        <script src="<?=slink::path('js/plugins.js');?>"></script>
-        <script src="<?=slink::path('js/main.js');?>"></script>
+        <script src="/js/plugins.js"></script>
+        <script src="/js/main.js"></script>

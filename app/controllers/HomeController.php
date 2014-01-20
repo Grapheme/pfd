@@ -17,11 +17,8 @@ class HomeController extends BaseController {
 
 	public function getPage($page)
 	{
-
-		$page = Page::where('url', $page)->firstOrFail();
-		$metaLang = 'meta_'.Config::get('app.locale');
-		$contentLang = 'content_'.Config::get('app.locale');
-		$data = array('meta' => $page->metaLang, 'wrapper' => $page->wrapper, 'content' => $page->contentLang, 'scripts' => $page->scripts);
+		$page = StatPage::where('url', $page)->firstOrFail();
+		$data = array('page' => $page);
 		return View::make('pages', $data);
 	}
 
@@ -35,9 +32,9 @@ class HomeController extends BaseController {
 						'email' => $email,
 						'text' => $text
 						);
-    	Mail::send('emails.contact', $data, function($message)
+    	Mail::send('emails.contact', $data, function($message) use ($email)
 		{
-    		$message->from('pfd-nz@yandex.ru', 'PFD');
+    		$message->from($email);
 	    	$message->to('admin@pfd-nz.com')->subject('PFD - Message from site');
 		});
 	}
@@ -58,9 +55,9 @@ class HomeController extends BaseController {
 						'company' => $company,
 						'country' => $country,
 						);
-    	Mail::send('emails.mam', $data, function($message)
+    	Mail::send('emails.mam', $data, function($message) use ($email)
 		{
-    		$message->from('pfd-nz@yandex.ru', 'PFD');
+    		$message->from($email);
 	    	$message->to('admin@pfd-nz.com')->subject('PFD - APPLY FOR MAM ACCESS');
 		});
 	}

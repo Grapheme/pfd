@@ -41,7 +41,7 @@ $('.contact-send').click(function(){
 	});
 	if(errors == 0) {
 		$button.fadeOut();
-		$.post( "contact_send", { name: $('#name').val(), email: $('#email').val(), text: $('#message').val() })
+		$.post( "http://www.pfd-nz.com/contact_send", { name: $('#name').val(), email: $('#email').val(), text: $('#message').val() })
 		  .done(function( data ) {
 		    $form.fadeOut(function(){
 				$('.contact-sent').fadeIn();
@@ -74,7 +74,7 @@ $('.mam-send').click(function(){
 	});
 	if(errors == 0) {
 		$button.fadeOut();
-		$.post( "mam_send", { 
+		$.post( "http://www.pfd-nz.com/mam_send", { 
 			firstname: $('#firstname').val(),
 			lastname: $('#lastname').val(),
 			email: $('#email').val(), 

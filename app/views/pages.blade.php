@@ -1,28 +1,36 @@
 @extends('layouts/main')
 
+<?php
+
+$cl = Config::get('app.locale');
+
+$meta = 'meta_'.$cl;
+$content = 'content_'.$cl;
+
+?>
 
 @section('meta')
 
-	{{$meta}}
+	<?php echo $page->$meta; ?>
 
 @stop
 
 
 @section('wrapper')
 	
-	{{$wrapper}}
+	{{$page->wrapper}}
 
 @stop
 
 
 @section('content')
 
-	{{$content}}
+	{{$page->$content}}
 	
 @stop
 
 @section('scripts')
 
-	{{$scripts}}
+	{{$page->scripts}}
 
 @stop

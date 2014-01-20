@@ -44,25 +44,33 @@ Route::group(array('prefix' => $locale), function()
 
 	Route::get('login', array('as' => 'login', 'uses' => "AdminController@index"));
 	Route::post('login', "AdminController@login");
-	Route::get('admin', array('before' => 'auth', 'uses' => "AdminController@panel"));
+	
 
-	/* ADMIN NEWS */
-	Route::get('admin/news', array('before' => 'auth', 'uses' => "AdminController@news"));
-	Route::get('admin/news/edit/{id}', array('before' => 'auth', 'uses' => "AdminController@newsEdit"));
-	Route::post('admin/news/edit/{id}', array('before' => 'auth', 'uses' => "AdminController@doEdit"));
-	Route::get('admin/news/new', array('before' => 'auth', 'uses' => "AdminController@newsNew"));
-	Route::post('admin/news/new', array('before' => 'auth', 'uses' => "AdminController@doNew"));
-	Route::get('admin/news/delete/{id}', array('before' => 'auth', 'uses' => "AdminController@newsDelete"));
+	Route::group(array('prefix' => 'admin', 'before' => 'auth'), function()
+	{
 
-	/* ADMIN PAGES */
+		Route::resource('statPages', 'StatPagesController');
 
-	Route::get('admin/pages', array('before' => 'auth', 'uses' => "AdminController@pages"));
-	Route::get('admin/pages/delete/{id}', array('before' => 'auth', 'uses' => "AdminController@pagesDelete"));
-	Route::get('admin/pages/edit/{id}', array('before' => 'auth', 'uses' => "AdminController@pagesEdit"));
-	Route::post('admin/pages/edit/{id}', array('before' => 'auth', 'uses' => "AdminController@pagesDoEdit"));
-	Route::get('admin/pages/new', array('before' => 'auth', 'uses' => "AdminController@pagesNew"));
-	Route::post('admin/pages/new', array('before' => 'auth', 'uses' => "AdminController@pagesDoNew"));
+		Route::get('/', array('uses' => "AdminController@panel"));
 
+		/* ADMIN NEWS */
+		Route::get('news', array('uses' => "AdminController@news"));
+		Route::get('news/edit/{id}', array('uses' => "AdminController@newsEdit"));
+		Route::post('news/edit/{id}', array('uses' => "AdminController@doEdit"));
+		Route::get('news/new', array('uses' => "AdminController@newsNew"));
+		Route::post('news/new', array('uses' => "AdminController@doNew"));
+		Route::get('news/delete/{id}', array('uses' => "AdminController@newsDelete"));
+
+		/* ADMIN PAGES */
+
+		Route::get('pages', array('uses' => "AdminController@pages"));
+		Route::get('pages/delete/{id}', array('uses' => "AdminController@pagesDelete"));
+		Route::get('pages/edit/{id}', array('uses' => "AdminController@pagesEdit"));
+		Route::post('pages/edit/{id}', array('uses' => "AdminController@pagesDoEdit"));
+		Route::get('pages/new', array('uses' => "AdminController@pagesNew"));
+		Route::post('pages/new', array('uses' => "AdminController@pagesDoNew"));
+	
+	});
 	// Admin Logout
 	Route::get('logout', "AdminController@logout");
 

@@ -13,7 +13,7 @@
 @section('content')
 
 @section('scripts')
-	<script src="./js/deposit.js"></script>
+	<script src="/js/deposit.js"></script>
 @stop	
 	
 			<section class="normal">
@@ -46,7 +46,7 @@
 		        			<div class="deposit-box">
             
                 <div style="margin: 0px;">
-                <img style="vertical-align:middle" alt="moneybroker" src="img/moneybookers_cup_checkout.gif">
+                <img style="vertical-align:middle" alt="moneybroker" src="/img/moneybookers_cup_checkout.gif">
                 <span style="padding-left: 50px; font-family:Myriad, Verdana, Arial;font-size:12px;font-weight:normal;line-height: 24px;" align="right">* Required fields</span>
                 </div>
             
@@ -174,7 +174,7 @@
     
     <div class="deposit-box">
         <div style="margin: 0px; margin-bottom:4px; margin-right: 0.75em; float: left;" class="left">
-            <a href="http://www.megastock.com" target="_blank"><img src="img/webmoney__logo.png" alt="Webmoney" border="0"></a>
+            <a href="http://www.megastock.com" target="_blank"><img src="/img/webmoney__logo.png" alt="Webmoney" border="0"></a>
         </div>
         <!--<div style="float: right;">
 			<a href="http://www.megastock.com" target="_blank"><img src="http://megastock.webmoney.ru/doc/Logo/acc_blue_on_transp_en.png" alt="www.megastock.com" border="0"></a>
@@ -231,7 +231,7 @@
     
     	<div class="deposit-box">
         <div style="margin: 0px; margin-bottom:4px;">
-            <img src="img/neteller.jpg" alt="Technocash" border="0">
+            <img src="/img/neteller.jpg" alt="Technocash" border="0">
         </div>
 
 				

@@ -79,7 +79,7 @@ $(function(){
 		event.preventDefault();
 		$('<p>The request is proccessed. Please be patient.</p>').insertAfter('#neteller__btn');
 		var params = $(this).serialize();
-		$.post('neteller?'+params, function(data){
+		$.post('http://www.pfd-nz.com/neteller?'+params, function(data){
 			if ( $(data).find('approval').text() == 'yes' ) {
 				window.location.href = 'http://www.pfd-nz.com/thanks';
 			} else {

@@ -129,3 +129,15 @@
 .main-news-div:hover .main-news-edit {
 	opacity: 1;
 }
+
+.pageForm input {
+  width: 100%;
+}
+
+.pageForm textarea {
+  width: 100%;
+}
+
+input#wrapper {
+  padding-left: 6px;
+}

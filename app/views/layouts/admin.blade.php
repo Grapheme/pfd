@@ -8,6 +8,13 @@
     <link href="<?=URL::to('css/admin.css');?>" rel="stylesheet">
 
     <link href="<?=URL::to('css/simple-sidebar.css');?>" rel="stylesheet">
+
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+    <style>
+      table form { margin-bottom: 0; }
+      form ul { margin-left: 0; list-style: none; }
+      .error { color: red; font-style: italic; }
+    </style>
     <!--<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">-->
 
   </head>
@@ -19,8 +26,8 @@
       <!-- Sidebar -->
       <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
-          <li class="sidebar-brand"><a href="#">Start Bootstrap</a></li>
-          <li><a href="<?=URL::to('admin/pages');?>">Страницы</a></li>
+          <li class="sidebar-brand"><a href="<?=URL::to('admin')?>">Admin Panel</a></li>
+          <li><a href="<?=URL::to('admin/statPages');?>">Страницы</a></li>
           <li><a href="<?=URL::to('admin/news');?>">Новости</a></li>
           <li><a href="<?=URL::to('logout');?>">Выйти</a></li>
         </ul>
@@ -28,7 +35,7 @@
           
       <!-- Page content -->
       <div id="page-content-wrapper">
-        <div class="content-header">
+        <!--<div class="content-header">
           <h1>
             <a id="menu-toggle" href="#" class="btn btn-default"><i class="icon-reorder"></i></a>
             Simple Sidebar
