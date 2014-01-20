@@ -15,11 +15,17 @@ class HomeController extends BaseController {
 	|
 	*/
 
-	public function getPage($page)
+	public function getPage($page = null)
 	{
-		$page = StatPage::where('url', $page)->firstOrFail();
-		$data = array('page' => $page);
-		return View::make('pages', $data);
+		if($page == null) {
+			$page = StatPage::where('url', 'index')->firstOrFail();
+			$data = array('page' => $page);
+			return View::make('pages', $data);
+		} else {
+			$page = StatPage::where('url', $page)->firstOrFail();
+			$data = array('page' => $page);
+			return View::make('pages', $data);
+		}
 	}
 
 	public function contact_send()

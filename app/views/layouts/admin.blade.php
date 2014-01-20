@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="<?=URL::to('css/normalize.css');?>">
     <link href="<?=URL::to('vendor/twitter/bootstrap/dist/css/bootstrap.css');?>" rel="stylesheet">
     <link href="<?=URL::to('css/admin.css');?>" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="<?=URL::to('public/markitup/skins/markitup/style.css')?>" />
+    <link rel="stylesheet" type="text/css" href="<?=URL::to('public/markitup/sets/default/style.css')?>" />
 
     <link href="<?=URL::to('css/simple-sidebar.css');?>" rel="stylesheet">
 
@@ -52,6 +54,8 @@
     <!-- JavaScript -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script type="text/javascript" src="<?=URL::to('public/markitup/jquery.markitup.js')?>"></script>
+    <script type="text/javascript" src="<?=URL::to('public/markitup/sets/default/set.js')?>"></script>
     <script src="<?=URL::to('js/admin.js');?>"></script>
     <script src="<?=URL::to('js/bootstrap.js');?>"></script>
 

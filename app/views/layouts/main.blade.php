@@ -36,7 +36,7 @@
         <article class="@yield('wrapper')">
         	<header>
         		<div class="header-top clearfix">
-        			<a href="./" class="logo-div"></a>
+        			<a href="/" class="logo-div"></a>
         			<div class="lang-div">
         				<!--<div class="search">
 	        				<div class="search-img">
@@ -70,36 +70,36 @@
 	        			<ul>
 	        				<li><a href="#">About Us</a>
 	        					<ul class="header-sub-menu">
-	        						<li><a href="about">Company profile</a>
-	        						<li><a href="white">White label</a>
-	        						<li><a href="broker">Introducing broker</a>
-	        						<li><a href="press">Press room</a>
+	        						<li><a href="/about">Company profile</a>
+	        						<li><a href="/white">White label</a>
+	        						<li><a href="/broker">Introducing broker</a>
+	        						<li><a href="/press">Press room</a>
 	        					</ul>
 	        				<li><a href="#">Platforms</a>
 	        					<ul class="header-sub-menu">
-	        						<li><a href="product">PFD trader (MT4)</a>
-	        						<li><a href="product-kiwi">Kiwi trader</a>
-	        						<li><a href="product-multi">Multi Account Manager</a>
+	        						<li><a href="/product">PFD trader (MT4)</a>
+	        						<li><a href="/product-kiwi">Kiwi trader</a>
+	        						<li><a href="/product-multi">Multi Account Manager</a>
 	        					</ul>
 	        				<li><a href="#">Products</a>
 	        					<ul class="header-sub-menu">
-	        						<li><a href="forex">Forex</a>
-	        						<li><a href="cfd">CFD</a>
-	        						<li><a href="future">Futures CFDs</a>
+	        						<li><a href="/forex">Forex</a>
+	        						<li><a href="/cfd">CFD</a>
+	        						<li><a href="/future">Futures CFDs</a>
 	        					</ul>
 	        				<li><a href="#">Operations</a>
 	        					<ul class="header-sub-menu">
 	        					    <!--WHAT is this!?
 									<li><a href="#">Discretionary Authority</a>
 									-->
-	        					    <li><a href="deposit">Deposit Options</a>
-	        					    <li><a href="withdrawal">Withdrawals</a>
-	        					    <li><a href="support">Technical Support</a>
-	        					    <li><a href="chat">Chat/Phone Trading</a>
+	        					    <li><a href="/deposit">Deposit Options</a>
+	        					    <li><a href="/withdrawal">Withdrawals</a>
+	        					    <li><a href="/support">Technical Support</a>
+	        					    <li><a href="/chat">Chat/Phone Trading</a>
 	        					</ul>
-	        				<li><a href="product-multi">MAM</a>
-	        				<li><a href="spread">Spreads Comparison</a>
-	        				<li><a href="contacts">Contacts</a>
+	        				<li><a href="/product-multi">MAM</a>
+	        				<li><a href="/spread">Spreads Comparison</a>
+	        				<li><a href="/contacts">Contacts</a>
 	        			</ul>
 	        		</nav>
 	        		<div class="shadow"></div>
@@ -112,7 +112,7 @@
 	        	</div>
 	        	<ul>
 	        		<li>
-	        			<a href="reg#demo" class="traider-link">
+	        			<a href="/reg#demo" class="traider-link">
 	        				<span class="f_header">Demo account</span>
 	        				<span class="desc">Test your trading strategies in a real-time environment and familiarize yourself with all the features of PFD Demonstrations's PFDTrader - with no risk and no obligation. Register below and we'll give you PFD Demonstrations's $50,000 virtual margin deposit and access to a fully functional version of PFDTrader for the next 15-days.</span>
 	        			</a>
@@ -123,7 +123,7 @@
 	        				<span class="desc">Online sign up is intended to be completed in conjunction with the relevant provisions of Pacific Financial Derivative Limited’s Individual Account Client Services Agreement Individual Account. First step is to register user name, password and email id.</span>
 	        			</a>
 	        		<li>
-	        			<a href="reg#paper" class="traider-link">
+	        			<a href="/reg#paper" class="traider-link">
 	        				<span class="f_header">Paper mode account</span>
 	        				<span class="desc">Once you have decided which of the account forms are right for you, please download the corresponding PDF form from our website right here. Now you can proceed and fill the account opening form.</span>
 	        			</a>
@@ -136,32 +136,32 @@
 	        	<div class="footer-content cleafix">
 	        		<div class="ftr-top clearfix">
 		        		<ul class="ftr-links-list">
-		        			<li class="ftr-links-item"><a href="./">Home</a>
-		        			<li class="ftr-links-item"><a href="white">White label</a>
-		        			<li class="ftr-links-item"><a href="broker">Introducing broker</a>
-		        			<li class="ftr-links-item"><a href="spread">Spread comparison</a>
-		        			<li class="ftr-links-item"><a href="product">Meta trader 4</a>
-		        			<li class="ftr-links-item"><a href="contacts">Contacts</a>
+		        			<li class="ftr-links-item"><a href="/">Home</a>
+		        			<li class="ftr-links-item"><a href="/white">White label</a>
+		        			<li class="ftr-links-item"><a href="/broker">Introducing broker</a>
+		        			<li class="ftr-links-item"><a href="/spread">Spread comparison</a>
+		        			<li class="ftr-links-item"><a href="/product">Meta trader 4</a>
+		        			<li class="ftr-links-item"><a href="/contacts">Contacts</a>
 		        		</ul>
 		        		<ul class="ftr-links-list about-us">
 		        			<li class="ftr-links-item list-head">About Us</a>
-		        			<li class="ftr-links-item"><a href="about">Welcome</a>
-		        			<li class="ftr-links-item"><a href="product-multi">MAM</a>
-		        			<li class="ftr-links-item"><a href="legal">Legal</a>
-		        			<li class="ftr-links-item"><a href="press">Press room</a>
+		        			<li class="ftr-links-item"><a href="/about">Welcome</a>
+		        			<li class="ftr-links-item"><a href="/product-multi">MAM</a>
+		        			<li class="ftr-links-item"><a href="/legal">Legal</a>
+		        			<li class="ftr-links-item"><a href="/press">Press room</a>
 		        		</ul>
 		        		<ul class="ftr-links-list products">
 		        			<li class="ftr-links-item list-head">Products
-		        			<li class="ftr-links-item"><a href="forex">Forex</a>
-    						<li class="ftr-links-item"><a href="cfd">CFD</a>
-    						<li class="ftr-links-item"><a href="future">Futures CFDs</a>
+		        			<li class="ftr-links-item"><a href="/forex">Forex</a>
+    						<li class="ftr-links-item"><a href="/cfd">CFD</a>
+    						<li class="ftr-links-item"><a href="/future">Futures CFDs</a>
 		        		</ul>
 		        		<ul class="ftr-links-list operations">
 		        			<li class="ftr-links-item list-head">Operations
-		        			<li class="ftr-links-item"><a href="reg">Open an account</a>
-		        			<li class="ftr-links-item"><a href="deposit">Deposit options</a>
-		        			<li class="ftr-links-item"><a href="withdrawal">Withdrawals</a>
-		        			<li class="ftr-links-item"><a href="support">Technical support</a>
+		        			<li class="ftr-links-item"><a href="/reg">Open an account</a>
+		        			<li class="ftr-links-item"><a href="/deposit">Deposit options</a>
+		        			<li class="ftr-links-item"><a href="/withdrawal">Withdrawals</a>
+		        			<li class="ftr-links-item"><a href="/support">Technical support</a>
 		        			<!--<li class="ftr-links-item"><a href="chat">Phone trading</a>-->
 		        		</ul>
 	        		</div>

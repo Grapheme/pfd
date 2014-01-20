@@ -15,6 +15,7 @@ $locale = slang::get();
 
 Route::group(array('prefix' => $locale), function()
 {
+	/*
 
 	Route::get('down', function() { return View::make('downloads'); });
 	Route::get('about', function() { return View::make('about'); });
@@ -26,8 +27,6 @@ Route::group(array('prefix' => $locale), function()
 	Route::get('/', function() { return View::make('index'); });
 	Route::get('legal', function() { return View::make('legal'); });
 	Route::get('one-news', function() { return View::make('one-news'); });
-	Route::get('press', 'HomeController@newsPage');
-	Route::get('press{id}', 'HomeController@newsOnePage');
 	Route::get('product', function() { return View::make('product'); });
 	Route::get('product-kiwi', function() { return View::make('product-kiwi'); });
 	Route::get('product-multi', function() { return View::make('product-multi'); });
@@ -37,9 +36,14 @@ Route::group(array('prefix' => $locale), function()
 	Route::get('white', function() { return View::make('white'); });
 	Route::get('withdrawal', function() { return View::make('withdrawal'); });
 	Route::get('spread', function() { return View::make('spread'); });
+
+	*/
+
+	Route::get('press', 'HomeController@newsPage');
+	Route::get('press{id}', 'HomeController@newsOnePage');
 	Route::get('deposit', function() { return View::make('deposit'); });
 
-	Route::get('page/{page}', 'HomeController@getPage');
+
 
 
 	Route::get('login', array('as' => 'login', 'uses' => "AdminController@index"));
@@ -80,4 +84,7 @@ Route::group(array('prefix' => $locale), function()
 	Route::post('neteller', "HomeController@neteller");
 	Route::post('contact_send', "HomeController@contact_send");
 	Route::post('mam_send', "HomeController@mam_send");
+
+	Route::get('/{page}', 'HomeController@getPage');
+	Route::get('/', 'HomeController@getPage');
 });

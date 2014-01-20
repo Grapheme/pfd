@@ -1,5 +1,6 @@
 $(function(){
 	$('.lang-div').not($('.lang-div').first()).hide();
+	$("textarea").markItUp(mySettings);
 });
 
 $('.lang-change').click(function(){

@@ -24,7 +24,7 @@
 		        				<p>An Introducing Broker (IB) is a person or a company which refers clients to PFD. As long as these clients trade, the IB receives rebate from PFD. It is a spread model, which is mutually profitable for both broker and IB.</p>
 		        				<p>	
 		        					<span class="static-block-title">How to become an IB?</span>
-		        					Open an account with PFD either online signup or paper mode application form like any other client using <a class="our-link" href="http://www.pfd-nz.com/open-an-account.php">Our sign up form</a>;
+		        					Open an account with PFD either online signup or paper mode application form like any other client using <a class="our-link" href="http://kiwi.pfd-nz.com/open-an-account.php">Our sign up form</a>;
 		        				</p>
 		        				<p>
 			        				<div class="gen_list">
@@ -32,7 +32,7 @@
 			        						Account opened by an IB will be  treated as a rebate-cum-trading account;
 			        					</div>
 			        					<div class="gen_list-item">
-			        						Download PFD’s Introducing Broker Agreement using<br><a class="our-link" href="./downloads/IB_Agreement.pdf">Introducing Broker Agreement</a>, sign and scan to <a class="our-link" href="mailto:compliance@pfd-nz.com">compliance@pfd-nz.com</a>.
+			        						Download PFD’s Introducing Broker Agreement using<br><a class="our-link" href="/downloads/IB_Agreement.pdf">Introducing Broker Agreement</a>, sign and scan to <a class="our-link" href="mailto:compliance@pfd-nz.com">compliance@pfd-nz.com</a>.
 		        						</div>
 		        						<div class="gen_list-item">
 		        							PFD will discuss rebate structure with IB, accept an IB and align IB’s rebate-cum-trading account with the unique IB agreement;
@@ -41,7 +41,7 @@
 		        				</p>
 		        				<p>
 									<span class="static-block-title">How and when can an IB withdraw the rebate?</span>
-									Like any other client, an IB can download a <a class="our-link" href="withdrawal">Withdrawal Form</a>, fill in and scan to <a class="our-link" href="mailto:backoffice@pfd-nz.com">backoffice@pfd-nz.com</a> for real time processing to receive the payment.
+									Like any other client, an IB can download a <a class="our-link" href="/withdrawal">Withdrawal Form</a>, fill in and scan to <a class="our-link" href="mailto:backoffice@pfd-nz.com">backoffice@pfd-nz.com</a> for real time processing to receive the payment.
 								</p>
 		        			</div>
 		        		</div>
@@ -64,7 +64,7 @@
 								</p>
 								<p>
 									<span class="static-block-title">Where do I find promo items?</span>
-									PFD does a lot of ads on forex portals as could be viewed from our <a href="press" class="our-link">Press Room</a>. As a strategy, IBs can promote business independently making use of PFD’ accreditation and can add URL www.fd-nz.com on IB’s website and promote PFD’s brand.
+									PFD does a lot of ads on forex portals as could be viewed from our <a href="/press" class="our-link">Press Room</a>. As a strategy, IBs can promote business independently making use of PFD’ accreditation and can add URL www.fd-nz.com on IB’s website and promote PFD’s brand.
 								</p>
 								<p>
 									For more information, please email us at <a class="our-link" href="mailto:info@pfd-nz.com">info@pfd-nz.com</a> or call us at our office numbers.

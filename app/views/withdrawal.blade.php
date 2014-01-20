@@ -42,7 +42,7 @@
 				            		<span class="static-block-title">PFD Withdrawal Form</span>
 				            	</p>
 				                <p>Withdrawal form is  essentially designed for overseas bank wire. However, clients may use the same  form irrespective of the mode of &nbsp;withdrawal and fill in needed  particulars therein. </p>
-		        				<a href="./downloads/PFD_Withdrawal_Form.pdf" class="our-button" target="_blank">Download Withdrawal Form</a>
+		        				<a href="/downloads/PFD_Withdrawal_Form.pdf" class="our-button" target="_blank">Download Withdrawal Form</a>
 		        			</div>
 		        	</div>
 	        </section>
