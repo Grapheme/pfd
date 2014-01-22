@@ -38,25 +38,32 @@
         		<div class="header-top clearfix">
         			<a href="/" class="logo-div"></a>
         			<div class="lang-div">
-        				<!--<div class="search">
-	        				<div class="search-img">
+        				<div class="search">
+	        				<!--<div class="search-img">
 	        					<div class="search-main"></div>
 	        					<div class="search-line"></div>
-	        				</div>
+	        				</div>-->
 	        				<div class="lang-ul">
 	        					<div class="lang-triangle"></div>
-	        					<div class="active-lang" data-lang="en">EN</div>
-	        					<div class="option-lang">
-	        					<div class="lang-item" data-lang="zh-cn">中文</div>
-	        					</div>
-	        					<form class="hidden">
+	        					<?php if(is_null(Session::get('lang')) || Session::get('lang') == 'en') { ?>
+		        					<div class="active-lang" data-lang="en" href="<?=URL::to('/changeLang/en')?>">EN</div>
+		        					<div class="option-lang">
+		        						<a class="lang-item" data-lang="vie" href="<?=URL::to('/changeLang/ve')?>">VIE</a>
+		        					</div>
+	        					<?php } else { ?>
+		        					<div class="active-lang" data-lang="vie" href="<?=URL::to('/changeLang/ve')?>">VIE</div>
+		        					<div class="option-lang">
+		        						<a class="lang-item" data-lang="en" href="<?=URL::to('/changeLang/en')?>">EN</a>
+		        					</div>
+	        					<?php } ?>
+	        					<!--<form class="hidden">
 	        						<select>
 	        							<option value="en">en
-	        							<option value="zh-cn">cn
+	        							<option value="zh-cn">vie
 	        						</select>
-	        					</form>
+	        					</form>-->
 	        				</div>
-	        			</div>-->
+	        			</div>
 	        			<div class="search-open">
 	        				<input class="search-input" type="text" placeholder="search">
 	        			</div>

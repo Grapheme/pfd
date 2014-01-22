@@ -17,7 +17,7 @@
 
         <a href="#" data-lang="en" class="lang-change">EN</a>
         <a href="#" data-lang="ch" class="lang-change">CH</a>
-        <a href="#" data-lang="vi" class="lang-change">VI</a>
+        <a href="#" data-lang="ve" class="lang-change">VE</a>
 
 
         <div data-lang="en" class="lang-div">
@@ -50,16 +50,16 @@
         </div>
 
 
-        <div data-lang="vi" class="lang-div">
+        <div data-lang="ve" class="lang-div">
 
             <li>
-                {{ Form::label('meta_vi', 'Meta_vi:') }}
-                {{ Form::textarea('meta_vi') }}
+                {{ Form::label('meta_ve', 'Meta_ve:') }}
+                {{ Form::textarea('meta_ve') }}
             </li>
 
             <li>
-                {{ Form::label('content_vi', 'Content_vi:') }}
-                {{ Form::textarea('content_vi') }}
+                {{ Form::label('content_ve', 'Content_ve:') }}
+                {{ Form::textarea('content_ve') }}
             </li>
 
         </div>
