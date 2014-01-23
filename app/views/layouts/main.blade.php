@@ -68,45 +68,45 @@
 	        				<input class="search-input" type="text" placeholder="search">
 	        			</div>
         				<div class="sign">
-        					<a href="#" class="sign-up js-open-sign">Sign up</a>
+        					<a href="#" class="sign-up js-open-sign"><?=trans('menu.sign_up')?></a>
         				</div>
         			</div>
         		</div>
 	        	<div class="header-nav">
 	        		<nav>
 	        			<ul>
-	        				<li><a href="#">About Us</a>
+	        				<li><a href="#"><?=trans('menu.about_us')?></a>
 	        					<ul class="header-sub-menu">
-	        						<li><a href="/about">Company profile</a>
-	        						<li><a href="/white">White label</a>
-	        						<li><a href="/broker">Introducing broker</a>
-	        						<li><a href="/press">Press room</a>
+	        						<li><a href="/about"><?=trans('menu.comp_profile')?></a>
+	        						<li><a href="/white"><?=trans('menu.white')?></a>
+	        						<li><a href="/broker"><?=trans('menu.broker')?></a>
+	        						<li><a href="/press"><?=trans('menu.press')?></a>
 	        					</ul>
-	        				<li><a href="#">Platforms</a>
+	        				<li><a href="#"><?=trans('menu.platforms')?></a>
 	        					<ul class="header-sub-menu">
 	        						<li><a href="/product">PFD trader (MT4)</a>
 	        						<li><a href="/product-kiwi">Kiwi trader</a>
 	        						<li><a href="/product-multi">Multi Account Manager</a>
 	        					</ul>
-	        				<li><a href="#">Products</a>
+	        				<li><a href="#"><?=trans('menu.products')?></a>
 	        					<ul class="header-sub-menu">
 	        						<li><a href="/forex">Forex</a>
-	        						<li><a href="/cfd">CFD</a>
-	        						<li><a href="/future">Futures CFDs</a>
+	        						<li><a href="/cfd"><?=trans('menu.cfd')?></a>
+	        						<li><a href="/future"><?=trans('menu.comp_futures')?></a>
 	        					</ul>
-	        				<li><a href="#">Operations</a>
+	        				<li><a href="#"><?=trans('menu.operations')?></a>
 	        					<ul class="header-sub-menu">
 	        					    <!--WHAT is this!?
 									<li><a href="#">Discretionary Authority</a>
 									-->
-	        					    <li><a href="/deposit">Deposit Options</a>
-	        					    <li><a href="/withdrawal">Withdrawals</a>
-	        					    <li><a href="/support">Technical Support</a>
-	        					    <li><a href="/chat">Chat/Phone Trading</a>
+	        					    <li><a href="/deposit"><?=trans('menu.deposit')?></a>
+	        					    <li><a href="/withdrawal"><?=trans('menu.withdrawals')?></a>
+	        					    <li><a href="/support"><?=trans('menu.support')?></a>
+	        					    <li><a href="/chat"><?=trans('menu.chat')?></a>
 	        					</ul>
 	        				<li><a href="/product-multi">MAM</a>
-	        				<li><a href="/spread">Spreads Comparison</a>
-	        				<li><a href="/contacts">Contacts</a>
+	        				<li><a href="/spread"><?=trans('menu.spread')?></a>
+	        				<li><a href="/contacts"><?=trans('menu.contacts')?></a>
 	        			</ul>
 	        		</nav>
 	        		<div class="shadow"></div>
