@@ -22,7 +22,10 @@ class HomeController extends BaseController {
 			$data = array('page' => $page);
 			return View::make('pages', $data);
 		} else {
-			$page = StatPage::where('url', $page)->firstOrFail();
+			if(!$page = StatPage::where('url', $page)->first())
+			{
+				App:abort(404);
+			}
 			$data = array('page' => $page);
 			return View::make('pages', $data);
 		}
