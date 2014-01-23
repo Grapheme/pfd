@@ -38,68 +38,75 @@
         		<div class="header-top clearfix">
         			<a href="/" class="logo-div"></a>
         			<div class="lang-div">
-        				<!--<div class="search">
-	        				<div class="search-img">
+        				<div class="search">
+	        				<!--<div class="search-img">
 	        					<div class="search-main"></div>
 	        					<div class="search-line"></div>
-	        				</div>
+	        				</div>-->
 	        				<div class="lang-ul">
 	        					<div class="lang-triangle"></div>
-	        					<div class="active-lang" data-lang="en">EN</div>
-	        					<div class="option-lang">
-	        					<div class="lang-item" data-lang="zh-cn">中文</div>
-	        					</div>
-	        					<form class="hidden">
+	        					<?php if(is_null(Session::get('lang')) || Session::get('lang') == 'en') { ?>
+		        					<div class="active-lang" data-lang="en" href="<?=URL::to('/changeLang/en')?>">EN</div>
+		        					<div class="option-lang">
+		        						<a style="color: #000;" class="lang-item" data-lang="vie" href="<?=URL::to('/changeLang/ve')?>">VIE</a>
+		        					</div>
+	        					<?php } else { ?>
+		        					<div class="active-lang" data-lang="vie" href="<?=URL::to('/changeLang/ve')?>">VIE</div>
+		        					<div class="option-lang">
+		        						<a style="color: #000;" class="lang-item" data-lang="en" href="<?=URL::to('/changeLang/en')?>">EN</a>
+		        					</div>
+	        					<?php } ?>
+	        					<!--<form class="hidden">
 	        						<select>
 	        							<option value="en">en
-	        							<option value="zh-cn">cn
+	        							<option value="zh-cn">vie
 	        						</select>
-	        					</form>
+	        					</form>-->
 	        				</div>
-	        			</div>-->
+	        			</div>
 	        			<div class="search-open">
 	        				<input class="search-input" type="text" placeholder="search">
 	        			</div>
         				<div class="sign">
-        					<a href="#" class="sign-up js-open-sign">Sign up</a>
+        					<a href="#" class="sign-up js-open-sign"><?=trans('menu.sign_up')?></a>
         				</div>
         			</div>
         		</div>
 	        	<div class="header-nav">
 	        		<nav>
 	        			<ul>
-	        				<li><a href="#">About Us</a>
+	        				<li><a href="#"><?=trans('menu.about_us')?></a>
 	        					<ul class="header-sub-menu">
-	        						<li><a href="/about">Company profile</a>
-	        						<li><a href="/white">White label</a>
-	        						<li><a href="/broker">Introducing broker</a>
-	        						<li><a href="/press">Press room</a>
+	        						<li><a href="/about"><?=trans('menu.comp_profile')?></a>
+	        						<li><a href="/white"><?=trans('menu.white')?></a>
+	        						<li><a href="/broker"><?=trans('menu.broker')?></a>
+	        						<li><a href="/press"><?=trans('menu.press')?></a>
 	        					</ul>
-	        				<li><a href="#">Platforms</a>
+	        				<li><a href="#"><?=trans('menu.platforms')?></a>
 	        					<ul class="header-sub-menu">
 	        						<li><a href="/product">PFD trader (MT4)</a>
 	        						<li><a href="/product-kiwi">Kiwi trader</a>
 	        						<li><a href="/product-multi">Multi Account Manager</a>
 	        					</ul>
-	        				<li><a href="#">Products</a>
+	        				<li><a href="#"><?=trans('menu.products')?></a>
 	        					<ul class="header-sub-menu">
 	        						<li><a href="/forex">Forex</a>
-	        						<li><a href="/cfd">CFD</a>
-	        						<li><a href="/future">Futures CFDs</a>
+	        						<li><a href="/cfd"><?=trans('menu.cfd')?></a>
+	        						<li><a href="/future"><?=trans('menu.futures')?></a>
 	        					</ul>
-	        				<li><a href="#">Operations</a>
+	        				<li><a href="#"><?=trans('menu.operations')?></a>
 	        					<ul class="header-sub-menu">
 	        					    <!--WHAT is this!?
 									<li><a href="#">Discretionary Authority</a>
 									-->
-	        					    <li><a href="/deposit">Deposit Options</a>
-	        					    <li><a href="/withdrawal">Withdrawals</a>
-	        					    <li><a href="/support">Technical Support</a>
-	        					    <li><a href="/chat">Chat/Phone Trading</a>
+	        					    <li><a href="/deposit"><?=trans('menu.deposit')?></a>
+	        					    <li><a href="/withdrawal"><?=trans('menu.withdrawals')?></a>
+	        					    <li><a href="/support"><?=trans('menu.support')?></a>
+	        					    <li><a href="/chat"><?=trans('menu.chat')?></a>
 	        					</ul>
 	        				<li><a href="/product-multi">MAM</a>
-	        				<li><a href="/spread">Spreads Comparison</a>
-	        				<li><a href="/contacts">Contacts</a>
+	        				<li><a href="/spread"><?=trans('menu.spread')?></a>
+	        				<li><a href="/contacts"><?=trans('menu.contacts')?></a>
 	        			</ul>
 	        		</nav>
 	        		<div class="shadow"></div>
@@ -137,31 +144,31 @@
 	        		<div class="ftr-top clearfix">
 		        		<ul class="ftr-links-list">
 		        			<li class="ftr-links-item"><a href="/">Home</a>
-		        			<li class="ftr-links-item"><a href="/white">White label</a>
-		        			<li class="ftr-links-item"><a href="/broker">Introducing broker</a>
-		        			<li class="ftr-links-item"><a href="/spread">Spread comparison</a>
+		        			<li class="ftr-links-item"><a href="/white"><?=trans('menu.white')?></a>
+		        			<li class="ftr-links-item"><a href="/broker"><?=trans('menu.broker')?></a>
+		        			<li class="ftr-links-item"><a href="/spread"><?=trans('menu.spread')?></a>
 		        			<li class="ftr-links-item"><a href="/product">Meta trader 4</a>
-		        			<li class="ftr-links-item"><a href="/contacts">Contacts</a>
+		        			<li class="ftr-links-item"><a href="/contacts"><?=trans('menu.contacts')?></a>
 		        		</ul>
 		        		<ul class="ftr-links-list about-us">
-		        			<li class="ftr-links-item list-head">About Us</a>
+		        			<li class="ftr-links-item list-head"><?=trans('menu.about_us')?></a>
 		        			<li class="ftr-links-item"><a href="/about">Welcome</a>
 		        			<li class="ftr-links-item"><a href="/product-multi">MAM</a>
 		        			<li class="ftr-links-item"><a href="/legal">Legal</a>
-		        			<li class="ftr-links-item"><a href="/press">Press room</a>
+		        			<li class="ftr-links-item"><a href="/press"><?=trans('menu.press')?></a>
 		        		</ul>
 		        		<ul class="ftr-links-list products">
-		        			<li class="ftr-links-item list-head">Products
+		        			<li class="ftr-links-item list-head"><?=trans('menu.products')?>
 		        			<li class="ftr-links-item"><a href="/forex">Forex</a>
-    						<li class="ftr-links-item"><a href="/cfd">CFD</a>
-    						<li class="ftr-links-item"><a href="/future">Futures CFDs</a>
+    						<li class="ftr-links-item"><a href="/cfd"><?=trans('menu.cfd')?></a>
+    						<li class="ftr-links-item"><a href="/future"><?=trans('menu.futures')?></a>
 		        		</ul>
 		        		<ul class="ftr-links-list operations">
-		        			<li class="ftr-links-item list-head">Operations
+		        			<li class="ftr-links-item list-head"><?=trans('menu.operations')?>
 		        			<li class="ftr-links-item"><a href="/reg">Open an account</a>
-		        			<li class="ftr-links-item"><a href="/deposit">Deposit options</a>
-		        			<li class="ftr-links-item"><a href="/withdrawal">Withdrawals</a>
-		        			<li class="ftr-links-item"><a href="/support">Technical support</a>
+		        			<li class="ftr-links-item"><a href="/deposit"><?=trans('menu.deposit')?></a>
+		        			<li class="ftr-links-item"><a href="/withdrawal"><?=trans('menu.withdrawals')?></a>
+		        			<li class="ftr-links-item"><a href="/support"><?=trans('menu.support')?></a>
 		        			<!--<li class="ftr-links-item"><a href="chat">Phone trading</a>-->
 		        		</ul>
 	        		</div>
