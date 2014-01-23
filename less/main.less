@@ -154,7 +154,7 @@ textarea {
   font: @size e('/') @line-h @family;
 }
 .desc {
-  .footer-font(@proxima-nova-reg, .875em, 1.3571em);
+  .footer-font(@proxima-nova-reg, 14px, 1.3571em);
   color: @black;
 }
 .desc-bold {
@@ -1801,10 +1801,72 @@ section.normal {
     position: relative;
     left: -10px;    
 }
-.withdrawal-list .contact-table {
+.contact-tab-cont .contact-table {
     margin: 12px 0;
 }
+h2.normal-list-title {
+    font-size: 1.17em;
+}
+/*
+ * About page
+ */
+.company-profile {
+  padding: 40px 0 0;
+  .fotorama {
+    margin:  0 0 50px;
+  }
+  p {
+    margin: 0 0 25px;
+  }
+  .static .static-title {
+    padding: 0 0 0 40px;
+  }
+  .static-block .static-block-in {
+    padding: 5px 40px 0;
+    .gen_list {
+      margin: 0 0 25px;
+      p {
+        margin: 0;      
+      }
+      .gen_list-item {
+        margin: 0;
+      }
+    }
+  } 
+}
 
+/*
+ * Chat/Phone Trading
+ */
+.chat-phone-trade {
+  .f_header { 
+    margin-bottom: 0;
+  }
+  .contact-table {
+    margin: 3px 0 12px 0;
+  }
+} 
+
+/*
+ * Forex 
+ */
+.color-table .open_td {
+  .transition(@transTime: .3s);
+  padding: 0;
+  p {
+    .transition(@transTime: .3s);
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+
+.member-derivatives .gen_list {
+  margin: 0 0 12px;
+}
+.member-derivatives a img {
+    margin: 0 0 1em;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */

@@ -4,6 +4,7 @@ $('.header-nav a[href=#]').click(function(){
 
 var $fotoramaDiv = $('.fotorama').fotorama();
 var fotorama = $fotoramaDiv.data('fotorama');
+var timer;
 
 function cssFade(elem, act) {
 	if(act=='show') {
@@ -65,6 +66,18 @@ $('.lang-item').click(function(){
 	$(this).html(langA);
 	$('.active-lang').html(langB);
 });
+
+/*
+ * Hover effects on hover table
+ */
+$('.color-table tr:nth-child(even)').css('cursor', 'pointer').hover(
+	function() {
+		$(this).next().find('.open_td').css('padding', '5px 0').find('p').css('height', 'auto');
+	},
+	function() {
+		$(this).next().find('.open_td').css('padding', '0').find('p').css('height', '0');
+	}
+);
 
 $(document).click(function(){
 	cssFade('.sign-up-open','hide');
