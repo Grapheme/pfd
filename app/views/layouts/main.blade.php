@@ -48,12 +48,12 @@
 	        					<?php if(is_null(Session::get('lang')) || Session::get('lang') == 'en') { ?>
 		        					<div class="active-lang" data-lang="en" href="<?=URL::to('/changeLang/en')?>">EN</div>
 		        					<div class="option-lang">
-		        						<a class="lang-item" data-lang="vie" href="<?=URL::to('/changeLang/ve')?>">VIE</a>
+		        						<a style="color: #000;" class="lang-item" data-lang="vie" href="<?=URL::to('/changeLang/ve')?>">VIE</a>
 		        					</div>
 	        					<?php } else { ?>
 		        					<div class="active-lang" data-lang="vie" href="<?=URL::to('/changeLang/ve')?>">VIE</div>
 		        					<div class="option-lang">
-		        						<a class="lang-item" data-lang="en" href="<?=URL::to('/changeLang/en')?>">EN</a>
+		        						<a style="color: #000;" class="lang-item" data-lang="en" href="<?=URL::to('/changeLang/en')?>">EN</a>
 		        					</div>
 	        					<?php } ?>
 	        					<!--<form class="hidden">
@@ -92,7 +92,7 @@
 	        					<ul class="header-sub-menu">
 	        						<li><a href="/forex">Forex</a>
 	        						<li><a href="/cfd"><?=trans('menu.cfd')?></a>
-	        						<li><a href="/future"><?=trans('menu.comp_futures')?></a>
+	        						<li><a href="/future"><?=trans('menu.futures')?></a>
 	        					</ul>
 	        				<li><a href="#"><?=trans('menu.operations')?></a>
 	        					<ul class="header-sub-menu">
@@ -144,31 +144,31 @@
 	        		<div class="ftr-top clearfix">
 		        		<ul class="ftr-links-list">
 		        			<li class="ftr-links-item"><a href="/">Home</a>
-		        			<li class="ftr-links-item"><a href="/white">White label</a>
-		        			<li class="ftr-links-item"><a href="/broker">Introducing broker</a>
-		        			<li class="ftr-links-item"><a href="/spread">Spread comparison</a>
+		        			<li class="ftr-links-item"><a href="/white"><?=trans('menu.white')?></a>
+		        			<li class="ftr-links-item"><a href="/broker"><?=trans('menu.broker')?></a>
+		        			<li class="ftr-links-item"><a href="/spread"><?=trans('menu.spread')?></a>
 		        			<li class="ftr-links-item"><a href="/product">Meta trader 4</a>
-		        			<li class="ftr-links-item"><a href="/contacts">Contacts</a>
+		        			<li class="ftr-links-item"><a href="/contacts"><?=trans('menu.contacts')?></a>
 		        		</ul>
 		        		<ul class="ftr-links-list about-us">
-		        			<li class="ftr-links-item list-head">About Us</a>
+		        			<li class="ftr-links-item list-head"><?=trans('menu.about_us')?></a>
 		        			<li class="ftr-links-item"><a href="/about">Welcome</a>
 		        			<li class="ftr-links-item"><a href="/product-multi">MAM</a>
 		        			<li class="ftr-links-item"><a href="/legal">Legal</a>
-		        			<li class="ftr-links-item"><a href="/press">Press room</a>
+		        			<li class="ftr-links-item"><a href="/press"><?=trans('menu.press')?></a>
 		        		</ul>
 		        		<ul class="ftr-links-list products">
-		        			<li class="ftr-links-item list-head">Products
+		        			<li class="ftr-links-item list-head"><?=trans('menu.products')?>
 		        			<li class="ftr-links-item"><a href="/forex">Forex</a>
-    						<li class="ftr-links-item"><a href="/cfd">CFD</a>
-    						<li class="ftr-links-item"><a href="/future">Futures CFDs</a>
+    						<li class="ftr-links-item"><a href="/cfd"><?=trans('menu.cfd')?></a>
+    						<li class="ftr-links-item"><a href="/future"><?=trans('menu.futures')?></a>
 		        		</ul>
 		        		<ul class="ftr-links-list operations">
-		        			<li class="ftr-links-item list-head">Operations
+		        			<li class="ftr-links-item list-head"><?=trans('menu.operations')?>
 		        			<li class="ftr-links-item"><a href="/reg">Open an account</a>
-		        			<li class="ftr-links-item"><a href="/deposit">Deposit options</a>
-		        			<li class="ftr-links-item"><a href="/withdrawal">Withdrawals</a>
-		        			<li class="ftr-links-item"><a href="/support">Technical support</a>
+		        			<li class="ftr-links-item"><a href="/deposit"><?=trans('menu.deposit')?></a>
+		        			<li class="ftr-links-item"><a href="/withdrawal"><?=trans('menu.withdrawals')?></a>
+		        			<li class="ftr-links-item"><a href="/support"><?=trans('menu.support')?></a>
 		        			<!--<li class="ftr-links-item"><a href="chat">Phone trading</a>-->
 		        		</ul>
 	        		</div>
