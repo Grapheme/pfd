@@ -1859,11 +1859,14 @@ h2.normal-list-title {
 /*
  * Forex 
  */
+.color-table tr {
+  &:nth-child(2n) {
+    cursor: pointer;
+  }
+}
 .color-table .open_td {
-  .transition(@transTime: .3s);
-  padding: 0;
+  padding: 0 5px;
   p {
-    .transition(@transTime: .3s);
     height: 0;
     overflow: hidden;
   }

@@ -70,12 +70,29 @@ $('.lang-item').click(function(){
 /*
  * Hover effects on hover table
  */
-$('.color-table tr:nth-child(even)').css('cursor', 'pointer').hover(
+$('.color-table tr:nth-child(even)').hover(
 	function() {
-		$(this).next().find('.open_td').css('padding', '5px 0').find('p').css('height', 'auto');
+		if($('.opened_td')[0]) {
+			$('.opened_td').removeClass('opened_td').css('padding', '0 5px').find('p').css('height', '0');
+		}
+		$(this).next().find('.open_td').addClass('opened_td').css('padding', '5px 5px').find('p').css('height', 'auto');
 	},
 	function() {
-		$(this).next().find('.open_td').css('padding', '0').find('p').css('height', '0');
+		var that = $(this);
+		timer = window.setTimeout(function(){
+			that.next().find('.open_td').removeClass('opened_td').css('padding', '0 5px').find('p').css('height', '0');
+		}, 1000);						
+	}
+);
+$('.color-table tr:nth-child(odd)').hover(
+	function() {
+		window.clearTimeout(timer);
+	},
+	function() {
+		var that = $(this);
+		timer = window.setTimeout(function(){
+			that.find('.open_td').css('padding', '0 5px').find('p').css('height', '0');
+		}, 1000);
 	}
 );
 
