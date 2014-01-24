@@ -120,19 +120,19 @@
 	        	<ul>
 	        		<li>
 	        			<a href="/reg#demo" class="traider-link">
-	        				<span class="f_header">Demo account</span>
-	        				<span class="desc">Test your trading strategies in a real-time environment and familiarize yourself with all the features of PFD Demonstrations's PFDTrader - with no risk and no obligation. Register below and we'll give you PFD Demonstrations's $50,000 virtual margin deposit and access to a fully functional version of PFDTrader for the next 15-days.</span>
+	        				<span class="f_header"><?=trans('menu.demo_acc')?></span>
+	        				<span class="desc"><?=trans('menu.demo_desc')?></span>
 	        			</a>
 	        		<li>
 	        			<!--<a href="reg#online" class="traider-link">-->
 	        				<a href="https://kiwi.pfd-nz.com/signup/logon" class="traider-link">
-	        				<span class="f_header">Online sign up</span>
-	        				<span class="desc">Online sign up is intended to be completed in conjunction with the relevant provisions of Pacific Financial Derivative Limited’s Individual Account Client Services Agreement Individual Account. First step is to register user name, password and email id.</span>
+	        				<span class="f_header"><?=trans('menu.online_acc')?></span>
+	        				<span class="desc"><?=trans('menu.online_desc')?></span>
 	        			</a>
 	        		<li>
 	        			<a href="/reg#paper" class="traider-link">
-	        				<span class="f_header">Paper mode account</span>
-	        				<span class="desc">Once you have decided which of the account forms are right for you, please download the corresponding PDF form from our website right here. Now you can proceed and fill the account opening form.</span>
+	        				<span class="f_header"><?=trans('menu.papper_acc')?></span>
+	        				<span class="desc"><?=trans('menu.papper_desc')?></span>
 	        			</a>
 	        	</ul>
 	        </div>

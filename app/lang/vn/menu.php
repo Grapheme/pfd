@@ -52,4 +52,10 @@ return array(
 	<!--End Comm100 Live Chat Code-->
 	",
 	"skype" => "pacific.vn",
+	"demo_acc" => "TÀI KHOẢN DÙNG THỬ",
+	"demo_desc" => "Tài khoản Dùng thử đã được thiết kế để mô phỏng gần giống môi trường giao dịch thực nhất trên nền tảng PFD Trader dựa trên những điều kiện thị trường thực tế và cung cấp cho những người mới bắt đầu giao dịch một cơ hội lớn để thử kỹ năng của mình trên thị trường ngoại hối, mà không phải chịu rủi ro với tiền thật. ",
+	"online_acc" => "MỞ TÀI KHOẢN ONLINE",
+	"online_desc" => "Khách hàng có thể mở tài khoản giao dịch một cách dễ dàng khi đăng ký Online thông qua hệ thống của chúng tôi. Khi đăng ký tài khoản Online thành công điều đó đồng nghĩa với việc có một hợp đồng giao dịch được ký kết giữa khách hàng và PFD.",
+	"papper_acc" => "HỢP ĐỒNG MỞ TÀI KHOẢN",
+	"papper_desc" => "Khi bạn quyết định mở tài khoản với chúng tôi bằng hình thức hợp đồng giấy.xin vui lòng tải về mẫu hợp đồng bằng cách click vào đây và gửi lại cho chúng tôi để tiến hành mở tài khoản",
 );
