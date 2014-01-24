@@ -48,10 +48,10 @@
 	        					<?php if(is_null(Session::get('lang')) || Session::get('lang') == 'en') { ?>
 		        					<div class="active-lang" data-lang="en" href="<?=URL::to('/changeLang/en')?>">EN</div>
 		        					<div class="option-lang">
-		        						<a style="color: #000;" class="lang-item" data-lang="vie" href="<?=URL::to('/changeLang/ve')?>">VIE</a>
+		        						<a style="color: #000;" class="lang-item" data-lang="vie" href="<?=URL::to('/changeLang/ve')?>">Tiếng Việt</a>
 		        					</div>
 	        					<?php } else { ?>
-		        					<div class="active-lang" data-lang="vie" href="<?=URL::to('/changeLang/ve')?>">VIE</div>
+		        					<div class="active-lang" data-lang="vie" href="<?=URL::to('/changeLang/ve')?>">Tiếng Việt</div>
 		        					<div class="option-lang">
 		        						<a style="color: #000;" class="lang-item" data-lang="en" href="<?=URL::to('/changeLang/en')?>">EN</a>
 		        					</div>
@@ -143,6 +143,7 @@
 	        	<div class="footer-content cleafix">
 	        		<div class="ftr-top clearfix">
 		        		<ul class="ftr-links-list">
+		        			<li class="ftr-links-item"><a href="skype:<?=trans('menu.skype')?>?chat" style="text-decoration: underline;">Skype Chat</a>
 		        			<li class="ftr-links-item"><a href="/">Home</a>
 		        			<li class="ftr-links-item"><a href="/white"><?=trans('menu.white')?></a>
 		        			<li class="ftr-links-item"><a href="/broker"><?=trans('menu.broker')?></a>
@@ -177,13 +178,6 @@
 	        		</div>
 	        		<a href="./" class="ftr-logo"></a>
 	        	</div>
-
-	        	<!--do not modify this script -->
-				<div class='nanorep_loadingData' id='nanoRepProxyContainer' style='position:absolute;top:-500px;left:0px;'></div>
-				<script type='text/javascript'>var _nRepData = _nRepData || []; _nRepData['kb'] = '23452028'; _nRepData['float'] = {account: 'pfdnz', cdcVersion: 3, cdcFrame: '', scriptVersion: '2.22.2.31'}
-				/* API here */;
-				(function(){var windowLoadFunc = function(){var _nRepData = window._nRepData || [];_nRepData['windowLoaded'] = true;if (typeof(_nRepData['windowOnload']) === 'function') _nRepData['windowOnload']();};if (window.attachEvent)window.attachEvent('onload', windowLoadFunc);else if (window.addEventListener)window.addEventListener('load', windowLoadFunc, false);var sc = document.createElement('script');sc.type = 'text/javascript';sc.async = true;sc.defer = true;sc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'my.nanorep.com/widget/scripts/float.js';var _head = document.getElementsByTagName('head')[0];_head.appendChild(sc);})();
-				</script>
 				
 	        </footer>
 		
@@ -226,6 +220,8 @@
 		   if(oldonload){oldonload()}};
 		}());
 		</script>
+
+		<?=trans('menu.ve_chat')?>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>

@@ -456,6 +456,10 @@ header {
  * Top block of header
  */
 
+.active-lang {
+  margin-right: 8px;
+}
+
 .header-top {
   padding-top: 40px;
   padding-bottom: 15px;
@@ -492,22 +496,24 @@ header {
   			float: left;
   			cursor: pointer;
   			position: relative;
-  			width: 35px; 			
+  			width: 85px;
+        text-align: right; 			
   			
   			.option-lang {
   				.transition(.3s);
   				position: absolute;
   				max-height: 0px;
   				overflow: hidden;
+          right: 8px;
   			}
   			
   			.lang-triangle {
   				.transition(.3s);
   				
-  				position: absolute;
+  				position: relative;
   				width: 0;
   				height: 0;
-  				left: 22px;
+  				float: right;
   				top: 9px;
   				border-left: 3px solid transparent;
   				border-right: 3px solid transparent;
@@ -892,7 +898,7 @@ header {
 		border: 1px solid #cacaca;
 		width: 200px;
 		margin: 5px;
-		padding: 0;
+		padding: 0 0 0 7px;
 	}
 	
 	select {
@@ -1768,7 +1774,7 @@ section.normal {
 	}
 	
 	.error-input&:before {
-		content: "incorrect";
+		content: "Incorrect";
 		position: absolute;
 		top: 0;
 		right: 100%;

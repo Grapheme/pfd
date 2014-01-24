@@ -49,6 +49,7 @@
 			        				<div class="news-text">
 			        					{{$oneNews->text}}
 			        				</div>
+			        				<a href="/press" class="news-link">&laquo; Previous</a>
 			        				<!--<div class="news-text">Posted in NEWS and ANNOUNCEMENTS | Tagged Forex Review</div>-->
 			        			</div>
 
