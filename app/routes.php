@@ -16,7 +16,7 @@ $locale = slang::get();
 Route::group(array('prefix' => $locale), function()
 {
 	Route::get('changeLang/{lang}', function($lang){
-		$languages = array('en', 'ch', 've');
+		$languages = array('en', 'ch', 'vn');
 		if(in_array($lang, $languages)) {
 			Session::put('lang', $lang);
 		}

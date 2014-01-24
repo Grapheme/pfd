@@ -4,7 +4,7 @@ class slang {
 
 	public static function get()
 	{
-		$languages = array('en','ch','ve');
+		$languages = array('en','ch','vn');
 		$locale = Request::segment(1);
 
 		if(in_array($locale, $languages)) {

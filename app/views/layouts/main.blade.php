@@ -46,14 +46,14 @@
 	        				<div class="lang-ul">
 	        					<div class="lang-triangle"></div>
 	        					<?php if(is_null(Session::get('lang')) || Session::get('lang') == 'en') { ?>
-		        					<div class="active-lang" data-lang="en" href="<?=URL::to('/changeLang/en')?>">EN</div>
+		        					<div class="active-lang" data-lang="en" href="<?=URL::to('/changeLang/en')?>">English</div>
 		        					<div class="option-lang">
-		        						<a style="color: #000;" class="lang-item" data-lang="vie" href="<?=URL::to('/changeLang/ve')?>">Tiếng Việt</a>
+		        						<a style="color: #000;" class="lang-item" data-lang="vie" href="<?=URL::to('/changeLang/vn')?>">Tiếng Việt</a>
 		        					</div>
 	        					<?php } else { ?>
 		        					<div class="active-lang" data-lang="vie" href="<?=URL::to('/changeLang/ve')?>">Tiếng Việt</div>
 		        					<div class="option-lang">
-		        						<a style="color: #000;" class="lang-item" data-lang="en" href="<?=URL::to('/changeLang/en')?>">EN</a>
+		        						<a style="color: #000;" class="lang-item" data-lang="en" href="<?=URL::to('/changeLang/en')?>">English</a>
 		        					</div>
 	        					<?php } ?>
 	        					<!--<form class="hidden">
@@ -143,13 +143,13 @@
 	        	<div class="footer-content cleafix">
 	        		<div class="ftr-top clearfix">
 		        		<ul class="ftr-links-list">
-		        			<li class="ftr-links-item"><a href="skype:<?=trans('menu.skype')?>?chat" style="text-decoration: underline;">Skype Chat</a>
 		        			<li class="ftr-links-item"><a href="/">Home</a>
 		        			<li class="ftr-links-item"><a href="/white"><?=trans('menu.white')?></a>
 		        			<li class="ftr-links-item"><a href="/broker"><?=trans('menu.broker')?></a>
 		        			<li class="ftr-links-item"><a href="/spread"><?=trans('menu.spread')?></a>
 		        			<li class="ftr-links-item"><a href="/product">Meta trader 4</a>
 		        			<li class="ftr-links-item"><a href="/contacts"><?=trans('menu.contacts')?></a>
+		        			<li class="ftr-links-item"><a href="skype:<?=trans('menu.skype')?>?chat" style="text-decoration: underline;">Skype Chat</a>
 		        		</ul>
 		        		<ul class="ftr-links-list about-us">
 		        			<li class="ftr-links-item list-head"><?=trans('menu.about_us')?></a>
