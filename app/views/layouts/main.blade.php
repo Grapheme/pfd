@@ -112,6 +112,7 @@
 	        		<div class="shadow"></div>
 	        	</div>
 	        </header>
+	        <a href="skype:<?=trans('menu.skype')?>?chat" class="skype-chat"></a>
 	        <div class="sign-up-open">
 	        	<div class="sign-close js-close-sign">
 	        		<div class="sign-close-one"></div>
