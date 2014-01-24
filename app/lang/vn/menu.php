@@ -50,6 +50,7 @@ return array(
 	    comm100_s.parentNode.insertBefore(comm100_lc, comm100_s);
 	</script>
 	<!--End Comm100 Live Chat Code-->
+		<a href=\"skype:pacific.vn?chat\" class=\"skype-chat\"></a>
 	",
 	"skype" => "pacific.vn",
 	"demo_acc" => "TÀI KHOẢN DÙNG THỬ",

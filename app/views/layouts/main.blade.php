@@ -37,7 +37,7 @@
         	<header>
         		<div class="header-social">
 		        	<span>Follow Us On:</span>
-		        	<a href="http://www.facebook.com/pfdnz/info" class="social-button facebook" target="_blank"></a><a href="http://twitter.com/#!/pfdnz" class="social-button linked" target="_blank"></a><a href="http://twitter.com/#!/pfdnz" class="social-button twitter" target="_blank"></a><a href="http://www.pfd-nz.com/press-room/index.php/feed/" class="social-button rss" target="_blank"></a>
+		        	<a href="http://www.facebook.com/pfdnz/info" class="social-button facebook" target="_blank"></a><a href="http://twitter.com/#!/pfdnz" class="social-button linked" target="_blank"></a><a href="http://twitter.com/#!/pfdnz" class="social-button twitter" target="_blank"></a><a href="http://kiwi.pfd-nz.com/press-room/index.php/feed/" class="social-button rss" target="_blank"></a>
 		        </div>
         		<div class="header-top clearfix">
         			<a href="/" class="logo-div"></a>
@@ -116,7 +116,6 @@
 	        		<div class="shadow"></div>
 	        	</div>
 	        </header>
-	        <a href="skype:<?=trans('menu.skype')?>?chat" class="skype-chat"></a>
 		    <div class="sign-up-open">
 	        	<div class="sign-close js-close-sign">
 	        		<div class="sign-close-one"></div>
