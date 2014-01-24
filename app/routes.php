@@ -99,3 +99,8 @@ Route::group(array('prefix' => $locale), function()
 	Route::get('/{page}', 'HomeController@getPage');
 	Route::get('/', 'HomeController@getPage');
 });
+
+App::missing(function($exception)
+{
+    return 404;
+});

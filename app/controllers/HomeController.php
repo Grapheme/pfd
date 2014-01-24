@@ -24,7 +24,8 @@ class HomeController extends BaseController {
 		} else {
 			if(!$page = StatPage::where('url', $page)->first())
 			{
-				App:abort(404);
+				App::abort(404);
+				exit;
 			}
 			$data = array('page' => $page);
 			return View::make('pages', $data);
