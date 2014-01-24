@@ -24,7 +24,7 @@ return array(
 	"futures" => "Futures CFD",
 	"operations" => "Operations",
 	"deposit" => "Deposit Options",
-	"withdrawals" => "withdrawals",
+	"withdrawals" => "Withdrawals",
 	"support" => "Technical Support",
 	"chat" => "Chat/Phone Trading",
 	"spread" => "Spread Comparison",

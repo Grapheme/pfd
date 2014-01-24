@@ -54,13 +54,13 @@
         <div data-lang="ve" class="lang-div">
 
             <li>
-                {{ Form::label('meta_ve', 'Meta_ve:') }}
-                {{ Form::textarea('meta_ve') }}
+                {{ Form::label('meta_vn', 'meta_vn:') }}
+                {{ Form::textarea('meta_vn') }}
             </li>
 
             <li>
-                {{ Form::label('content_ve', 'Content_ve:') }}
-                {{ Form::textarea('content_ve') }}
+                {{ Form::label('content_vn', 'content_vn:') }}
+                {{ Form::textarea('content_vn') }}
             </li>
 
         </div>

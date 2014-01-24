@@ -4,7 +4,7 @@
 
 <h1>Edit StatPage</h1>
 {{ Form::model($statPage, array('method' => 'PATCH', 'class' => 'pageForm','route' => array('admin.statPages.update', $statPage->id))) }}
-	<ul>
+    <ul>
         <li>
             {{ Form::label('name', 'Name:') }}
             {{ Form::text('name') }}
@@ -53,13 +53,13 @@
         <div data-lang="ve" class="lang-div">
 
             <li>
-                {{ Form::label('meta_ve', 'Meta_ve:') }}
-                {{ Form::textarea('meta_ve') }}
+                {{ Form::label('meta_vn', 'Meta_vn:') }}
+                {{ Form::textarea('meta_vn') }}
             </li>
 
             <li>
-                {{ Form::label('content_ve', 'Content_ve:') }}
-                {{ Form::textarea('content_ve') }}
+                {{ Form::label('content_vn', 'Content_vn:') }}
+                {{ Form::textarea('content_vn') }}
             </li>
 
         </div>
@@ -75,17 +75,17 @@
             {{ Form::textarea('scripts') }}
         </li>
 
-		<li>
-			{{ Form::submit('Update', array('class' => 'btn btn-info')) }}
-			{{ link_to_route('admin.statPages.show', 'Cancel', $statPage->id, array('class' => 'btn')) }}
-		</li>
-	</ul>
+        <li>
+            {{ Form::submit('Update', array('class' => 'btn btn-info')) }}
+            {{ link_to_route('admin.statPages.show', 'Cancel', $statPage->id, array('class' => 'btn')) }}
+        </li>
+    </ul>
 {{ Form::close() }}
 
 @if ($errors->any())
-	<ul>
-		{{ implode('', $errors->all('<li class="error">:message</li>')) }}
-	</ul>
+    <ul>
+        {{ implode('', $errors->all('<li class="error">:message</li>')) }}
+    </ul>
 @endif
 
 @stop
