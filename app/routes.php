@@ -102,5 +102,5 @@ Route::group(array('prefix' => $locale), function()
 
 App::missing(function($exception)
 {
-    return 404;
+    return View::make('errors.404');
 });
