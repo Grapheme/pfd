@@ -75,12 +75,12 @@ $('.color-table tr:nth-child(even)').hover(
 		if($('.opened_td')[0]) {
 			$('.opened_td').removeClass('opened_td').css('padding', '0 5px').find('p').css('height', '0');
 		}
-		$(this).next().find('.open_td').addClass('opened_td').css('padding', '5px 5px').find('p').css('height', 'auto');
+		$(this).next().css('border-top', '1px dotted #ccc').find('.open_td').addClass('opened_td').css('padding', '5px 5px').find('p').css('height', 'auto');
 	},
 	function() {
 		var that = $(this);
 		timer = window.setTimeout(function(){
-			that.next().find('.open_td').removeClass('opened_td').css('padding', '0 5px').find('p').css('height', '0');
+			that.next().css('border-top', '1px dotted transparent').find('.open_td').removeClass('opened_td').css('padding', '0 5px').find('p').css('height', '0');
 		}, 1000);						
 	}
 );
@@ -91,7 +91,7 @@ $('.color-table tr:nth-child(odd)').hover(
 	function() {
 		var that = $(this);
 		timer = window.setTimeout(function(){
-			that.find('.open_td').css('padding', '0 5px').find('p').css('height', '0');
+			that.css('border-top', '1px dotted transparent').find('.open_td').css('padding', '0 5px').find('p').css('height', '0');
 		}, 1000);
 	}
 );
