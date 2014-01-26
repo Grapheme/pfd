@@ -35,7 +35,7 @@ App::after(function($request, $response)
 
 Route::filter('auth', function()
 {
-	if (Auth::guest()) return Redirect::guest('123231223');
+	if (Auth::guest()) App::abort(404); exit;	
 });
 
 

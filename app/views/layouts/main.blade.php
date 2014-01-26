@@ -178,7 +178,7 @@
 		        		</ul>
 	        		</div>
 	        		<div class="ftr-copyright">
-	        			&copy; 2013 Pacific Financial Derivatives Ltd. All Rights Reserved.
+	        			&copy; 2014 Pacific Financial Derivatives Ltd. All Rights Reserved.
 	        		</div>
 	        		<a href="./" class="ftr-logo"></a>
 	        	</div>

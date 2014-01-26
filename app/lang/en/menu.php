@@ -27,7 +27,7 @@ return array(
 	"withdrawals" => "Withdrawals",
 	"support" => "Technical Support",
 	"chat" => "Chat/Phone Trading",
-	"spread" => "Spread Comparison",
+	"spread" => "Spreads Comparison",
 	"contacts" => "Contacts",
 	"sign_up" => "Sign Up",
 	"ve_chat" => "        	<!--do not modify this script -->

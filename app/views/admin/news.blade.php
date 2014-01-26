@@ -6,7 +6,7 @@
 
 	if($action=="") {
 
-		echo "<a href='".URL::to('admin/news/new')."'>Создать новость</a>";
+		echo "<a href='".URL::to('admin/news/new')."'>Create news</a>";
 
 		foreach ($news as $new)
 		{
