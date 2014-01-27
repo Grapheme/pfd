@@ -15,9 +15,11 @@
             {{ Form::text('url') }}
         </li>
 
-        <a href="#" data-lang="en" class="lang-change">EN</a>
-        <a href="#" data-lang="ch" class="lang-change">CH</a>
-        <a href="#" data-lang="ve" class="lang-change">VE</a>
+        <ul class="nav nav-tabs">
+          <li class="active lang-change" data-lang="en"><a href="#">English</a></li>
+          <li class="lang-change" data-lang="ve"><a href="#">tiếng việt</a></li>
+          <!--<li><a href="#">Chinise</a></li>-->
+        </ul>
 
 
         <div data-lang="en" class="lang-div">
@@ -29,7 +31,7 @@
 
             <li>
                 {{ Form::label('content_en', 'Content_en:') }}
-                {{ Form::textarea('content_en') }}
+                {{ Form::textarea('content_en', null, array('class' => 'redactor')) }}
             </li>
 
         </div>
@@ -44,7 +46,7 @@
 
             <li>
                 {{ Form::label('content_ch', 'Content_ch:') }}
-                {{ Form::textarea('content_ch') }}
+                {{ Form::textarea('content_ch', null, array('class' => 'redactor')) }}
             </li>
 
         </div>
@@ -59,7 +61,7 @@
 
             <li>
                 {{ Form::label('content_vn', 'Content_vn:') }}
-                {{ Form::textarea('content_vn') }}
+                {{ Form::textarea('content_vn', null, array('class' => 'redactor', 'rows' => 20)) }}
             </li>
 
         </div>

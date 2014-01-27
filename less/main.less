@@ -141,7 +141,7 @@ textarea {
 @menu-height: 65px;
 @menu-hover: #eaeaea;
 @gray: #4a4c4c;
-@orange: #d68a40;
+@orange: #EE8B36;
 @traiderColor: #7badc6;
 @traiderColorHover: #4e98b0;
 @newsColor: #1976a5;
@@ -687,8 +687,8 @@ header {
           .heightWline(@menu-height);
           .noneOutline;
           
-          padding-left: 24px;
-          padding-right: 24px;
+          padding-left: 17px;
+          padding-right: 17px;
           white-space: nowrap;
           font-family: 'OpenSansRegular';
           font-size: 14px;
@@ -850,8 +850,17 @@ header {
 
 .fotorama-cont {
   .mid_block();
-  
-  background: url(../img/back-man.png) no-repeat 630px bottom;
+  position: relative;
+}
+
+.fotorama-over {
+  position: absolute;
+  width: 32%;
+  height: 96%;
+  bottom: 0;
+  right: 0;
+  z-index: 99;
+  background: url(../img/back-man.png) no-repeat;
 }
 
 .slide-item {
