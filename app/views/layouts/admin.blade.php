@@ -29,9 +29,9 @@
       <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
           <li class="sidebar-brand"><a href="<?=URL::to('admin')?>">Admin Panel</a></li>
-          <li><a href="<?=URL::to('admin/statPages');?>">Страницы</a></li>
-          <li><a href="<?=URL::to('admin/news');?>">Новости</a></li>
-          <li><a href="<?=URL::to('logout');?>">Выйти</a></li>
+          <li><a href="<?=URL::to('admin/statPages');?>">Pages</a></li>
+          <li><a href="<?=URL::to('admin/news');?>">News</a></li>
+          <li><a href="<?=URL::to('logout');?>">Log Out</a></li>
         </ul>
       </div>
           
