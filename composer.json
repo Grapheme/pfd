@@ -6,7 +6,9 @@
 	"require": {
 		"laravel/framework": "4.1.*",
     	"twitter/bootstrap": "dev-master",
-    	"way/generators": "dev-master"
+    	"way/generators": "dev-master",
+    	"scalia/sphinxsearch": "dev-master",
+    	"gigablah/sphinxphp": "dev-master"
 	},
 	"autoload": {
 		"classmap": [

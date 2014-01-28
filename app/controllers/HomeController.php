@@ -15,6 +15,43 @@ class HomeController extends BaseController {
 	|
 	*/
 
+	public function search($words) {
+		 // Подключим файл с api
+    include('sphinxapi.php');
+
+    $cl = new SphinxClient();
+
+	$cl->SetServer('localhost',9312);
+	$cl->SetMatchMode(SPH_MATCH_EXTENDED2);
+	$cl->setRankingMode(SPH_RANK_PROXIMITY_BM25);
+	//$cl->SetLimits($this->offset,PER_PAGE_DEFAULT);
+	$cl->SetSortMode(SPH_SORT_RELEVANCE);
+	$cl->SetFieldWeights(array('title'=>30,'destination'=>50,'advantages'=>40,'page_title'=>10,'page_description'=>10));
+
+    $result = $cl->Query($words); // поисковый запрос
+
+    // обработка результатов запроса
+    if ( $result === false ) { 
+          echo "Query failed: " . $cl->GetLastError() . ".\n"; // выводим ошибку если произошла
+      }
+      else {
+          if ( $cl->GetLastWarning() ) {
+              echo "WARNING: " . $cl->GetLastWarning() . " // выводим предупреждение если оно было ";
+          }
+
+         /* if ( ! empty($result["matches"]) ) { // если есть результаты поиска - обрабатываем их
+              foreach ( $result["matches"] as $product => $info ) {
+                    echo $product . "<br />"; // просто выводим id найденных товаров
+              }
+          } */
+
+
+          print_r($result);
+      }
+		//$results = SphinxSearch::search($words)->get();
+		//return View::make('search', array('results' => $results));
+	}
+
 	public function getPage($page = null)
 	{
 		if($page == null) {

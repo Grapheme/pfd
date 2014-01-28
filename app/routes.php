@@ -45,6 +45,9 @@ Route::group(array('prefix' => 'admin', 'before' => 'auth'), function()
 
 Route::group(array('prefix' => $locale), function()
 {
+
+	Route::get('/search/{words}', "HomeController@search");
+
 	Route::get('changeLang/{lang}', function($lang){
 		$languages = array('en', 'ch', 'vn');
 		if(in_array($lang, $languages)) {

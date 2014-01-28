@@ -199,6 +199,14 @@ textarea {
   -ms-transition: all @transTime ease;
 }
 
+.trans(@transTime: .3s, @effect: ease, @elem: all) {
+  transition: @elem @transTime @effect;
+  -webkit-transition: @elem @transTime @effect;
+  -moz-transition: @elem @transTime @effect;
+  -o-transition: @elem @transTime @effect;
+  -ms-transition: @elem @transTime @effect;
+}
+
 .heightWline(@height) {
   line-height: @height;
   height: @height;
@@ -1712,20 +1720,30 @@ section.normal {
         position: absolute;
       }
       .iphone {
-        z-index: 3;
-        top: 350px;
-        right: 0;
+        z-index: 2;
+        top: 300px;
+        left: 750px;
         width: 144px;
         height: 252px;
         background: url(../img/iphone.png) no-repeat;
+        transition: left .5s ease-in, top .5s ease-out;
+        -webkit-transition: left .5s ease-in, top .5s ease-out;
+        -moz-transition: left .5s ease-in, top .5s ease-out;
+        -o-transition: left .5s ease-in, top .5s ease-out;
+        -ms-transition: left .5s ease-in, top .5s ease-out;
+        
       }
       .ipad {
         z-index: 1;
         top: 183px;
-        left: 0;
+        left: 260px;
         width: 568px;
         height: 359px;
-        background: url(../img/ipad.png) no-repeat;
+        transition: left .5s ease-in, top .5s ease-out;
+        -webkit-transition: left .5s ease-in, top .5s ease-out;
+        -moz-transition: left .5s ease-in, top .5s ease-out;
+        -o-transition: left .5s ease-in, top .5s ease-out;
+        -ms-transition: left .5s ease-in, top .5s ease-out;
       }
       .imac {
         z-index: 2;
@@ -1773,7 +1791,7 @@ section.normal {
 
 .main-footer {
    padding: 55px 0 37px;
-   background: #b5b9bb;     
+   background: #b5b9bb;    
 }
 .footer-content {
    position: relative;
@@ -1976,6 +1994,16 @@ h2.normal-list-title {
 .error-desc {
     font-size: 32px;
     font-weight: 700;
+}
+
+.ftr-l-c {
+  float: left;
+}
+.ftr-r-c {
+  float: right;
+  a {
+    color: #4a4c4c;
+  }
 }
 
 /* ==========================================================================

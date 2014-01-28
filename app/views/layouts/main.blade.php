@@ -181,7 +181,8 @@
 		        		</ul>
 	        		</div>
 	        		<div class="ftr-copyright">
-	        			&copy; 2014 Pacific Financial Derivatives Ltd. All Rights Reserved.
+	        			<span class="ftr-l-c">&copy; 2014 Pacific Financial Derivatives Ltd. All Rights Reserved.</span>
+	        			<span class="ftr-r-c">Made with love by <a href="//grphm.com" target="_blank">GRPHM</a></span>
 	        		</div>
 	        		<a href="./" class="ftr-logo"></a>
 	        	</div>
