@@ -17,7 +17,7 @@
 	        	<div class="news">
 		        	<div class="news-left-div">
 		        		<div class="news-in">
-		        			<div class="f_header">Resent post</div>
+		        			<div class="f_header">Recent posts</div>
 
 		        			<?php foreach ($news as $new) { ?>
 		        				<?php if(isset($oneNews)) { if($oneNews->id != $new->id ) { ?>

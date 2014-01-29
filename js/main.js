@@ -154,6 +154,18 @@ $('.search-img').click(function(e){
 	e.stopPropagation();
 	$('.search-open').css({'text-indent': 0});
 	$('.search-input').css({'width': 180});
+	$('.search-input').focus();
+	if($('.search-input').val() != '' && parseInt($('.search-input').css('width')) > 0 ) {
+		window.location.href = '/search/' + $('.search-input').val();
+	}
+});
+
+$(document).keypress(function(e) {
+    if(e.which == 13) {
+        if($('.search-input').val() != '' && parseInt($('.search-input').css('width')) > 0 ) {
+			window.location.href = '/search/' + $('.search-input').val();
+		}
+    }
 });
 
 $('.search-input').click(function(e){

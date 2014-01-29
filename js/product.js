@@ -1,5 +1,3 @@
-var animated = true;
-
 $(function(){
 	scrollPosStart();
 });
@@ -28,11 +26,8 @@ function animateStart() {
 }
 
 function scrollPosStart() {
-
 		var position = $('.devices-content').position();
 		if($(window).scrollTop() > position.top - $('.devices-content').height()/2 ) {
 			animateStart();
 		}
-		animated = false;
-	
 }

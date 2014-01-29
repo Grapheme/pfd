@@ -43,21 +43,21 @@
         			<a href="/" class="logo-div"></a>
         			<div class="lang-div">
         				<div class="search">
-	        				<!--<div class="search-img">
+	        				<div class="search-img">
 	        					<div class="search-main"></div>
 	        					<div class="search-line"></div>
-	        				</div>-->
+	        				</div>
 	        				<div class="lang-ul">
 	        					<div class="lang-triangle"></div>
 	        					<?php if(is_null(Session::get('lang')) || Session::get('lang') == 'en') { ?>
-		        					<div class="active-lang" data-lang="en" href="<?=URL::to('/changeLang/en')?>">English</div>
+		        					<div class="active-lang" data-lang="en" href="<?=sLang::link('en')?>">English</div>
 		        					<div class="option-lang">
-		        						<a style="color: #000;" class="lang-item" data-lang="vie" href="<?=URL::to('/changeLang/vn')?>">Tiếng Việt</a>
+		        						<a style="color: #000;" class="lang-item" data-lang="vie" href="<?=sLang::link('vn')?>">Tiếng Việt</a>
 		        					</div>
 	        					<?php } else { ?>
-		        					<div class="active-lang" data-lang="vie" href="<?=URL::to('/changeLang/ve')?>">Tiếng Việt</div>
+		        					<div class="active-lang" data-lang="vie" href="<?=sLang::link('vn')?>">Tiếng Việt</div>
 		        					<div class="option-lang">
-		        						<a style="color: #000;" class="lang-item" data-lang="en" href="<?=URL::to('/changeLang/en')?>">English</a>
+		        						<a style="color: #000;" class="lang-item" data-lang="en" href="<?=sLang::link('en')?>">English</a>
 		        					</div>
 	        					<?php } ?>
 	        					<!--<form class="hidden">
@@ -182,7 +182,7 @@
 	        		</div>
 	        		<div class="ftr-copyright">
 	        			<span class="ftr-l-c">&copy; 2014 Pacific Financial Derivatives Ltd. All Rights Reserved.</span>
-	        			<span class="ftr-r-c">Made with love by <a href="//grphm.com" target="_blank">GRPHM</a></span>
+	        			<span class="ftr-r-c">Made with love by <a href="http://grphm.com" target="_blank">GRPHM</a></span>
 	        		</div>
 	        		<a href="./" class="ftr-logo"></a>
 	        	</div>
@@ -229,7 +229,29 @@
 		}());
 		</script>
 
-		<!--do not modify this script -->
+		<!-- clustrmaps starts -->
+		<div id="clustrmaps-widget" class="left_buttons" style="margin-left: 17px; margin-top: 10px; margin-bottom: 7px; display: none;"></div>
+		<script type="text/javascript">var _clustrmaps = {'url' : 'http://www.pfd-nz.com', 'user' : 898678, 'server' : '4', 'id' : 'clustrmaps-widget', 'version' : 1, 'date' : '2011-06-10', 'lang' : 'en' };(function (){ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'http://www4.clustrmaps.com/counter/map.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);})();</script>
+		<noscript><a href="http://www4.clustrmaps.com/user/4b3db676"><img src="http://www4.clustrmaps.com/stats/maps-no_clusters/www.pfd-nz.com-thumb.jpg" alt="Locations of visitors to this page" /></a></noscript>
+		<!-- clustrmaps ends -->
+		  
+		<!-- statcounter starts -->  
+		<script type="text/javascript">
+		    var sc_project=7221510; 
+		    var sc_invisible=1; 
+		    var sc_security="6949071d"; 
+		    </script>
+
+		    <script type="text/javascript"
+		    src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+		    class="statcounter"><a title="free hit counter"
+		    href="http://statcounter.com/free_hit_counter.html"
+		    target="_blank"><img class="statcounter"
+		    src="http://c.statcounter.com/7221510/0/6949071d/1/"
+		    alt="free hit counter" ></a></div></noscript>
+		<!-- statcounter ends --> 
+
+		<!-- do not modify this script -->
 				<div class='nanorep_loadingData' id='nanoRepProxyContainer' style='position:absolute;top:-500px;left:0px;'></div>
 				<script type='text/javascript'>var _nRepData = _nRepData || []; _nRepData['kb'] = '23452028'; _nRepData['float'] = {account: 'pfdnz', cdcVersion: 3, cdcFrame: '', scriptVersion: '2.22.2.31'}
 				/* API here */;

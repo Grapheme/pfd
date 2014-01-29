@@ -30,7 +30,7 @@ return array(
 	"spread" => "Spreads Comparison",
 	"contacts" => "Contacts",
 	"sign_up" => "Sign Up",
-	"ve_chat" => "",
+	"ve_chat" => "<a href=\"skype:pacific.vn?chat\" class=\"skype-chat\"></a>",
 	"skype" => "pacific.f.d",
 	"demo_acc" => "Demo account",
 	"demo_desc" => "Test your trading strategies in a real-time environment and familiarize yourself with all the features of PFD Demonstrations's PFDTrader - with no risk and no obligation. Register below and we'll give you PFD Demonstrations's $50,000 virtual margin deposit and access to a fully functional version of PFDTrader for the next 15-days.",
