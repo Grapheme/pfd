@@ -6,7 +6,7 @@
 
 	if($action=="") { 
 
-		echo "<a href='".URL::to('admin/news/new')."' class='glyphicon glyphicon-plus'>Create</a>";
+		echo "<a href='".URL::to('admin/news/new')."' class='glyphicon glyphicon-plus news-button'>Create</a>";
 
 		foreach ($news as $new)
 		{
@@ -19,8 +19,8 @@
 
 			echo date('d.m.y',strtotime($new->created_at));;
 	    	echo "<h3 class=\"panel-title\">".$new->title."</h3></div>
-	    		<a href='".URL::to('admin/news/edit/'.$new->id)."' class='glyphicon glyphicon-edit'>Edit</a>
-	    		<a href='".URL::to('admin/news/delete/'.$new->id)."' class='glyphicon glyphicon-trash'>Delete</a><hr>";
+	    		<a href='".URL::to('admin/news/edit/'.$new->id)."' class='glyphicon glyphicon-edit news-button'>Edit</a>
+	    		<a href='".URL::to('admin/news/delete/'.$new->id)."' class='glyphicon glyphicon-trash delete-item news-button'>Delete</a><hr>";
 	    	echo "<div class=\"panel-body\">".$new->desc."</div>";
 
 	    	?>
@@ -45,16 +45,16 @@
             'role' => 'form'
 	        )) 
 	    }}
-	    <input class="form-control" value="{{$news->title}}" name="title">
-    	
-		<br>
-		<textarea name="desc" class="form-control" style="height: 100px;">{{$news->desc}}</textarea><br>
-	    <textarea name="text" class="form-control" style="height: 300px;">{{$news->text}}</textarea><br>
 
-	    <input class="form-control" name="date" placeholder="Заголовок" value="{{$news->created_at}}">
+	    <ul>
 
-	    <input type="submit" value="Сохранить" class="btn">
+		    <li><label>Title:</label><input class="form-control" value="{{$news->title}}" name="title">
+			<li><label>Preview:</label><textarea name="desc" class="form-control redactor" style="height: 100px;">{{$news->desc}}</textarea>
+		    <li><label>Text:</label><textarea name="text" class="form-control redactor" style="height: 300px;">{{$news->text}}</textarea>
+		    <li><label>Date:</label><input class="form-control" name="date" placeholder="Заголовок" value="{{$news->created_at}}">
+		    <li><input type="submit" value="Сохранить" class="btn">
 		
+		</ul>
 		{{ Form::close() }}
 
 	<?php
@@ -69,14 +69,15 @@
             'role' => 'form'
 	        )) 
 	    }}
-	    <input class="form-control" name="title" placeholder="Заголовок">
-    	
-		<br>
-		<textarea name="desc" class="form-control" placeholder="Превью" style="height: 100px;"></textarea><br>
-	    <textarea name="text" class="form-control" placeholder="Текст" style="height: 300px;"></textarea><br>
+	    <ul>
 
-	    <input type="submit" value="Создать" class="btn">
+		    <li><label>Title:</label><input class="form-control" name="title">
+			<li><label>Preview:</label><textarea name="desc" class="form-control redactor" style="height: 100px;"></textarea>
+		    <li><label>Text:</label><textarea name="text" class="form-control redactor" style="height: 300px;"></textarea>
+		    <li><input type="submit" value="Создать" class="btn">
 		
+		</ul>
+
 		{{ Form::close() }}
 
 	<?php

@@ -3,6 +3,13 @@
 @section('content')
 
 <h1>Edit StatPage</h1>
+
+@if ($errors->any())
+    <ul>
+        {{ implode('', $errors->all('<li class="error">:message</li>')) }}
+    </ul>
+@endif
+
 {{ Form::model($statPage, array('method' => 'PATCH', 'class' => 'pageForm','route' => array('admin.statPages.update', $statPage->id))) }}
     <ul>
         <li>
@@ -25,12 +32,12 @@
         <div data-lang="en" class="lang-div">
 
             <li>
-                {{ Form::label('meta_en', 'Meta_en:') }}
+                {{ Form::label('meta_en', 'English meta:') }}
                 {{ Form::textarea('meta_en') }}
             </li>
 
             <li>
-                {{ Form::label('content_en', 'Content_en:') }}
+                {{ Form::label('content_en', 'English content:') }}
                 {{ Form::textarea('content_en', null, array('class' => 'redactor')) }}
             </li>
 
@@ -55,24 +62,24 @@
         <div data-lang="ve" class="lang-div">
 
             <li>
-                {{ Form::label('meta_vn', 'Meta_vn:') }}
+                {{ Form::label('meta_vn', 'VN meta:') }}
                 {{ Form::textarea('meta_vn') }}
             </li>
 
             <li>
-                {{ Form::label('content_vn', 'Content_vn:') }}
-                {{ Form::textarea('content_vn', null, array('class' => 'redactor', 'rows' => 20)) }}
+                {{ Form::label('content_vn', 'VN content:') }}
+                {{ Form::textarea('content_vn', null, array('class' => 'redactor')) }}
             </li>
 
         </div>
 
 
-        <li>
+        <li style="display: none;">
             {{ Form::label('wrapper', 'Wrapper:') }}
             {{ Form::text('wrapper') }}
         </li>
 
-        <li>
+        <li style="display: none;">
             {{ Form::label('scripts', 'Scripts:') }}
             {{ Form::textarea('scripts') }}
         </li>
@@ -83,11 +90,5 @@
         </li>
     </ul>
 {{ Form::close() }}
-
-@if ($errors->any())
-    <ul>
-        {{ implode('', $errors->all('<li class="error">:message</li>')) }}
-    </ul>
-@endif
 
 @stop

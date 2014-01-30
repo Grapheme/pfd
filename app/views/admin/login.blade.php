@@ -8,7 +8,7 @@
     <title>Signin</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/twitter/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="/vendor/twitter/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <style>
@@ -74,6 +74,12 @@
         )) 
     }}
     <h2 class="form-signin-heading">Please sign in</h2>
+
+    @if (Session::has('message'))
+        <div class="flash alert">
+            <p>{{ Session::get('message') }}</p>
+        </div>
+    @endif
 
     {{ Form::text('user', '', array(
         'placeholder' => 'Пользователь',

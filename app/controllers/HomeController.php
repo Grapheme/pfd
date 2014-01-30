@@ -107,7 +107,7 @@ class HomeController extends BaseController {
 	}
 
 	public function newsPage() {
-		$news = News::all();
+		$news = News::orderBy('created_at', 'DESC')->get();
 		return View::make('press', array('news' => $news, 'action' => ''));
 	}
 

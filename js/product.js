@@ -25,9 +25,16 @@ function animateStart() {
 	ipadAnimate();
 }
 
+var isNotAnim = true;
+
 function scrollPosStart() {
-		var position = $('.devices-content').position();
-		if($(window).scrollTop() > position.top - $('.devices-content').height()/2 ) {
+	
+	var position = $('.devices-content').position();
+	if($(window).scrollTop() > position.top - $('.devices-content').height()/2 ) {
+		if(isNotAnim)
+		{
 			animateStart();
+			isNotAnim = false;
 		}
+	}
 }

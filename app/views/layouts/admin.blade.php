@@ -55,7 +55,7 @@
     <script src="<?=URL::to('js/admin.js');?>"></script>
 
     {{HTML::script('js/vendor/redactor.js');}}
-    <!--{{HTML::script('js/redactor-config.js');}}-->
+    {{HTML::script('js/redactor-config.js');}}
 
     <!-- Custom JavaScript for the Menu Toggle -->
     <script>

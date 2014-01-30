@@ -12,3 +12,11 @@ $('.lang-change').click(function(){
 	});
 	return false;
 });
+
+$('.delete-item').click(function(){
+	if(confirm('Are you sure?'))
+	{
+		window.location.href = $(this).attr('href');
+	}
+	return false;
+});

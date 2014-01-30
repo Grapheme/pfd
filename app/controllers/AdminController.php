@@ -39,7 +39,7 @@ class AdminController extends BaseController {
 		{
 		    return Redirect::to('admin');
 		} else {
-			echo "Your password or user are not correct";
+			return Redirect::back()->with('message', 'Password or user isn\'t correct.');
 		}
 
 		if (Auth::check())

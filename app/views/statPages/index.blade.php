@@ -2,9 +2,9 @@
 
 @section('content')
 
-<h1>All StatPages</h1>
+<h1>All Pages</h1>
 
-<p>{{ link_to_route('admin.statPages.create', 'Add new statPage') }}</p>
+<p>{{ link_to_route('admin.statPages.create', 'Add new Page') }}</p>
 
 @if ($statPages->count())
 	<table class="table table-striped table-bordered">
@@ -31,7 +31,7 @@
 		</tbody>
 	</table>
 @else
-	There are no statPages
+	There are no Pages
 @endif
 
 @stop

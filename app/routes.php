@@ -22,7 +22,9 @@ Route::group(array('prefix' => 'admin', 'before' => 'auth'), function()
 
 	Route::resource('statPages', 'StatPagesController');
 
-	Route::get('/', array('uses' => "AdminController@panel"));
+	Route::get('/', function(){
+		return Redirect::to('admin/statPages');
+	});
 
 	/* ADMIN NEWS */
 	Route::get('news', array('uses' => "AdminController@news"));
