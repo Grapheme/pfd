@@ -30,6 +30,9 @@ return array(
 	"spread" => "Điều Khoản Giao Dịch",
 	"contacts" => "Liên Hệ",
 	"sign_up" => "Mở Tài Khoản",
+	"followus" => "Theo Chúng Tôi:",
+	"accreditation" => "Pháp Lý",
+	"funds" => "An Toàn Tiền Gửi",
 	"ve_chat" => "
 	<!--Begin Comm100 Live Chat Code-->
 	<div id=\"comm100-button-2504\"></div>  

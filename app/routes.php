@@ -86,7 +86,7 @@ Route::group(array('prefix' => $locale), function()
 
 	Route::get('press', 'HomeController@newsPage');
 	Route::get('press{id}', 'HomeController@newsOnePage');
-	Route::get('deposit', function() { return View::make('deposit'); });
+	//Route::get('deposit', function() { return View::make('deposit'); });
 
 
 

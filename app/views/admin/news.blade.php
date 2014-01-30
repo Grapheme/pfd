@@ -4,20 +4,37 @@
 @section('content')
 	<?php
 
-	if($action=="") {
+	if($action=="") { 
 
-		echo "<a href='".URL::to('admin/news/new')."'>Create news</a>";
+		echo "<a href='".URL::to('admin/news/new')."' class='glyphicon glyphicon-plus'>Create</a>";
 
 		foreach ($news as $new)
 		{
-			echo "<br>".date('d.m.y',strtotime($new->created_at));;
-			echo "<div class='main-news-div'>";
-	    	echo $new->title."
-	    		<a href='".URL::to('admin/news/edit/'.$new->id)."' class='main-news-edit'>Редактировать</a>
-	    		<a href='".URL::to('admin/news/delete/'.$new->id)."' class='main-news-edit'>Удалить</a><hr>";
-	    	echo $new->desc."<br>";
-	    	echo "</div>";
+			?> 
+
+			<div class="panel panel-default">
+  				<div class="panel-heading">
+
+			<?php
+
+			echo date('d.m.y',strtotime($new->created_at));;
+	    	echo "<h3 class=\"panel-title\">".$new->title."</h3></div>
+	    		<a href='".URL::to('admin/news/edit/'.$new->id)."' class='glyphicon glyphicon-edit'>Edit</a>
+	    		<a href='".URL::to('admin/news/delete/'.$new->id)."' class='glyphicon glyphicon-trash'>Delete</a><hr>";
+	    	echo "<div class=\"panel-body\">".$new->desc."</div>";
+
+	    	?>
+
+			</div>
+
+	    	<?php
 		}
+
+		?>
+
+
+
+		<?php
 	}
 	
 	if($action=="edit") {

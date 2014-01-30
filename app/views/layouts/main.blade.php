@@ -36,7 +36,7 @@
         <article class="@yield('wrapper')">
         	<header>
         		<div class="header-social">
-		        	<span>Follow Us On:</span>
+		        	<span><?=trans('menu.followus')?></span>
 		        	<a href="http://www.facebook.com/pfdnz/info" class="social-button facebook" target="_blank"></a><a href="http://twitter.com/#!/pfdnz" class="social-button linked" target="_blank"></a><a href="http://twitter.com/#!/pfdnz" class="social-button twitter" target="_blank"></a><a href="http://kiwi.pfd-nz.com/press-room/index.php/feed/" class="social-button rss" target="_blank"></a>
 		        </div>
         		<div class="header-top clearfix">
@@ -110,9 +110,9 @@
 	        					</ul>
 	        				<li><a href="/broker"><?=trans('menu.broker')?></a>
 	        				<li><a href="/spread"><?=trans('menu.spread')?></a>
-	        				<li><a href="/accreditation">Accreditation</a>
+	        				<li><a href="/accreditation"><?=trans('menu.accreditation')?></a>
 	        					<ul class="header-sub-menu">
-	        						<li><a href="/funds">Client Funds</a>
+	        						<li><a href="/funds"><?=trans('menu.funds')?></a>
 	        					</ul>
 	        			</ul>
 	        		</nav>
@@ -155,8 +155,8 @@
 		        			<li class="ftr-links-item"><a href="/broker"><?=trans('menu.broker')?></a>
 		        			<li class="ftr-links-item"><a href="/spread"><?=trans('menu.spread')?></a>
 		        			<li class="ftr-links-item"><a href="/product">Meta trader 4</a>
-		        			<li class="ftr-links-item"><a href="/contacts"><?=trans('menu.contacts')?></a>
 		        			<li class="ftr-links-item"><a href="skype:<?=trans('menu.skype')?>?chat" style="text-decoration: underline;">Skype Chat</a>
+		        			<li class="ftr-links-item"><a href="/sitemap">Site Map</a>
 		        		</ul>
 		        		<ul class="ftr-links-list about-us">
 		        			<li class="ftr-links-item list-head"><?=trans('menu.about_us')?></a>
@@ -164,6 +164,7 @@
 		        			<li class="ftr-links-item"><a href="/product-multi">MAM</a>
 		        			<li class="ftr-links-item"><a href="/legal">Legal</a>
 		        			<li class="ftr-links-item"><a href="/press"><?=trans('menu.press')?></a>
+		        			<li class="ftr-links-item"><a href="/contacts"><?=trans('menu.contacts')?></a>
 		        		</ul>
 		        		<ul class="ftr-links-list products">
 		        			<li class="ftr-links-item list-head"><?=trans('menu.products')?>
