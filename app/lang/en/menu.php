@@ -28,7 +28,7 @@ return array(
 	"support" => "Technical Support",
 	"chat" => "Chat/Phone Trading",
 	"spread" => "Spreads Comparison",
-	"contacts" => "Contacts",
+	"contacts" => "Contact Us",
 	"sign_up" => "Sign Up",
 	"followus" => "Follow Us On:",
 	"accreditation" => "Accreditation",

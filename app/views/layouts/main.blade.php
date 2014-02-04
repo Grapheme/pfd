@@ -37,7 +37,7 @@
         	<header>
         		<div class="header-social">
 		        	<span><?=trans('menu.followus')?></span>
-		        	<a href="http://www.facebook.com/pfdnz/info" class="social-button facebook" target="_blank"></a><a href="http://twitter.com/#!/pfdnz" class="social-button linked" target="_blank"></a><a href="http://twitter.com/#!/pfdnz" class="social-button twitter" target="_blank"></a><a href="http://kiwi.pfd-nz.com/press-room/index.php/feed/" class="social-button rss" target="_blank"></a>
+		        	<a href="http://www.facebook.com/pfdnz/info" class="social-button facebook" target="_blank"></a><a href="http://www.linkedin.com/company/pacific-financial-derivatives-ltd" class="social-button linked" target="_blank"></a><a href="http://twitter.com/#!/pfdnz" class="social-button twitter" target="_blank"></a><a href="http://kiwi.pfd-nz.com/press-room/index.php/feed/" class="social-button rss" target="_blank"></a>
 		        </div>
         		<div class="header-top clearfix">
         			<a href="/" class="logo-div"></a>
