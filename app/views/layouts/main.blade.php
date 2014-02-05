@@ -156,7 +156,7 @@
 		        			<li class="ftr-links-item"><a href="/broker"><?=trans('menu.broker')?></a>
 		        			<li class="ftr-links-item"><a href="/spread"><?=trans('menu.spread')?></a>
 		        			<li class="ftr-links-item"><a href="/product">Meta trader 4</a>
-		        			<li class="ftr-links-item"><a href="skype:<?=trans('menu.skype')?>?chat" style="text-decoration: underline;">Skype Chat</a>
+		        			<li class="ftr-links-item"><a href="skype:<?=trans('menu.skype')?>?chat">Skype Chat</a>
 		        			<li class="ftr-links-item"><a href="/sitemap">Site Map</a>
 		        		</ul>
 		        		<ul class="ftr-links-list about-us">
