@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h1>Create StatPage</h1>
+<h1>Create Page</h1>
 
 @if ($errors->any())
     <ul>
@@ -25,7 +25,8 @@
         <ul class="nav nav-tabs">
           <li class="active lang-change" data-lang="en"><a href="#">English</a></li>
           <li class="lang-change" data-lang="ve"><a href="#">tiếng việt</a></li>
-          <!--<li><a href="#">Chinise</a></li>-->
+          <li class="lang-change" data-lang="ch"><a href="#">中文</a></li>
+          <li class="lang-change" data-lang="ru"><a href="#">Русский</a></li>
         </ul>
 
 
@@ -53,7 +54,7 @@
 
             <li>
                 {{ Form::label('content_ch', 'Content_ch:') }}
-                {{ Form::textarea('content_ch') }}
+                {{ Form::textarea('content_ch', null, array('class' => 'redactor')) }}
             </li>
 
         </div>
@@ -69,6 +70,20 @@
             <li>
                 {{ Form::label('content_vn', 'VN content:') }}
                 {{ Form::textarea('content_vn', null, array('class' => 'redactor')) }}
+            </li>
+
+        </div>
+
+        <div data-lang="ru" class="lang-div">
+
+            <li>
+                {{ Form::label('meta_ru', 'Russian meta:') }}
+                {{ Form::textarea('meta_ru') }}
+            </li>
+
+            <li>
+                {{ Form::label('content_ru', 'Russian content:') }}
+                {{ Form::textarea('content_ru', null, array('class' => 'redactor')) }}
             </li>
 
         </div>
