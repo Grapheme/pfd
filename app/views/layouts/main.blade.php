@@ -26,8 +26,9 @@
         <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet/less" type="text/css" href="/less/main.less">
         <link href="/css/fotorama.css" rel="stylesheet">
-		<script src="/js/vendor/less-1.5.0.min.js"></script>
-        <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic,300,900' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+        <script src="/js/vendor/less-1.5.0.min.js"></script>
     <body class="main">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
