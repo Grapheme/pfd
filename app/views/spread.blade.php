@@ -43,7 +43,7 @@
 		        			</div>
 		        			
 		        			<div>
-								<param value="//www.pfd-nz.com/fxintel/PFD.swf" name="movie">
+								<param value="http://www.fxintel.com/custom/PFD.swf" name="movie">
 								<param value="high" name="quality">
 								<param value="transparent" name="wmode">
 								<embed width="750" height="530" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" quality="high" src="http://www.fxintel.com/custom/PFD.swf">

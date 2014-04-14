@@ -35,7 +35,7 @@ App::after(function($request, $response)
 
 Route::filter('auth', function()
 {
-	if (Auth::guest()) App::abort(404); exit;	
+	if (!Auth::check()) App::abort(404);	
 });
 
 

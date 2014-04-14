@@ -80,13 +80,13 @@ $(function(){
 		$('<p>The request is proccessed. Please be patient.</p>').insertAfter('#neteller__btn');
 		var params = $(this).serialize();
 		console.log('request: ' + params);
-		$.post('http://www.pfd-nz.com/neteller?'+params, function(data){
+		$.post('/neteller?'+params, function(data){
 			if ( $(data).find('approval').text() == 'yes' ) {
 				window.location.href = 'http://www.pfd-nz.com/thanks';
 			} else {
 				window.location.href = 'http://www.pfd-nz.com/thanks?neteller=error&msg='+$(data).find('error_message').text();
 			}
-			console.log('responce: ' + data);
+			//console.log('responce: ' + data);
 		});
 		
 		// refresh transaction ID

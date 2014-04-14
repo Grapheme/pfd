@@ -26,8 +26,8 @@
         <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet/less" type="text/css" href="/less/main.less">
         <link href="/css/fotorama.css" rel="stylesheet">
-        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic,300,900' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic,300,900' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
         <script src="/js/vendor/less-1.5.0.min.js"></script>
     <body class="main">
         <!--[if lt IE 7]>
@@ -38,7 +38,7 @@
         	<header>
         		<div class="header-social">
 		        	<span><?=trans('menu.followus')?></span>
-		        	<a href="http://www.facebook.com/pfdnz/info" class="social-button facebook" target="_blank"></a><a href="http://www.linkedin.com/company/pacific-financial-derivatives-ltd" class="social-button linked" target="_blank"></a><a href="http://twitter.com/#!/pfdnz" class="social-button twitter" target="_blank"></a><a href="http://kiwi.pfd-nz.com/press-room/index.php/feed/" class="social-button rss" target="_blank"></a>
+		        	<a href="https://www.facebook.com/pfdnz/info" class="social-button facebook" target="_blank"></a><a href="http://www.linkedin.com/company/pacific-financial-derivatives-ltd" class="social-button linked" target="_blank"></a><a href="http://twitter.com/#!/pfdnz" class="social-button twitter" target="_blank"></a><a href="http://kiwi.pfd-nz.com/press-room/index.php/feed/" class="social-button rss" target="_blank"></a>
 		        </div>
         		<div class="header-top clearfix">
         			<a href="/" class="logo-div"></a>
@@ -90,7 +90,7 @@
 	        					<ul class="header-sub-menu">
 	        						<li><a href="/product">PFD trader (MT4)</a>
 	        						<li><a href="/product-kiwi">Kiwi trader</a>
-	        						<li><a href="/product-multi">Multi Account Manager</a>
+	        						<li><a href="/product-multi">MAM/PAMM Accounts</a>
 	        					</ul>
 	        				<li><a href="#"><?=trans('menu.products')?></a>
 	        					<ul class="header-sub-menu">
@@ -233,7 +233,7 @@
 
 		<!-- clustrmaps starts -->
 		<div id="clustrmaps-widget" class="left_buttons" style="margin-left: 17px; margin-top: 10px; margin-bottom: 7px; display: none;"></div>
-		<script type="text/javascript">var _clustrmaps = {'url' : 'http://www.pfd-nz.com', 'user' : 898678, 'server' : '4', 'id' : 'clustrmaps-widget', 'version' : 1, 'date' : '2011-06-10', 'lang' : 'en' };(function (){ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'http://www4.clustrmaps.com/counter/map.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);})();</script>
+		<script type="text/javascript">var _clustrmaps = {'url' : 'http://www.pfd-nz.com', 'user' : 898678, 'server' : '4', 'id' : 'clustrmaps-widget', 'version' : 1, 'date' : '2011-06-10', 'lang' : 'en' };(function (){ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//www4.clustrmaps.com/counter/map.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);})();</script>
 		<noscript><a href="http://www4.clustrmaps.com/user/4b3db676"><img src="http://www4.clustrmaps.com/stats/maps-no_clusters/www.pfd-nz.com-thumb.jpg" alt="Locations of visitors to this page" /></a></noscript>
 		<!-- clustrmaps ends -->
 		  
@@ -245,11 +245,11 @@
 		    </script>
 
 		    <script type="text/javascript"
-		    src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+		    src="//www.statcounter.com/counter/counter.js"></script><noscript><div
 		    class="statcounter"><a title="free hit counter"
-		    href="http://statcounter.com/free_hit_counter.html"
+		    href="//statcounter.com/free_hit_counter.html"
 		    target="_blank"><img class="statcounter"
-		    src="http://c.statcounter.com/7221510/0/6949071d/1/"
+		    src="//c.statcounter.com/7221510/0/6949071d/1/"
 		    alt="free hit counter" ></a></div></noscript>
 		<!-- statcounter ends --> 
 

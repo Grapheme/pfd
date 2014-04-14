@@ -6310,7 +6310,7 @@
 				this.form = $('<form  action="' + this.uploadOptions.url + '" method="POST" target="' + name + '" name="' + formId + '" id="' + formId + '" enctype="multipart/form-data" />');
 
 				// append hidden fields
-				if (this.opts.uploadFields !== false && typeof this.opts.uploadFields === 'object')
+				/*if (this.opts.uploadFields !== false && typeof this.opts.uploadFields === 'object')
 				{
 					$.each(this.opts.uploadFields, $.proxy(function(k, v)
 					{
@@ -6325,7 +6325,7 @@
 						$(this.form).append(hidden);
 
 					}, this));
-				}
+				}*/
 
 				var oldElement = this.uploadOptions.input;
 				var newElement = $(oldElement).clone();

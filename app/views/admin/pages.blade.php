@@ -6,7 +6,7 @@
 
 	if($action=="") {
 
-		echo "<a href='".URL::to('admin/pages/new')."'>Create Page</a>";
+		echo "<a href='".URL::to('admin/pages/new')."'>Создать страницу</a>";
 
 		foreach ($pages as $page)
 		{

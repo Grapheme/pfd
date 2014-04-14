@@ -29,7 +29,7 @@
 	        		</div>
 	        		<div class="gen_list">
 	        			<div class="gen_list-item">Minimum of 10 slave/sub-accounts</div>
-	        			<div class="gen_list-item"><a class="our-link" href="/downloads/power-of-attorney-and-compensation-acknowledgement.pdf">MAM Power of Attorney and Compensation Acknowledgement Forms</a> must be provided for any slave/sub - accounts</div>
+	        			<div class="gen_list-item"><a class="our-link" href="./downloads/power-of-attorney-and-compensation-acknowledgement.pdf">MAM Power of Attorney and Compensation Acknowledgement Forms</a> must be provided for any slave/sub - accounts</div>
 	        			<div class="gen_list-item">The Money Manager must hold relevant licence/authorisation as it may be required in the respective jurisdiction he is operating in</div>
 	        		</div>
 	        		<div class="desc">

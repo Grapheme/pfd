@@ -3,9 +3,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Admin Panel</title>
-    <link rel="stylesheet" href="<?=URL::to('css/normalize.css');?>">
-    <link href="<?=URL::to('vendor/twitter/bootstrap/dist/css/bootstrap.css');?>" rel="stylesheet">
-    <link href="<?=URL::to('css/admin.css');?>" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link href="/vendor/twitter/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/admin.css" rel="stylesheet">
 
     {{ HTML::style('css/redactor.css') }}
 

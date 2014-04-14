@@ -37,10 +37,10 @@
 			       				<div class="desc">
 			       					<p>Once you have decided which of the account forms are right for you, please download the corresponding PDF form from our website right here. Make sure you have read and understood the following documents:</p>
 			       					<p>
-			       						<p><a class="our-link" href="/downloads/PFD_Client_Services_Agreement_Individual.pdf">PFD Client Services Agreement - Individual</a></p>
-			       						<p><a class="our-link" href="/downloads/PFD_Client_Services_Agreement_Company.pdf">PFD Client Services Agreement - Company</a></p>
-			       						<p><a class="our-link" href="/downloads/PFD_Disclosure_Statement.pdf">PFD Disclosure Statement </a></p>
-			       						<p><a class="our-link" href="/downloads/PFD_General_Terms_and_Conditions.pdf">PFD General Terms & Conditions</a></p>
+			       						<p><a class="our-link" href="./downloads/PFD_Client_Services_Agreement_Individual.pdf">PFD Client Services Agreement - Individual</a></p>
+			       						<p><a class="our-link" href="./downloads/PFD_Client_Services_Agreement_Company.pdf">PFD Client Services Agreement - Company</a></p>
+			       						<p><a class="our-link" href="./downloads/PFD_Disclosure_Statement.pdf">PFD Disclosure Statement </a></p>
+			       						<p><a class="our-link" href="./downloads/PFD_General_Terms_and_Conditions.pdf">PFD General Terms & Conditions</a></p>
 			       					</p>
 			       				</div>
 			       			</div>
@@ -70,7 +70,7 @@
 										<br>New Zealand
 									</p>
 									<p>
-										Funding your account once the account is set up is very easy. You have the choice between the classical Swift transfer and a fast and easy online funding. <a href="/deposit" class="our-link">(Depositing Funds)</a>
+										Funding your account once the account is set up is very easy. You have the choice between the classical Swift transfer and a fast and easy online funding. <a href="deposit" class="our-link">(Depositing Funds)</a>
 									</p>
 								</div>
 			       			</div>
@@ -145,7 +145,7 @@
 			       				<div class="desc">
 			       					System requirements: Windows XP and newer versions
 			       				</div>
-			       				<a href="/downloads/pfd4setup.exe" class="download-button-blue">Download PFD Trader setup.exe</a>
+			       				<a href="./downloads/pfd4setup.exe" class="download-button-blue">Download PFD Trader setup.exe</a>
 			       			</div>
 			       		</div>
 		       			<div class="account-in-div">
@@ -157,7 +157,7 @@
 			       					System requirements: Windows XP and newer versions
 			       				</div>
 			       				<a href="https://kiwi.pfd-nz.com/demoreg/registration" class="download-button">Free demo account registration</a>
-			       				<a href="/downloads/KiwiTraderSetup.exe" class="download-button-blue">Download Kiwi Trader software.exe</a>
+			       				<a href="./downloads/KiwiTraderSetup.exe" class="download-button-blue">Download Kiwi Trader software.exe</a>
 			       			</div>
 		       			</div>
 		       		</div>

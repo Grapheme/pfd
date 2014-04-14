@@ -1,2 +1,3 @@
 User-agent: *
-Disallow: 
+Disallow:
+Sitemap: http://www.pfd-nz.com/sitemap.xml 

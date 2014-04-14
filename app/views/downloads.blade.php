@@ -58,13 +58,13 @@
 	        					System requirements: Windows XP a nd newer versions.
 	        				</div>
 	        				<a href="https://kiwi.pfd-nz.com/demoreg/registration" class="download-button-blue">Free Demo account registration.exe</a>
-	        				<a href="/downloads/KiwiTraderSetup.exe" class="download-button-blue">Download Kiwi Trader software.exe</a>
+	        				<a href="./downloads/KiwiTraderSetup.exe" class="download-button-blue">Download Kiwi Trader software.exe</a>
 	        				<div class="download-panel">
 	        					<div class="download-panel-left">
-	        						<a href="/downloads/Kiwi_Trader_Manual.pdf" class="down-link">Kiwi Trader user manual.pdf</a>
+	        						<a href="./downloads/Kiwi_Trader_Manual.pdf" class="down-link">Kiwi Trader user manual.pdf</a>
 	        					</div>
 	        					<div class="download-panel-right">
-	        						<a href="/downloads/Kiwi_Trader_Manual.pdf" class="down-right-link">0.3 MB</a>
+	        						<a href="./downloads/Kiwi_Trader_Manual.pdf" class="down-right-link">0.3 MB</a>
 	        					</div>
 	        				</div>
 	        			</div>
@@ -123,10 +123,10 @@
 		        				<a href="//files.metaquotes.net/pacific.financial.derivatives/mt4/pfd4setup.exe" class="download-button-blue">Download PFD Trader setup.exe</a>
 			        			<div class="download-panel">
 		        					<div class="download-panel-left">
-		        						<a href="/downloads/PFDTraderManual.pdf" class="down-link">PFD Trader user manual.pdf</a>
+		        						<a href="./downloads/PFDTraderManual.pdf" class="down-link">PFD Trader user manual.pdf</a>
 		        					</div>
 		        					<div class="download-panel-right">
-		        						<a href="/downloads/PFDTraderManual.pdf" class="down-right-link">1,3 МB</a>
+		        						<a href="./downloads/PFDTraderManual.pdf" class="down-right-link">1,3 МB</a>
 		        					</div>
 		        				</div>
 	        			</div>
