@@ -585,7 +585,9 @@ header {
   			cursor: pointer;
   			position: relative;
   			padding-left: 20px;
-        text-align: right; 			
+        text-align: right; 
+        white-space: nowrap;
+        z-index: 999;			
   			
   			.option-lang {
   				.transition(.3s);
@@ -994,6 +996,7 @@ header {
 	//width: 700px;
 	margin: 25px 0;
 	padding: 25px;
+	max-width: 560px;
 	
 	input {
 		.footer-font(@source-sans-reg, 14px, 1.3571em, 400);

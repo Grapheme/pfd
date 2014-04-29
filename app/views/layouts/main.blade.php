@@ -53,20 +53,22 @@
 	        					<?php if(is_null(Session::get('lang')) || Session::get('lang') == 'en') { ?>
 		        					<div class="active-lang" data-lang="en" href="<?=sLang::link('en')?>">English</div>
 		        					<div class="option-lang">
-		        						<a style="color: #000;" class="lang-item" data-lang="vie" href="<?=sLang::link('vn')?>">Tiếng Việt</a>
+		        						<a style="color: #000;" class="lang-item" data-lang="vie" href="<?=sLang::link('vn')?>">Tiếng Việt</a><br>
+		        						<a style="color: #000;" class="lang-item" data-lang="ch" href="<?=sLang::link('ch')?>">中國的</a><br>
 		        					</div>
-	        					<?php } else { ?>
+	        					<?php } elseif(Session::get('lang') == 'vn') { ?>
 		        					<div class="active-lang" data-lang="vie" href="<?=sLang::link('vn')?>">Tiếng Việt</div>
 		        					<div class="option-lang">
-		        						<a style="color: #000;" class="lang-item" data-lang="en" href="<?=sLang::link('en')?>">English</a>
+		        						<a style="color: #000;" class="lang-item" data-lang="en" href="<?=sLang::link('en')?>">English</a><br>
+		        						<a style="color: #000;" class="lang-item" data-lang="ch" href="<?=sLang::link('ch')?>">中國的</a><br>
 		        					</div>
-	        					<?php } ?>
-	        					<!--<form class="hidden">
-	        						<select>
-	        							<option value="en">en
-	        							<option value="zh-cn">vie
-	        						</select>
-	        					</form>-->
+	        					<?php } elseif(Session::get('lang') == 'ch') { ?>
+	        						<div class="active-lang" data-lang="ch" href="<?=sLang::link('ch')?>">中國的</div>
+		        					<div class="option-lang">
+		        						<a style="color: #000;" class="lang-item" data-lang="en" href="<?=sLang::link('en')?>">English</a><br>
+		        						<a style="color: #000;" class="lang-item" data-lang="vn" href="<?=sLang::link('vn')?>">Tiếng Việt</a><br>
+		        					</div>
+		        				<?php } ?>
 	        				</div>
 	        			</div>
 	        			<div class="search-open">
@@ -90,7 +92,7 @@
 	        					<ul class="header-sub-menu">
 	        						<li><a href="/product">PFD trader (MT4)</a>
 	        						<li><a href="/product-kiwi">Kiwi trader</a>
-	        						<li><a href="/product-multi">MAM/PAMM Accounts</a>
+	        						<li><a href="/product-multi">MT4 Multi Terminal</a>
 	        					</ul>
 	        				<li><a href="#"><?=trans('menu.products')?></a>
 	        					<ul class="header-sub-menu">
@@ -100,9 +102,6 @@
 	        					</ul>
 	        				<li><a href="#"><?=trans('menu.operations')?></a>
 	        					<ul class="header-sub-menu">
-	        					    <!--WHAT is this!?
-									<li><a href="#">Discretionary Authority</a>
-									-->
 	        					    <li><a href="/deposit"><?=trans('menu.deposit')?></a>
 	        					    <li><a href="/withdrawal"><?=trans('menu.withdrawals')?></a>
 	        					    <li><a href="/contacts"><?=trans('menu.contacts')?></a>
@@ -162,7 +161,7 @@
 		        		<ul class="ftr-links-list about-us">
 		        			<li class="ftr-links-item list-head"><?=trans('menu.about_us')?></a>
 		        			<li class="ftr-links-item"><a href="/about">Welcome</a>
-		        			<li class="ftr-links-item"><a href="/product-multi">MAM</a>
+		        			<li class="ftr-links-item"><a href="/product-multi">MT4 Multi Terminal</a>
 		        			<li class="ftr-links-item"><a href="/legal">Legal</a>
 		        			<li class="ftr-links-item"><a href="/press"><?=trans('menu.press')?></a>
 		        			<li class="ftr-links-item"><a href="/contacts"><?=trans('menu.contacts')?></a>
@@ -195,7 +194,6 @@
 	</body>
 
 		<!--GOOGLE-->
-
 		<script type="text/javascript">
 
 		  var _gaq = _gaq || [];
@@ -208,11 +206,9 @@
 		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		  })();
-
 		</script>
 
 		<!-- AdRoll Smart Pixel -->
-
 		<script type="text/javascript">
 		adroll_adv_id = "JRTN6BXMPVGFJLJ2CBL37T";
 		adroll_pix_id = "6EPWSQAEURDR5JJTUCCC2V";
@@ -251,14 +247,14 @@
 		    target="_blank"><img class="statcounter"
 		    src="//c.statcounter.com/7221510/0/6949071d/1/"
 		    alt="free hit counter" ></a></div></noscript>
-		<!-- statcounter ends --> 
+		<!-- statcounter ends -->
 
 		<!-- do not modify this script -->
-				<div class='nanorep_loadingData' id='nanoRepProxyContainer' style='position:absolute;top:-500px;left:0px;'></div>
-				<script type='text/javascript'>var _nRepData = _nRepData || []; _nRepData['kb'] = '23452028'; _nRepData['float'] = {account: 'pfdnz', cdcVersion: 3, cdcFrame: '', scriptVersion: '2.22.2.31'}
-				/* API here */;
-				(function(){var windowLoadFunc = function(){var _nRepData = window._nRepData || [];_nRepData['windowLoaded'] = true;if (typeof(_nRepData['windowOnload']) === 'function') _nRepData['windowOnload']();};if (window.attachEvent)window.attachEvent('onload', windowLoadFunc);else if (window.addEventListener)window.addEventListener('load', windowLoadFunc, false);var sc = document.createElement('script');sc.type = 'text/javascript';sc.async = true;sc.defer = true;sc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'my.nanorep.com/widget/scripts/float.js';var _head = document.getElementsByTagName('head')[0];_head.appendChild(sc);})();
-				</script>
+		<div class='nanorep_loadingData' id='nanoRepProxyContainer' style='position:absolute;top:-500px;left:0px;'></div>
+		<script type='text/javascript'>var _nRepData = _nRepData || []; _nRepData['kb'] = '23452028'; _nRepData['float'] = {account: 'pfdnz', cdcVersion: 3, cdcFrame: '', scriptVersion: '2.22.2.31'}
+		/* API here */;
+		(function(){var windowLoadFunc = function(){var _nRepData = window._nRepData || [];_nRepData['windowLoaded'] = true;if (typeof(_nRepData['windowOnload']) === 'function') _nRepData['windowOnload']();};if (window.attachEvent)window.attachEvent('onload', windowLoadFunc);else if (window.addEventListener)window.addEventListener('load', windowLoadFunc, false);var sc = document.createElement('script');sc.type = 'text/javascript';sc.async = true;sc.defer = true;sc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'my.nanorep.com/widget/scripts/float.js';var _head = document.getElementsByTagName('head')[0];_head.appendChild(sc);})();
+		</script>
 
 		<?=trans('menu.ve_chat')?>
 
