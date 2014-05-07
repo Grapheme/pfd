@@ -43,4 +43,12 @@ return array(
 	"papper_desc" => "一旦您决定适合您的账户表格之后，请从我们网站的这个页面下载相应的PDF表格。现在您可以下载并填写账户申请表。",
 	"mt4" => "MT4白标合作方案",
 	"forex" => "外汇",
+	"site_map" => "網站地圖",
+	"ft_home" => "主頁",
+	"skype_chat" => "Skype的聊天",
+	"welcome" => "歡迎",
+	"legal" => "法律",
+	"open_account" => "开立账户",
+	"pfd_trader" => "PFD操盘手 (MT4)",
+	"meta_trader4" => "Meta交易4",
 );

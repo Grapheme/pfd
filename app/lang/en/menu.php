@@ -43,4 +43,12 @@ return array(
 	"papper_desc" => "Once you have decided which of the account forms are right for you, please download the corresponding PDF form from our website right here. Now you can proceed and fill the account opening form.",
 	"mt4" => "MT4 Multi Terminal",
 	"forex" => "Forex",
+	"site_map" => "Site map",
+	"ft_home" => "Home",
+	"skype_chat" => "Skype chat",
+	"welcome" => "Welcome",
+	"legal" => "Legal",
+	"open_account" => "Open an account",
+	"pfd_trader" => "PFD Trader (MT4)",
+	"meta_trader4" => "Meta trader 4",
 );

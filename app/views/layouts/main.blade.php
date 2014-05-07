@@ -90,7 +90,7 @@
 	        					</ul>
 	        				<li><a href="#"><?=trans('menu.platforms')?></a>
 	        					<ul class="header-sub-menu">
-	        						<li><a href="/product">PFD trader (MT4)</a>
+	        						<li><a href="/product"><?=trans('menu.pfd_trader')?></a>
 	        						<li><a href="/product-kiwi">Kiwi trader</a>
 	        						<li><a href="/product-multi"><?=trans('menu.mt4')?></a>
 	        					</ul>
@@ -150,19 +150,19 @@
 	        	<div class="footer-content cleafix">
 	        		<div class="ftr-top clearfix">
 		        		<ul class="ftr-links-list">
-		        			<li class="ftr-links-item"><a href="/">Home</a>
+		        			<li class="ftr-links-item"><a href="/"><?=trans('menu.ft_home')?></a>
 		        			<li class="ftr-links-item"><a href="/white"><?=trans('menu.white')?></a>
 		        			<li class="ftr-links-item"><a href="/broker"><?=trans('menu.broker')?></a>
 		        			<li class="ftr-links-item"><a href="/spread"><?=trans('menu.spread')?></a>
-		        			<li class="ftr-links-item"><a href="/product">Meta trader 4</a>
-		        			<li class="ftr-links-item"><a href="skype:<?=trans('menu.skype')?>?chat">Skype Chat</a>
-		        			<li class="ftr-links-item"><a href="/sitemap">Site Map</a>
+		        			<li class="ftr-links-item"><a href="/product"><?=trans('menu.meta_trader4')?></a>
+		        			<li class="ftr-links-item"><a href="skype:<?=trans('menu.skype')?>?chat"><?=trans('menu.skype_chat')?></a>
+		        			<li class="ftr-links-item"><a href="/sitemap"><?=trans('menu.site_map')?></a>
 		        		</ul>
 		        		<ul class="ftr-links-list about-us">
 		        			<li class="ftr-links-item list-head"><?=trans('menu.about_us')?></a>
-		        			<li class="ftr-links-item"><a href="/about">Welcome</a>
+		        			<li class="ftr-links-item"><a href="/about"><?=trans('menu.welcome')?></a>
 		        			<li class="ftr-links-item"><a href="/product-multi"><?=trans('menu.mt4')?></a>
-		        			<li class="ftr-links-item"><a href="/legal">Legal</a>
+		        			<li class="ftr-links-item"><a href="/legal"><?=trans('menu.legal')?></a>
 		        			<li class="ftr-links-item"><a href="/press"><?=trans('menu.press')?></a>
 		        			<li class="ftr-links-item"><a href="/contacts"><?=trans('menu.contacts')?></a>
 		        		</ul>
@@ -174,7 +174,7 @@
 		        		</ul>
 		        		<ul class="ftr-links-list operations">
 		        			<li class="ftr-links-item list-head"><?=trans('menu.operations')?>
-		        			<li class="ftr-links-item"><a href="/reg">Open an account</a>
+		        			<li class="ftr-links-item"><a href="/reg"><?=trans('menu.open_account')?></a>
 		        			<li class="ftr-links-item"><a href="/deposit"><?=trans('menu.deposit')?></a>
 		        			<li class="ftr-links-item"><a href="/withdrawal"><?=trans('menu.withdrawals')?></a>
 		        			<li class="ftr-links-item"><a href="/support"><?=trans('menu.support')?></a>
