@@ -41,4 +41,6 @@ return array(
 	"online_desc" => "Online sign up is intended to be completed in conjunction with the relevant provisions of Pacific Financial Derivative Limited’s Individual Account Client Services Agreement Individual Account. First step is to register user name, password and email id.",
 	"papper_acc" => "Paper mode account",
 	"papper_desc" => "Once you have decided which of the account forms are right for you, please download the corresponding PDF form from our website right here. Now you can proceed and fill the account opening form.",
+	"mt4" => "MT4 Multi Terminal",
+	"forex" => "Forex",
 );

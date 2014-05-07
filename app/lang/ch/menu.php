@@ -41,4 +41,6 @@ return array(
 	"online_desc" => "网上注册是与Pacific Financial Derivative Limited的个人账户客户服务协议的相关条款一块完成。第一步是注册用户名、密码和电子邮箱ID。",
 	"papper_acc" => "纸张模式账户申请",
 	"papper_desc" => "一旦您决定适合您的账户表格之后，请从我们网站的这个页面下载相应的PDF表格。现在您可以下载并填写账户申请表。",
+	"mt4" => "MT4白标合作方案",
+	"forex" => "外汇",
 );

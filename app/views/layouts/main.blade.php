@@ -92,11 +92,11 @@
 	        					<ul class="header-sub-menu">
 	        						<li><a href="/product">PFD trader (MT4)</a>
 	        						<li><a href="/product-kiwi">Kiwi trader</a>
-	        						<li><a href="/product-multi">MT4 Multi Terminal</a>
+	        						<li><a href="/product-multi"><?=trans('menu.mt4')?></a>
 	        					</ul>
 	        				<li><a href="#"><?=trans('menu.products')?></a>
 	        					<ul class="header-sub-menu">
-	        						<li><a href="/forex">Forex</a>
+	        						<li><a href="/forex"><?=trans('menu.forex')?></a>
 	        						<li><a href="/cfd"><?=trans('menu.cfd')?></a>
 	        						<li><a href="/future"><?=trans('menu.futures')?></a>
 	        					</ul>
@@ -161,14 +161,14 @@
 		        		<ul class="ftr-links-list about-us">
 		        			<li class="ftr-links-item list-head"><?=trans('menu.about_us')?></a>
 		        			<li class="ftr-links-item"><a href="/about">Welcome</a>
-		        			<li class="ftr-links-item"><a href="/product-multi">MT4 Multi Terminal</a>
+		        			<li class="ftr-links-item"><a href="/product-multi"><?=trans('menu.mt4')?></a>
 		        			<li class="ftr-links-item"><a href="/legal">Legal</a>
 		        			<li class="ftr-links-item"><a href="/press"><?=trans('menu.press')?></a>
 		        			<li class="ftr-links-item"><a href="/contacts"><?=trans('menu.contacts')?></a>
 		        		</ul>
 		        		<ul class="ftr-links-list products">
 		        			<li class="ftr-links-item list-head"><?=trans('menu.products')?>
-		        			<li class="ftr-links-item"><a href="/forex">Forex</a>
+		        			<li class="ftr-links-item"><a href="/forex"><?=trans('menu.forex')?></a>
     						<li class="ftr-links-item"><a href="/cfd"><?=trans('menu.cfd')?></a>
     						<li class="ftr-links-item"><a href="/future"><?=trans('menu.futures')?></a>
 		        		</ul>

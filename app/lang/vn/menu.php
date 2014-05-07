@@ -62,4 +62,6 @@ return array(
 	"online_desc" => "Khách hàng có thể mở tài khoản giao dịch một cách dễ dàng khi đăng ký Online thông qua hệ thống của chúng tôi. Khi đăng ký tài khoản Online thành công điều đó đồng nghĩa với việc có một hợp đồng giao dịch được ký kết giữa khách hàng và PFD.",
 	"papper_acc" => "HỢP ĐỒNG MỞ TÀI KHOẢN",
 	"papper_desc" => "Khi bạn quyết định mở tài khoản với chúng tôi bằng hình thức hợp đồng giấy.xin vui lòng tải về mẫu hợp đồng bằng cách click vào đây và gửi lại cho chúng tôi để tiến hành mở tài khoản",
+	"mt4" => "MT4 Multi Terminal",
+	"forex" => "Forex",
 );
